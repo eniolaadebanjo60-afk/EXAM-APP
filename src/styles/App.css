@@ -1,0 +1,23 @@
+.nav {
+  display: flex;
+  gap: 8px;
+  padding: 14px var(--pad) 0;
+  max-width: var(--maxw);
+  margin: 0 auto;
+}
+
+.nav a {
+  padding: 8px 16px;
+  border-radius: 999px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--text-muted);
+  transition: background 140ms ease, color 140ms ease;
+}
+
+.nav a:hover { background: var(--surface-2); color: var(--text); }
+
+.nav a.active {
+  background: var(--accent);
+  color: var(--accent-contrast);
+}

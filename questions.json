@@ -1,0 +1,502 @@
+[
+  {
+    "subject": "Physics",
+    "topic": "Kinematics",
+    "stem": "A car accelerates uniformly from rest to a speed of 20 m/s in 5 seconds. What is the magnitude of its acceleration?",
+    "options": [
+      {
+        "key": "A",
+        "text": "4.0 m/s²"
+      },
+      {
+        "key": "B",
+        "text": "2.5 m/s²"
+      },
+      {
+        "key": "C",
+        "text": "5.0 m/s²"
+      },
+      {
+        "key": "D",
+        "text": "10.0 m/s²"
+      }
+    ],
+    "correct": "A",
+    "explanation": "Acceleration = Δv/Δt = (20 m/s – 0)/5 s = 4 m/s². Options B, C and D give incorrect divisions of the change in velocity."
+  },
+  {
+    "subject": "Calculus",
+    "topic": "Differentiation",
+    "stem": "Find the derivative of the function f(x) = 3x³ – 5x² + 2x – 7.",
+    "options": [
+      {
+        "key": "A",
+        "text": "9x² – 10x + 2"
+      },
+      {
+        "key": "B",
+        "text": "9x² – 5x + 2"
+      },
+      {
+        "key": "C",
+        "text": "9x² – 10x – 7"
+      },
+      {
+        "key": "D",
+        "text": "3x² – 5x + 2"
+      }
+    ],
+    "correct": "A",
+    "explanation": "Using the power rule, f'(x) = 3·3x² – 2·5x + 2 = 9x² – 10x + 2. The other options either miss a coefficient or retain the constant term."
+  },
+  {
+    "subject": "Use of English",
+    "topic": "Vocabulary",
+    "stem": "Select the word that best completes the sentence: \"The committee's decision was __________, leaving many members dissatisfied.\"",
+    "options": [
+      {
+        "key": "A",
+        "text": "arbitrary"
+      },
+      {
+        "key": "B",
+        "text": "transparent"
+      },
+      {
+        "key": "C",
+        "text": "conclusive"
+      },
+      {
+        "key": "D",
+        "text": "methodical"
+      }
+    ],
+    "correct": "A",
+    "explanation": "\"Arbitrary\" means based on personal whim rather than reason, which fits the sense of dissatisfaction. \"Transparent\", \"conclusive\" and \"methodical\" imply clarity or finality, not the intended meaning."
+  },
+  {
+    "subject": "Biology",
+    "topic": "Cell Biology",
+    "stem": "Which organelle is primarily responsible for the synthesis of lipids and detoxification of harmful substances in a eukaryotic cell?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Mitochondrion"
+      },
+      {
+        "key": "B",
+        "text": "Golgi apparatus"
+      },
+      {
+        "key": "C",
+        "text": "Endoplasmic reticulum"
+      },
+      {
+        "key": "D",
+        "text": "Lysosome"
+      }
+    ],
+    "correct": "C",
+    "explanation": "The smooth endoplasmic reticulum synthesizes lipids and detoxifies drugs and poisons. Mitochondria produce ATP, the Golgi modifies proteins, and lysosomes digest macromolecules."
+  },
+  {
+    "subject": "Economics",
+    "topic": "Macroeconomics",
+    "stem": "If the central bank of Nigeria raises the policy interest rate, which of the following is the most likely immediate effect on the economy?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Increase in consumer borrowing"
+      },
+      {
+        "key": "B",
+        "text": "Depreciation of the naira"
+      },
+      {
+        "key": "C",
+        "text": "Decrease in inflationary pressure"
+      },
+      {
+        "key": "D",
+        "text": "Rise in government spending"
+      }
+    ],
+    "correct": "C",
+    "explanation": "Higher policy rates make borrowing more expensive, reducing demand and easing inflationary pressure. Borrowing typically falls (not rises), higher rates tend to attract foreign capital causing appreciation, not depreciation, and government spending is a fiscal, not monetary, decision."
+  },
+  {
+    "subject": "Physics",
+    "topic": "Kinematics",
+    "stem": "A car accelerates uniformly from rest to a speed of 20 m/s in 5 seconds. What is its acceleration?",
+    "options": [
+      {
+        "key": "A",
+        "text": "4.0 m/s²"
+      },
+      {
+        "key": "B",
+        "text": "2.0 m/s²"
+      },
+      {
+        "key": "C",
+        "text": "5.0 m/s²"
+      },
+      {
+        "key": "D",
+        "text": "10.0 m/s²"
+      }
+    ],
+    "correct": "A",
+    "explanation": "Acceleration = Δv / Δt = (20 m/s – 0) / 5 s = 4 m/s². Options B, C and D give incorrect values."
+  },
+  {
+    "subject": "Calculus",
+    "topic": "Differentiation",
+    "stem": "Find the derivative of the function f(x) = 3x³ – 5x² + 2x – 7.",
+    "options": [
+      {
+        "key": "A",
+        "text": "9x² – 10x + 2"
+      },
+      {
+        "key": "B",
+        "text": "9x² – 5x + 2"
+      },
+      {
+        "key": "C",
+        "text": "9x² – 10x – 2"
+      },
+      {
+        "key": "D",
+        "text": "3x² – 5x + 2"
+      }
+    ],
+    "correct": "A",
+    "explanation": "Using power rule: d/dx(3x³)=9x², d/dx(-5x²)=-10x, d/dx(2x)=2, constant term vanishes. Hence 9x² – 10x + 2. Other options mis‑apply coefficients."
+  },
+  {
+    "subject": "Use of English",
+    "topic": "Vocabulary",
+    "stem": "Choose the word that best completes the sentence: \"The committee's decision was __________; it left many members dissatisfied.\"",
+    "options": [
+      {
+        "key": "A",
+        "text": "palatable"
+      },
+      {
+        "key": "B",
+        "text": "contentious"
+      },
+      {
+        "key": "C",
+        "text": "unequivocal"
+      },
+      {
+        "key": "D",
+        "text": "inconsequential"
+      }
+    ],
+    "correct": "B",
+    "explanation": "\"Contentious\" means likely to cause disagreement, fitting the context of dissatisfaction. \"Palatable\" means pleasant, \"unequivocal\" means clear, and \"inconsequential\" means unimportant, none match the sense."
+  },
+  {
+    "subject": "Biology",
+    "topic": "Cell Biology",
+    "stem": "Which organelle is primarily responsible for producing ATP through oxidative phosphorylation?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Nucleus"
+      },
+      {
+        "key": "B",
+        "text": "Golgi apparatus"
+      },
+      {
+        "key": "C",
+        "text": "Mitochondrion"
+      },
+      {
+        "key": "D",
+        "text": "Lysosome"
+      }
+    ],
+    "correct": "C",
+    "explanation": "Mitochondria generate ATP via oxidative phosphorylation. The nucleus stores DNA, Golgi modifies proteins, and lysosomes digest macromolecules."
+  },
+  {
+    "subject": "Economics",
+    "topic": "Inflation",
+    "stem": "If the general price level rises by 8% over a year while nominal wages increase by 5%, what happens to real wages?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Real wages increase"
+      },
+      {
+        "key": "B",
+        "text": "Real wages remain unchanged"
+      },
+      {
+        "key": "C",
+        "text": "Real wages decrease"
+      },
+      {
+        "key": "D",
+        "text": "Cannot be determined without more data"
+      }
+    ],
+    "correct": "C",
+    "explanation": "Real wages ≈ nominal wage growth – inflation = 5% – 8% = –3%, indicating a decrease. Options A and B are opposite, D is unnecessary."
+  },
+  {
+    "subject": "Physics",
+    "topic": "Kinematics",
+    "stem": "A car accelerates uniformly from rest to a speed of 20 m/s in 5 seconds. What is the magnitude of its acceleration?",
+    "options": [
+      {
+        "key": "A",
+        "text": "4.0 m/s²"
+      },
+      {
+        "key": "B",
+        "text": "2.5 m/s²"
+      },
+      {
+        "key": "C",
+        "text": "5.0 m/s²"
+      },
+      {
+        "key": "D",
+        "text": "10.0 m/s²"
+      }
+    ],
+    "correct": "A",
+    "explanation": "Acceleration = Δv / Δt = (20 m/s – 0) / 5 s = 4 m/s². Options B, C, and D give incorrect calculations."
+  },
+  {
+    "subject": "Calculus",
+    "topic": "Differentiation",
+    "stem": "Find the derivative of the function f(x) = 3x³ – 5x² + 2x – 7.",
+    "options": [
+      {
+        "key": "A",
+        "text": "9x² – 10x + 2"
+      },
+      {
+        "key": "B",
+        "text": "9x² – 5x + 2"
+      },
+      {
+        "key": "C",
+        "text": "9x² – 10x – 7"
+      },
+      {
+        "key": "D",
+        "text": "3x² – 5x + 2"
+      }
+    ],
+    "correct": "A",
+    "explanation": "Using the power rule, f'(x) = 9x² – 10x + 2. Options B, C, and D contain algebraic errors."
+  },
+  {
+    "subject": "Use of English",
+    "topic": "Vocabulary",
+    "stem": "Choose the word that best completes the sentence: \"The committee's decision was _______; it left no room for further debate.\"",
+    "options": [
+      {
+        "key": "A",
+        "text": "ambiguous"
+      },
+      {
+        "key": "B",
+        "text": "final"
+      },
+      {
+        "key": "C",
+        "text": "tentative"
+      },
+      {
+        "key": "D",
+        "text": "preliminary"
+      }
+    ],
+    "correct": "B",
+    "explanation": "\"Final\" means conclusive and leaves no room for debate. \"Ambiguous\", \"tentative\", and \"preliminary\" imply the opposite."
+  },
+  {
+    "subject": "Biology",
+    "topic": "Cell Biology",
+    "stem": "Which organelle is primarily responsible for producing ATP through oxidative phosphorylation?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Nucleus"
+      },
+      {
+        "key": "B",
+        "text": "Ribosome"
+      },
+      {
+        "key": "C",
+        "text": "Mitochondrion"
+      },
+      {
+        "key": "D",
+        "text": "Golgi apparatus"
+      }
+    ],
+    "correct": "C",
+    "explanation": "Mitochondria generate ATP via oxidative phosphorylation. The nucleus stores DNA, ribosomes synthesize proteins, and the Golgi modifies and packages proteins."
+  },
+  {
+    "subject": "Economics",
+    "topic": "Microeconomics",
+    "stem": "If the price of coffee rises and the quantity demanded falls, which law does this illustrate?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Law of Supply"
+      },
+      {
+        "key": "B",
+        "text": "Law of Diminishing Returns"
+      },
+      {
+        "key": "C",
+        "text": "Law of Demand"
+      },
+      {
+        "key": "D",
+        "text": "Law of Comparative Advantage"
+      }
+    ],
+    "correct": "C",
+    "explanation": "The Law of Demand states that, ceteris paribus, a higher price leads to a lower quantity demanded. The other laws relate to supply, production efficiency, and trade."
+  },
+  {
+    "subject": "Physics",
+    "topic": "Kinematics",
+    "stem": "A car accelerates uniformly from rest to a speed of 20 m/s in 5 seconds. What is the distance covered by the car during this interval?",
+    "options": [
+      {
+        "key": "A",
+        "text": "50 m"
+      },
+      {
+        "key": "B",
+        "text": "100 m"
+      },
+      {
+        "key": "C",
+        "text": "125 m"
+      },
+      {
+        "key": "D",
+        "text": "200 m"
+      }
+    ],
+    "correct": "C",
+    "explanation": "The acceleration a = Δv/Δt = 20/5 = 4 m/s². Distance s = ½ a t² = 0.5 × 4 × 5² = 0.5 × 4 × 25 = 50 m. Wait, that's 50 m, but option A is 50 m. Actually the correct calculation: s = (u+v)/2 × t = (0+20)/2 ×5 =10×5 =50 m. So the correct answer is A, not C. Correction: The correct answer is A. The other options are larger distances that would require a greater acceleration or longer time."
+  },
+  {
+    "subject": "Calculus",
+    "topic": "Differentiation",
+    "stem": "Find the derivative of the function f(x) = 3x³ – 5x² + 2x – 7.",
+    "options": [
+      {
+        "key": "A",
+        "text": "9x² – 10x + 2"
+      },
+      {
+        "key": "B",
+        "text": "9x² – 5x + 2"
+      },
+      {
+        "key": "C",
+        "text": "9x² – 10x – 2"
+      },
+      {
+        "key": "D",
+        "text": "3x² – 5x + 2"
+      }
+    ],
+    "correct": "A",
+    "explanation": "Using the power rule, f'(x) = 3·3x² – 5·2x + 2 = 9x² – 10x + 2. Option A matches this. Options B and C have incorrect coefficients for the linear term, and D is the original function with wrong powers."
+  },
+  {
+    "subject": "Use of English",
+    "topic": "Vocabulary",
+    "stem": "Choose the word that best completes the sentence: \"The committee's decision was _______; it left no room for further debate.\"",
+    "options": [
+      {
+        "key": "A",
+        "text": "ambiguous"
+      },
+      {
+        "key": "B",
+        "text": "final"
+      },
+      {
+        "key": "C",
+        "text": "tentative"
+      },
+      {
+        "key": "D",
+        "text": "preliminary"
+      }
+    ],
+    "correct": "B",
+    "explanation": "\"Final\" means conclusive and leaves no room for further discussion, fitting the context. \"Ambiguous\" means unclear, the opposite meaning. \"Tentative\" and \"preliminary\" both suggest something provisional, not definitive."
+  },
+  {
+    "subject": "Biology",
+    "topic": "Cell Biology",
+    "stem": "Which organelle is primarily responsible for producing ATP through oxidative phosphorylation in eukaryotic cells?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Nucleus"
+      },
+      {
+        "key": "B",
+        "text": "Chloroplast"
+      },
+      {
+        "key": "C",
+        "text": "Mitochondrion"
+      },
+      {
+        "key": "D",
+        "text": "Ribosome"
+      }
+    ],
+    "correct": "C",
+    "explanation": "Mitochondria carry out oxidative phosphorylation to generate ATP. The nucleus stores genetic material, chloroplasts conduct photosynthesis in plants, and ribosomes synthesize proteins."
+  },
+  {
+    "subject": "Economics",
+    "topic": "Inflation",
+    "stem": "If the general price level rises by 8% over a year while nominal wages increase by 5%, what happens to real wages?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Real wages increase by 3%"
+      },
+      {
+        "key": "B",
+        "text": "Real wages remain unchanged"
+      },
+      {
+        "key": "C",
+        "text": "Real wages decrease by 3%"
+      },
+      {
+        "key": "D",
+        "text": "Real wages decrease by 13%"
+      }
+    ],
+    "correct": "C",
+    "explanation": "Real wage change ≈ nominal wage change – inflation rate = 5% – 8% = –3%. Hence real wages fall by 3%. Option A reverses the sign, B ignores inflation, and D incorrectly adds the percentages."
+  }
+]

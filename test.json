@@ -1,0 +1,9 @@
+{
+  "question": "What is 2+2?",
+  "options": [
+    { "key": "A", "text": "3" },
+    { "key": "B", "text": "4" }
+  ],
+  "correct": "B",
+  "chosen": "A"
+}
