@@ -1,13 +1,14 @@
 .exam {
   min-height: 100vh;
   background: var(--bg);
+  background-image: var(--bg-gradient);
   color: var(--text);
   display: flex;
   flex-direction: column;
   padding: var(--pad);
   max-width: var(--maxw);
   margin: 0 auto;
-  gap: 20px;
+  gap: 24px;
 }
 
 .exam__bar {
@@ -20,7 +21,7 @@
 .timer {
   font-family: var(--font-body);
   font-variant-numeric: tabular-nums;
-  font-size: 1.15rem;
+  font-size: 1.25rem;
   font-weight: 700;
   letter-spacing: 0.04em;
   color: var(--text);
@@ -37,14 +38,14 @@
 }
 
 .exam__count {
-  font-size: 0.85rem;
+  font-size: 0.9rem;
   font-weight: 600;
   color: var(--text-muted);
   font-variant-numeric: tabular-nums;
 }
 
 .exam__progress {
-  height: 3px;
+  height: 4px;
   background: var(--surface-2);
   border-radius: 999px;
   overflow: hidden;
@@ -59,6 +60,27 @@
 
 .exam__body { flex: 1; }
 
+.exam__hint-loading {
+  margin-top: 16px;
+  color: var(--text-muted);
+  font-style: italic;
+  animation: pulse 1.5s ease-in-out infinite;
+}
+
+.exam__hint-box {
+  margin-top: 16px;
+  padding: 16px;
+  border-radius: var(--radius-sm);
+  background: var(--surface-2);
+  border-left: 3px solid var(--accent);
+  line-height: 1.6;
+  animation: rise 200ms ease;
+}
+
+.exam__hint-box strong {
+  color: var(--accent);
+}
+
 .exam__footer {
   display: flex;
   justify-content: space-between;
@@ -67,7 +89,7 @@
 }
 
 .exam__btn {
-  padding: 13px 22px;
+  padding: 14px 24px;
   border-radius: var(--radius-sm);
   border: 1px solid var(--border);
   background: var(--surface);
@@ -75,6 +97,7 @@
   font-weight: 600;
   font-size: 0.95rem;
   transition: background 140ms ease, transform 140ms ease, opacity 140ms ease;
+  box-shadow: var(--shadow-sm);
 }
 
 .exam__btn:not(:disabled):hover { background: var(--surface-2); }
@@ -85,6 +108,7 @@
   background: var(--accent);
   border-color: var(--accent);
   color: var(--accent-contrast);
+  box-shadow: none;
 }
 .exam__btn--primary:not(:disabled):hover {
   background: var(--accent-hover);
@@ -94,6 +118,7 @@
 .exam--result {
   justify-content: center;
   align-items: center;
+  padding-bottom: 40px;
 }
 
 .exam__result-card {
@@ -106,13 +131,8 @@
   flex-direction: column;
   align-items: center;
   gap: 16px;
-  box-shadow: var(--shadow);
+  box-shadow: var(--shadow-lg);
   animation: rise 320ms cubic-bezier(0.16, 1, 0.3, 1);
-}
-
-@keyframes rise {
-  from { opacity: 0; transform: translateY(12px); }
-  to   { opacity: 1; transform: translateY(0); }
 }
 
 .exam__result-label {
@@ -144,57 +164,54 @@
 
 .exam__result-card .exam__btn {
   margin-top: 8px;
-  padding: 13px 28px;
-}
-
-.exam--result {
-  align-items: center;
-  padding-bottom: 40px;
+  padding: 14px 32px;
 }
 
 .exam__review {
   width: 100%;
   display: flex;
   flex-direction: column;
-  gap: 14px;
-  margin-top: 24px;
+  gap: 16px;
+  margin-top: 32px;
 }
 
 .exam__review-title {
-  font-size: 0.8rem;
+  font-size: 0.85rem;
   text-transform: uppercase;
   letter-spacing: 0.12em;
   color: var(--text-muted);
   font-weight: 700;
-  margin-bottom: 4px;
+  margin-bottom: 8px;
 }
 
 .review-card {
   background: var(--surface);
   border: 1px solid var(--border);
-  border-left: 3px solid var(--danger);
+  border-left: 4px solid var(--danger);
   border-radius: var(--radius);
-  padding: clamp(18px, 4vw, 22px);
+  padding: clamp(20px, 4vw, 24px);
   display: flex;
   flex-direction: column;
-  gap: 12px;
+  gap: 14px;
   text-align: left;
+  box-shadow: var(--shadow-md);
 }
 
 .review-card__stem {
   font-weight: 500;
   line-height: 1.5;
+  font-size: 1.05rem;
   margin-bottom: 4px;
 }
 
 .review-card__row {
   display: flex;
   flex-direction: column;
-  gap: 3px;
+  gap: 4px;
 }
 
 .review-card__label {
-  font-size: 0.72rem;
+  font-size: 0.75rem;
   text-transform: uppercase;
   letter-spacing: 0.1em;
   color: var(--text-muted);
@@ -207,27 +224,7 @@
 .review-card__explain {
   color: var(--text-muted);
   line-height: 1.65;
-  padding-top: 10px;
+  padding-top: 14px;
   border-top: 1px solid var(--border);
   font-size: 0.95rem;
-}
-
-.exam__replay-stat {
-  width: 100%;
-  background: var(--surface-2);
-  border: 1px solid var(--accent);
-  border-radius: var(--radius);
-  padding: 20px;
-  margin-top: 10px;
-  text-align: center;
-}
-.exam__replay-stat h3 {
-  font-size: 0.85rem;
-  text-transform: uppercase;
-  letter-spacing: 0.08em;
-  color: var(--accent);
-  margin-bottom: 8px;
-}
-.exam__replay-stat p {
-  color: var(--text);
 }
