@@ -18,7 +18,7 @@ export default function ExplanationPanel({ question, chosen, onNext }) {
     setReply("");
 
     try {
-      const res = await fetch("/api/explain", {
+      const res = await fetch("https://exam-app-backend-lsgh.onrender.com/api/explain", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
