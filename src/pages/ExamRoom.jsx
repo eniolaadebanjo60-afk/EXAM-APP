@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
-import { MOCK_QUESTIONS } from "../lib/mockQuestions";
+import { useSearchParams } from "react-router-dom";
+import { supabase } from "../lib/supabase";
 import { saveExamState, loadExamState, clearExamState } from "../lib/examStorage";
 import QuestionCard from "../components/QuestionCard";
 import Timer from "../components/Timer";
@@ -8,38 +9,75 @@ import "../styles/ExamRoom.css";
 const EXAM_SECONDS = 60 * 5;
 
 export default function ExamRoom() {
+  const [searchParams] = useSearchParams();
+  const course = searchParams.get("course");
+
+  const [questions, setQuestions] = useState([]);
+  const [loading, setLoading] = useState(true);
+  
   const [index, setIndex] = useState(0);
   const [history, setHistory] = useState({});
   const [submitted, setSubmitted] = useState(false);
   const [timeLeft, setTimeLeft] = useState(EXAM_SECONDS);
   const [isLoaded, setIsLoaded] = useState(false);
 
-  const q = MOCK_QUESTIONS[index];
-  const total = MOCK_QUESTIONS.length;
-  const progress = ((index + 1) / total) * 100;
-  const currentAnswers = history[q.id] || [];
-  const chosen = currentAnswers[currentAnswers.length - 1] || null;
-
   useEffect(() => {
     document.documentElement.setAttribute("data-room", "exam");
     
     const saved = loadExamState();
-    if (saved) {
+    if (saved && saved.course === course) {
       setIndex(saved.index);
       setHistory(saved.history);
       setTimeLeft(saved.timeLeft);
+    } else {
+      clearExamState();
     }
     
-    setIsLoaded(true);
+    async function fetchQuestions() {
+      let query = supabase.from("questions").select("*");
+      if (course) query = query.eq("course", course);
+      
+      const { data, error } = await query;
+      if (error) console.error(error);
+      else if (data) setQuestions(data);
+      
+      setLoading(false);
+      setIsLoaded(true);
+    }
+    
+    fetchQuestions();
 
     return () => document.documentElement.removeAttribute("data-room");
-  }, []);
+  }, [course]);
 
   useEffect(() => {
-    if (!submitted && isLoaded) {
-      saveExamState(index, history, timeLeft);
+    if (!submitted && isLoaded && questions.length > 0) {
+      saveExamState(index, history, timeLeft, course);
     }
-  }, [index, history, timeLeft, submitted, isLoaded]);
+  }, [index, history, timeLeft, submitted, isLoaded, questions.length, course]);
+
+  if (loading) {
+    return (
+      <div className="practice__loading" data-room="exam">
+        <div className="practice__spinner"></div>
+        <span>Loading exam...</span>
+      </div>
+    );
+  }
+
+  if (questions.length === 0) {
+    return (
+      <div className="practice__loading" data-room="exam">
+        <span>No exam questions found for this course.</span>
+      </div>
+    );
+  }
+
+  const q = questions[index];
+  const total = questions.length;
+  const progress = ((index + 1) / total) * 100;
+  const currentAnswers = history[q.id] || [];
+  const chosen = currentAnswers[currentAnswers.length - 1] || null;
 
   function pick(key) {
     if (submitted || chosen === key) return;
@@ -73,13 +111,13 @@ export default function ExamRoom() {
   const correctCount = Object.entries(history).filter(
     ([qid, answers]) => {
       const finalAnswer = answers[answers.length - 1];
-      return MOCK_QUESTIONS.find((m) => m.id === qid)?.correct === finalAnswer;
+      return questions.find((m) => m.id === qid)?.correct === finalAnswer;
     }
   ).length;
 
   if (submitted) {
-    const secondGuesses = MOCK_QUESTIONS.filter((m) => (history[m.id] || []).length > 1);
-    const missed = MOCK_QUESTIONS.filter((m) => {
+    const secondGuesses = questions.filter((m) => (history[m.id] || []).length > 1);
+    const missed = questions.filter((m) => {
       const qHistory = history[m.id] || [];
       const finalAnswer = qHistory[qHistory.length - 1];
       return finalAnswer && finalAnswer !== m.correct;
@@ -142,11 +180,7 @@ export default function ExamRoom() {
   return (
     <div className="exam">
       <header className="exam__bar">
-        <Timer 
-          seconds={timeLeft} 
-          onTick={setTimeLeft} 
-          onEnd={submit} 
-        />
+        <Timer seconds={timeLeft} onTick={setTimeLeft} onEnd={submit} />
         <span className="exam__count">{index + 1} / {total}</span>
       </header>
 

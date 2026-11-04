@@ -1,8 +1,8 @@
 .practice {
   display: flex;
   flex-direction: column;
-  gap: 32px;
-  padding: max(8vh, 40px) var(--pad) 80px;
+  gap: 24px;
+  padding: 24px var(--pad) 60px;
   max-width: var(--maxw);
   margin: 0 auto;
   min-height: 100vh;
@@ -17,26 +17,32 @@
 .practice__meta {
   display: flex;
   justify-content: space-between;
-  align-items: baseline;
-  font-size: 0.8rem;
-  color: var(--text-muted);
-  text-transform: uppercase;
-  letter-spacing: 0.08em;
-  font-weight: 600;
+  align-items: center;
 }
 
-.practice__topic {
-  color: var(--accent);
+.practice__meta > span:first-child {
+  background: var(--accent);
+  color: white;
+  padding: 6px 14px;
+  border-radius: 999px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
 }
 
 .practice__count {
-  font-variant-numeric: tabular-nums;
+  background: var(--surface);
+  padding: 6px 14px;
+  border-radius: 999px;
+  font-size: 0.8rem;
+  font-weight: 700;
   color: var(--text-muted);
+  border: 1px solid var(--border);
 }
 
 .practice__progress {
-  height: 6px;
-  background: var(--surface-2);
+  height: 8px;
+  background: var(--border);
   border-radius: 999px;
   overflow: hidden;
 }
@@ -46,7 +52,13 @@
   height: 100%;
   background: var(--accent);
   border-radius: 999px;
-  transition: width 300ms cubic-bezier(0.16, 1, 0.3, 1);
+  transition: width 300ms ease;
+}
+
+.practice__topic {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--text);
 }
 
 .practice__loading {
@@ -57,18 +69,15 @@
   gap: 16px;
   height: 60vh;
   color: var(--text-muted);
-  font-size: 0.95rem;
 }
 
 .practice__spinner {
-  width: 40px;
-  height: 40px;
-  border: 3px solid var(--surface-2);
+  width: 36px;
+  height: 36px;
+  border: 3px solid var(--border);
   border-top-color: var(--accent);
   border-radius: 50%;
-  animation: spin 0.8s linear infinite;
+  animation: spin 1s linear infinite;
 }
 
-@keyframes spin {
-  to { transform: rotate(360deg); }
-}
+@keyframes spin { to { transform: rotate(360deg); } }

@@ -1,0 +1,113 @@
+.home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px var(--pad) 60px;
+  max-width: 900px;
+  margin: 0 auto;
+  gap: 32px;
+}
+
+.home__hero {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.home__hero h1 {
+  font-size: clamp(2rem, 8vw, 3rem);
+  margin-bottom: 8px;
+  color: var(--text);
+  font-weight: 800;
+}
+
+.home__hero p {
+  font-size: clamp(1rem, 4vw, 1.2rem);
+  color: var(--text-muted);
+}
+
+.home__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 16px;
+  width: 100%;
+}
+
+.home__card {
+  background: var(--surface);
+  padding: 30px 20px;
+  border-radius: var(--radius);
+  border: 3px solid transparent;
+  box-shadow: var(--shadow-md);
+  text-align: center;
+  transition: all 200ms ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  cursor: pointer;
+}
+
+.home__card.is-selected {
+  border-color: var(--accent);
+  background: var(--surface-2);
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-lg);
+}
+
+.home__icon {
+  font-size: 2.5rem;
+  background: var(--surface-2);
+  width: 72px;
+  height: 72px;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  transition: background 200ms ease;
+}
+
+.home__card.is-selected .home__icon {
+  background: var(--accent);
+  color: white;
+}
+
+.home__actions {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  width: 100%;
+  max-width: 400px;
+  margin-top: 10px;
+}
+
+.home__btn-primary, .home__btn-secondary {
+  width: 100%;
+  padding: 16px;
+  border-radius: 999px;
+  font-weight: 700;
+  font-size: 1rem;
+  transition: all 200ms ease;
+}
+
+.home__btn-primary {
+  background: var(--accent);
+  color: white;
+  box-shadow: 0 4px 12px rgba(79, 70, 229, 0.3);
+}
+
+.home__btn-secondary {
+  background: var(--surface);
+  color: var(--text);
+  border: 2px solid var(--border);
+}
+
+.home__btn-primary:disabled, .home__btn-secondary:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+@media (min-width: 600px) {
+  .home__actions {
+    flex-direction: row;
+    max-width: 500px;
+  }
+}

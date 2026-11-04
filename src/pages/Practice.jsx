@@ -1,10 +1,14 @@
 import { useState, useEffect } from "react";
+import { useSearchParams } from "react-router-dom";
 import { supabase } from "../lib/supabase";
 import QuestionCard from "../components/QuestionCard";
 import ExplanationPanel from "../components/ExplanationPanel";
 import "../styles/Practice.css";
 
 export default function Practice() {
+  const [searchParams] = useSearchParams();
+  const course = searchParams.get("course");
+  
   const [questions, setQuestions] = useState([]);
   const [loading, setLoading] = useState(true);
   const [index, setIndex] = useState(0);
@@ -12,18 +16,22 @@ export default function Practice() {
 
   useEffect(() => {
     async function fetchQuestions() {
-      const { data, error } = await supabase.from("questions").select("*");
+      let query = supabase.from("questions").select("*");
       
-      if (error) {
-        console.error("Error fetching questions:", error);
-      } else if (data) {
-        setQuestions(data);
+      if (course) {
+        query = query.eq("course", course);
       }
+
+      const { data, error } = await query;
+      
+      if (error) console.error("Error fetching:", error);
+      else if (data) setQuestions(data);
+      
       setLoading(false);
     }
     
     fetchQuestions();
-  }, []);
+  }, [course]);
 
   if (loading) {
     return (
@@ -37,7 +45,7 @@ export default function Practice() {
   if (questions.length === 0) {
     return (
       <div className="practice__loading">
-        <span>No questions found in the database.</span>
+        <span>No questions found for this course yet.</span>
       </div>
     );
   }

@@ -7,13 +7,15 @@ const apiKey = process.env.GROQ_API_KEY;
 async function generateBatch(batchNumber) {
   console.log(`Generating batch ${batchNumber} (5 questions)...`);
 
-  const prompt = `Generate exactly 5 multiple-choice questions for Nigerian university students. Mix the subjects (e.g., General Physics, Calculus, Use of English, Biology, Chemistry, Economics).
+    const prompt = `Generate exactly 5 multiple-choice questions for the ICAN (Institute of Chartered Accountants of Nigeria) professional exam. 
+  Focus on Financial Reporting and Audit.
   
   Return ONLY a valid JSON array. Do not wrap it in markdown. Do not add any text before or after.
   Each object must have this exact structure:
   {
-    "subject": "Physics",
-    "topic": "Kinematics",
+    "course": "ican",
+    "subject": "Financial Reporting",
+    "topic": "IFRS",
     "stem": "The question text here",
     "options": [
       {"key": "A", "text": "Option 1"},
@@ -24,7 +26,7 @@ async function generateBatch(batchNumber) {
     "correct": "A",
     "explanation": "Why A is correct and why the others are wrong."
   }`;
-
+  
   try {
     const response = await fetch("https://api.groq.com/openai/v1/chat/completions", {
       method: "POST",

@@ -1,7 +1,7 @@
 const KEY = "exam-in-progress";
 
-export function saveExamState(index, history, timeLeft) {
-  localStorage.setItem(KEY, JSON.stringify({ index, history, timeLeft }));
+export function saveExamState(index, history, timeLeft, course) {
+  localStorage.setItem(KEY, JSON.stringify({ index, history, timeLeft, course }));
 }
 
 export function loadExamState() {
