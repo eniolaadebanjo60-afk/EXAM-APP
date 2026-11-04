@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { BrowserRouter, Routes, Route, NavLink, Navigate, useNavigate } from "react-router-dom";
+import { BrowserRouter, Routes, Route, NavLink, Navigate, useNavigate, Outlet } from "react-router-dom";
 import { supabase } from "./lib/supabase";
 import Practice from "./pages/Practice";
 import ExamRoom from "./pages/ExamRoom";
@@ -7,31 +7,19 @@ import Home from "./pages/Home";
 import Auth from "./pages/Auth";
 import "./styles/App.css";
 
-function Nav() {
-  const [user, setUser] = useState(null);
+function ProtectedRoute({ session }) {
+  if (!session) {
+    return <Navigate to="/auth" replace />;
+  }
+  return <Outlet />;
+}
+
+function Nav({ session }) {
   const [menuOpen, setMenuOpen] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [isEditing, setIsEditing] = useState(false);
-  const [newName, setNewName] = useState("");
+  const [newName, setNewName] = useState(session?.user?.user_metadata?.full_name || "");
   const navigate = useNavigate();
-
-  useEffect(() => {
-    supabase.auth.getSession().then(({ data: { session } }) => {
-      if (session) {
-        setUser(session.user);
-        setNewName(session.user.user_metadata.full_name || "");
-      }
-    });
-
-    const { data: authListener } = supabase.auth.onAuthStateChange((_event, session) => {
-      setUser(session?.user || null);
-      if (session?.user) setNewName(session.user.user_metadata.full_name || "");
-    });
-
-    return () => {
-      authListener.subscription.unsubscribe();
-    };
-  }, []);
 
   async function handleLogout() {
     await supabase.auth.signOut();
@@ -46,14 +34,13 @@ function Nav() {
       data: { full_name: newName }
     });
 
-    if (!error && data.user) {
-      setUser(data.user);
+    if (!error) {
       setIsEditing(false);
     }
   }
 
-  const initial = user?.user_metadata?.full_name?.charAt(0).toUpperCase() || "U";
-  const firstName = user?.user_metadata?.full_name?.split(" ")[0] || "User";
+  const initial = session?.user?.user_metadata?.full_name?.charAt(0).toUpperCase() || "U";
+  const firstName = session?.user?.user_metadata?.full_name?.split(" ")[0] || "User";
 
   return (
     <nav className="nav">
@@ -70,7 +57,7 @@ function Nav() {
         <NavLink to="/exam" onClick={() => setMobileMenuOpen(false)}>Exam Room</NavLink>
       </div>
 
-      {user && (
+      {session && (
         <div className="nav__profile">
           <button 
             className="nav__profile-btn" 
@@ -101,8 +88,8 @@ function Nav() {
               ) : (
                 <>
                   <div className="nav__user-info">
-                    <strong>{user.user_metadata.full_name || "User"}</strong>
-                    <span>{user.email}</span>
+                    <strong>{session.user.user_metadata.full_name || "User"}</strong>
+                    <span>{session.user.email}</span>
                   </div>
                   <hr />
                   <button onClick={() => setIsEditing(true)}>Change Name</button>
@@ -118,14 +105,45 @@ function Nav() {
 }
 
 export default function App() {
+  const [session, setSession] = useState(null);
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    supabase.auth.getSession().then(({ data: { session } }) => {
+      setSession(session);
+      setLoading(false);
+    });
+
+    const { data: { subscription } } = supabase.auth.onAuthStateChange((_event, session) => {
+      setSession(session);
+    });
+
+    return () => subscription.unsubscribe();
+  }, []);
+
+  if (loading) {
+    return (
+      <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '100vh' }}>
+        <div className="practice__spinner"></div>
+      </div>
+    );
+  }
+
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/auth" element={<Auth />} />
-        <Route path="/home" element={<><Nav /><Home /></>} />
-        <Route path="/practice" element={<><Nav /><Practice /></>} />
-        <Route path="/exam" element={<><Nav /><ExamRoom /></>} />
-        <Route path="*" element={<Navigate to="/auth" replace />} />
+        <Route 
+          path="/auth" 
+          element={session ? <Navigate to="/home" replace /> : <Auth />} 
+        />
+
+        <Route element={<ProtectedRoute session={session} />}>
+          <Route path="/home" element={<><Nav session={session} /><Home /></>} />
+          <Route path="/practice" element={<><Nav session={session} /><Practice /></>} />
+          <Route path="/exam" element={<><Nav session={session} /><ExamRoom /></>} />
+        </Route>
+
+        <Route path="*" element={<Navigate to={session ? "/home" : "/auth"} replace />} />
       </Routes>
     </BrowserRouter>
   );
