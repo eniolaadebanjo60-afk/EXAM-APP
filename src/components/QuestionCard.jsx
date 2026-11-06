@@ -16,22 +16,13 @@ export default function QuestionCard({ question, chosen, revealed, onPick, isThe
           disabled={revealed}
           rows={8}
         />
-        <div className="qcard__theory-actions">
-          <button 
-            className="qcard__skip-btn" 
-            onClick={() => onPick("SKIP")} 
-            disabled={revealed}
-          >
-            Skip Question
-          </button>
-          <button 
-            className="qcard__submit-btn" 
-            onClick={() => onPick(text)} 
-            disabled={revealed || text.trim().length < 10}
-          >
-            Submit for Grading
-          </button>
-        </div>
+        <button 
+          className="qcard__submit-btn" 
+          onClick={() => onPick(text)} 
+          disabled={revealed || text.trim().length < 10}
+        >
+          Submit for Grading
+        </button>
       </article>
     );
   }

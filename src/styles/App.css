@@ -11,6 +11,11 @@
   border-bottom: 1px solid var(--border);
 }
 
+.nav__left {
+  display: flex;
+  align-items: center;
+}
+
 .nav__mobile-toggle {
   display: none;
   font-size: 1.5rem;
@@ -79,7 +84,7 @@
 .nav__dropdown {
   position: absolute;
   top: calc(100% + 12px);
-  right: 0;
+  left: 0;
   background: var(--surface);
   border: 1px solid var(--border);
   border-radius: var(--radius-sm);
@@ -185,6 +190,11 @@
 
   .nav__mobile-toggle {
     display: block;
+    order: 2;
+  }
+
+  .nav__left {
+    order: 1;
   }
 
   .nav__links {
@@ -197,6 +207,7 @@
     margin-top: 12px;
     box-shadow: var(--shadow-md);
     border: 1px solid var(--border);
+    order: 3;
   }
 
   .nav__links.is-open {

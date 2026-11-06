@@ -8,6 +8,7 @@ import "../styles/Practice.css";
 export default function Practice() {
   const [searchParams] = useSearchParams();
   const course = searchParams.get("course");
+  const company = searchParams.get("company");
   const navigate = useNavigate();
   
   const [allQuestions, setAllQuestions] = useState([]);
@@ -22,7 +23,14 @@ export default function Practice() {
   useEffect(() => {
     async function fetchQuestions() {
       let query = supabase.from("questions").select("*");
-      if (course) query = query.eq("course", course);
+      
+      if (course) {
+        query = query.eq("course", course);
+      }
+      
+      if (company) {
+        query = query.eq("company", company);
+      }
 
       const { data, error } = await query;
       
@@ -37,7 +45,7 @@ export default function Practice() {
     }
     
     fetchQuestions();
-  }, [course]);
+  }, [course, company]);
 
   const questions = currentSubject === "All" 
     ? allQuestions 
@@ -47,6 +55,38 @@ export default function Practice() {
     setCurrentSubject(e.target.value);
     setIndex(0);
     setHistory({});
+    setFinished(false);
+  }
+
+  function pick(key) {
+    if (history[questions[index].id]) return;
+    setHistory((prev) => ({
+      ...prev,
+      [questions[index].id]: key
+    }));
+  }
+
+  function skip() {
+    next();
+  }
+
+  function next() {
+    if (index < questions.length - 1) {
+      setIndex(index + 1);
+    } else {
+      setFinished(true);
+    }
+  }
+
+  function prev() {
+    if (index > 0) {
+      setIndex(index - 1);
+    }
+  }
+
+  function restart() {
+    setHistory({});
+    setIndex(0);
     setFinished(false);
   }
 
@@ -70,46 +110,19 @@ export default function Practice() {
   const q = questions[index];
   const total = questions.length;
   const progress = ((index + (history[q.id] ? 1 : 0)) / total) * 100;
-  
-  const currentAnswers = history[q.id] || [];
-  const chosen = currentAnswers[currentAnswers.length - 1] || null;
-  
+  const chosen = history[q.id] || null;
   const isTheory = q.type === "theory" || !q.options || q.options.length === 0;
 
-  function pick(key) {
-    if (chosen) return;
-    setHistory((prev) => {
-      const qHistory = prev[q.id] || [];
-      return { ...prev, [q.id]: [...qHistory, key] };
-    });
-  }
-
-  function next() {
-    if (index < total - 1) {
-      setIndex(index + 1);
-    } else {
-      setFinished(true);
-    }
-  }
-
-  function restart() {
-    setHistory({});
-    setIndex(0);
-    setFinished(false);
-  }
-
   const correctCount = Object.entries(history).filter(
-    ([qid, answers]) => {
-      const finalAnswer = answers[answers.length - 1];
-      return questions.find((m) => m.id === qid)?.correct === finalAnswer;
+    ([qid, answer]) => {
+      return questions.find((m) => m.id === qid)?.correct === answer;
     }
   ).length;
 
   if (finished) {
     const missed = questions.filter((m) => {
-      const qHistory = history[m.id] || [];
-      const finalAnswer = qHistory[qHistory.length - 1];
-      return finalAnswer && finalAnswer !== m.correct;
+      const answer = history[m.id];
+      return answer && answer !== m.correct;
     });
 
     return (
@@ -128,9 +141,9 @@ export default function Practice() {
           <section className="exam__review">
             <h2 className="exam__review-title">Review your misses</h2>
             {missed.map((m) => {
-              const picked = history[m.id][history[m.id].length - 1];
-              const pickedText = m.options?.find((o) => o.key === picked)?.text ?? "Essay Answer";
-              const correctText = m.options?.find((o) => o.key === m.correct)?.text ?? "See AI Feedback";
+              const picked = history[m.id];
+              const pickedText = m.options?.find((o) => o.key === picked)?.text ?? picked;
+              const correctText = m.options?.find((o) => o.key === m.correct)?.text ?? m.correct;
               return (
                 <article key={m.id} className="review-card">
                   <p className="review-card__stem">{m.stem}</p>
@@ -165,7 +178,6 @@ export default function Practice() {
     <div className="practice">
       <div className="practice__top">
         <header className="practice__meta">
-          
           <select 
             className="practice__subject-select" 
             value={currentSubject} 
@@ -202,6 +214,25 @@ export default function Practice() {
           isTheory={isTheory}
         />
       )}
+
+      <div className="practice__nav">
+        <button 
+          className="exam__btn" 
+          onClick={prev} 
+          disabled={index === 0}
+        >
+          ← Back
+        </button>
+        
+        {!chosen && (
+          <button 
+            className="exam__btn exam__btn--primary" 
+            onClick={skip}
+          >
+            Skip →
+          </button>
+        )}
+      </div>
     </div>
   );
 }

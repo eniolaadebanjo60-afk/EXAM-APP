@@ -34,13 +34,8 @@ async function extractQuestions(pdfPath) {
     
     fullText += pageText + "\n\n";
   }
-  
-  console.log(`Total text length: ${fullText.length} characters.`);
 
-  fs.writeFileSync("debug_text.txt", fullText);
-  console.log("Saved cleaned text to debug_text.txt");
-
-  const chunkSize = 5000; 
+  const chunkSize = 4000; 
   const chunks = [];
   for (let i = 0; i < fullText.length; i += chunkSize) {
     chunks.push(fullText.substring(i, i + chunkSize));
@@ -51,16 +46,30 @@ async function extractQuestions(pdfPath) {
   for (let i = 0; i < chunks.length; i++) {
     console.log(`Processing chunk ${i + 1} of ${chunks.length}...`);
     
-    const prompt = `You are an expert ICAN examiner. I am providing you with a chunk of text from an ICAN Pathfinder PDF.
+    const prompt = `You are an expert ICAN examiner. Extract the exam questions from the text below.
     
-    Extract any exam questions you find in this text. Format them as a JSON array.
-    Do not wrap the JSON in markdown.
+    Ignore table of contents, forewords, and examiner reports. Focus ONLY on the actual questions (e.g., "QUESTION 1", "Required:").
     
-    If you find a Multiple Choice Question (A, B, C, D), use this format:
+    Return a valid JSON array. Do not use markdown.
+    
+    If it is a theory question, use this format:
     {
       "course": "ican",
       "subject": "Financial Reporting",
-      "topic": "IFRS",
+      "topic": "General",
+      "type": "theory",
+      "stem": "The question text",
+      "options": [],
+      "correct": "N/A",
+      "official_solution": "The suggested solution text.",
+      "explanation": "N/A"
+    }
+    
+    If it is a multiple choice question, use this format:
+    {
+      "course": "ican",
+      "subject": "Financial Reporting",
+      "topic": "General",
       "type": "mcq",
       "stem": "The question text",
       "options": [{"key": "A", "text": "..."}, {"key": "B", "text": "..."}, {"key": "C", "text": "..."}, {"key": "D", "text": "..."}],
@@ -68,22 +77,9 @@ async function extractQuestions(pdfPath) {
       "explanation": "Why A is correct."
     }
     
-    If you find a Theory/Essay Question, use this format:
-    {
-      "course": "ican",
-      "subject": "Financial Reporting",
-      "topic": "IFRS",
-      "type": "theory",
-      "stem": "The question text",
-      "options": [],
-      "correct": "N/A",
-      "official_solution": "The official solution/marking guide provided in the text.",
-      "explanation": "N/A"
-    }
+    If there are no questions in this chunk, return [].
     
-    Only return valid JSON. If there are no questions in this chunk, return [].
-    
-    TEXT CHUNK:
+    TEXT:
     ${chunks[i]}`;
 
     try {
@@ -101,26 +97,35 @@ async function extractQuestions(pdfPath) {
       });
 
       const result = await response.json();
+      
+      if (!response.ok) {
+        console.log(`GROQ ERROR on chunk ${i + 1}:`, JSON.stringify(result));
+        await new Promise((resolve) => setTimeout(resolve, 5000));
+        continue;
+      }
+
       let content = result.choices?.[0]?.message?.content || "[]";
       content = content.replace(/```json/g, "").replace(/```/g, "").trim();
       
       try {
         const parsed = JSON.parse(content);
-        if (Array.isArray(parsed)) {
+        if (Array.isArray(parsed) && parsed.length > 0) {
           allExtractedQuestions = [...allExtractedQuestions, ...parsed];
-          console.log(`Found ${parsed.length} questions in this chunk.`);
+          console.log(`Found ${parsed.length} questions.`);
         }
       } catch (parseError) {
-        console.log(`Could not parse JSON for chunk ${i + 1}. Skipping.`);
+        console.log(`PARSE ERROR on chunk ${i + 1}. AI returned:`, content.substring(0, 100));
       }
       
     } catch (err) {
-      console.error(`Error on chunk ${i + 1}:`, err.message);
+      console.error(`NETWORK ERROR on chunk ${i + 1}:`, err.message);
     }
+    
+    await new Promise((resolve) => setTimeout(resolve, 5000));
   }
 
   fs.writeFileSync("extracted_questions.json", JSON.stringify(allExtractedQuestions, null, 2));
-  console.log(`Done! Extracted ${allExtractedQuestions.length} questions to extracted_questions.json`);
+  console.log(`\nDone! Extracted ${allExtractedQuestions.length} questions to extracted_questions.json`);
 }
 
 extractQuestions("./PATHFINDER_MAY_2026_SKILLS.pdf");

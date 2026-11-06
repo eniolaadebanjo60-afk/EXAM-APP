@@ -158,3 +158,9 @@
 .qcard__hint-btn:hover {
   background: color-mix(in srgb, var(--accent) 10%, transparent);
 }
+
+.qcard__mcq-footer {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 20px;
+}

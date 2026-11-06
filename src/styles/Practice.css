@@ -107,6 +107,11 @@
 .practice.exam--result .exam__review {
   width: 100%;
 }
+.practice__nav {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 24px;
+}
 
 @keyframes spin {
   to { transform: rotate(360deg); }
