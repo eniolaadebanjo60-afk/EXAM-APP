@@ -1,10 +1,10 @@
 import { useNavigate } from "react-router-dom";
-import gtbankLogo from "../assets/GTBANK.PNG";
-import mtnLogo from "../assets/MTN.JPEG";
-import shellLogo from "../assets/SHELL.PNG";
-import dangoteLogo from "../assets/DANGOTE.PNG";
-import kpmgLogo from "../assets/KPMG.PNG";
-import accessLogo from "../assets/ACCESS.JPEG";
+import gtbankLogo from "../assets/GTBANK.png";
+import mtnLogo from "../assets/MTN.jpeg";
+import shellLogo from "../assets/SHELL.png";
+import dangoteLogo from "../assets/DANGOTE.png";
+import kpmgLogo from "../assets/KPMG.png";
+import accessLogo from "../assets/ACCESS.jpeg";
 import "../styles/Home.css";
 
 export default function Graduate() {
