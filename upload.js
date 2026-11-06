@@ -10,14 +10,28 @@ const supabase = createClient(
 );
 
 async function upload() {
-  const rawData = fs.readFileSync("questions.json");
+  const rawData = fs.readFileSync("extracted_questions.json", "utf-8");
   const questions = JSON.parse(rawData);
 
-  console.log(`Uploading ${questions.length} questions to Supabase...`);
+  const sanitizedQuestions = questions.map((q) => ({
+    course: q.course || "",
+    company: q.company || "",
+    level: q.level || "",
+    subject: q.subject || "General",
+    topic: q.topic || "General",
+    type: q.type || "mcq",
+    stem: q.stem || "",
+    options: q.options || [],
+    correct: q.correct || "",
+    explanation: q.explanation || "",
+    official_solution: q.official_solution || ""
+  }));
+
+  console.log(`Uploading ${sanitizedQuestions.length} questions to Supabase...`);
 
   const { data, error } = await supabase
     .from("questions")
-    .insert(questions)
+    .insert(sanitizedQuestions)
     .select();
 
   if (error) {

@@ -12,7 +12,6 @@ const level = args[3] || null;
 
 if (!pdfPath) {
   console.log("Usage: node extract.js <path-to-pdf> <course> <company> <level>");
-  console.log("Example: node extract.js ./cipm-foundation.pdf cipm null foundation");
   process.exit(1);
 }
 
@@ -62,36 +61,15 @@ async function extractQuestions() {
     
     Ignore table of contents, forewords, and examiner reports. Focus ONLY on the actual questions.
     
-    Return a valid JSON array. Do not use markdown.
+    The correct answer is the option that is highlighted, bolded, or marked in the text. If you cannot find a highlight, use your best judgment to solve the question.
+    
+    Return a valid JSON array. Do not use markdown. Only return the JSON array.
     
     If it is a theory question, use this format:
-    {
-      "course": "${course}",
-      ${company ? `"company": "${company}",` : ""}
-      ${level ? `"level": "${level}",` : ""}
-      "subject": "General",
-      "topic": "General",
-      "type": "theory",
-      "stem": "The question text",
-      "options": [],
-      "correct": "N/A",
-      "official_solution": "The suggested solution text.",
-      "explanation": "N/A"
-    }
+    {"course": "${course}",${company ? `"company": "${company}",` : ""}${level ? `"level": "${level}",` : ""}"subject": "General","topic": "General","type": "theory","stem": "The question text","options": [],"correct": "N/A","official_solution": "The suggested solution text.","explanation": "N/A"}
     
     If it is a multiple choice question, use this format:
-    {
-      "course": "${course}",
-      ${company ? `"company": "${company}",` : ""}
-      ${level ? `"level": "${level}",` : ""}
-      "subject": "General",
-      "topic": "General",
-      "type": "mcq",
-      "stem": "The question text",
-      "options": [{"key": "A", "text": "..."}, {"key": "B", "text": "..."}, {"key": "C", "text": "..."}, {"key": "D", "text": "..."}],
-      "correct": "A",
-      "explanation": "Why A is correct."
-    }
+    {"course": "${course}",${company ? `"company": "${company}",` : ""}${level ? `"level": "${level}",` : ""}"subject": "General","topic": "General","type": "mcq","stem": "The question text","options": [{"key": "A", "text": "..."}, {"key": "B", "text": "..."}, {"key": "C", "text": "..."}, {"key": "D", "text": "..."}],"correct": "A","explanation": "Why A is correct."}
     
     If there are no questions in this chunk, return [].
     
@@ -109,6 +87,8 @@ async function extractQuestions() {
           model: "openai/gpt-oss-120b",
           messages: [{ role: "user", content: prompt }],
           temperature: 0.1,
+          max_tokens: 4000,
+          response_format: { type: "json_object" }
         }),
       });
 
@@ -116,21 +96,34 @@ async function extractQuestions() {
       
       if (!response.ok) {
         console.log(`GROQ ERROR on chunk ${i + 1}:`, JSON.stringify(result));
-        await new Promise((resolve) => setTimeout(resolve, 15000));
+        await new Promise((resolve) => setTimeout(resolve, 30000));
         continue;
       }
 
-      let content = result.choices?.[0]?.message?.content || "[]";
-      content = content.replace(/```json/g, "").replace(/```/g, "").trim();
+      let content = result.choices?.[0]?.message?.content || "{}";
       
       try {
         const parsed = JSON.parse(content);
-        if (Array.isArray(parsed) && parsed.length > 0) {
-          allExtractedQuestions = [...allExtractedQuestions, ...parsed];
-          console.log(`Found ${parsed.length} questions.`);
+        
+        let questionsArray = [];
+        if (Array.isArray(parsed)) {
+          questionsArray = parsed;
+        } else if (parsed.questions && Array.isArray(parsed.questions)) {
+          questionsArray = parsed.questions;
+        } else {
+           const keys = Object.keys(parsed);
+           if (keys.length > 0 && Array.isArray(parsed[keys[0]])) {
+             questionsArray = parsed[keys[0]];
+           }
+        }
+
+        if (questionsArray.length > 0) {
+          allExtractedQuestions = [...allExtractedQuestions, ...questionsArray];
+          console.log(`Found ${questionsArray.length} questions.`);
         }
       } catch (parseError) {
-        console.log(`PARSE ERROR on chunk ${i + 1}. AI returned:`, content.substring(0, 100));
+        console.log(`PARSE ERROR on chunk ${i + 1}.`);
+        console.log("Raw output:", content.substring(0, 200));
       }
       
     } catch (err) {
