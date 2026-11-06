@@ -15,7 +15,7 @@ export default function Home() {
       </div>
 
       <div className="home__grid">
-        <button className="home__card" onClick={() => navigate("/practice?course=ican")}>
+        <button className="home__card" onClick={() => navigate("/mode?course=ican")}>
           <img src={ICAN} alt="ICAN" className="home__img" />
           <div className="home__card-content">
             <h3>ICAN</h3>
@@ -23,7 +23,7 @@ export default function Home() {
           </div>
         </button>
 
-        <button className="home__card" onClick={() => navigate("/practice?course=cipm")}>
+        <button className="home__card" onClick={() => navigate("/cipm-levels")}>
           <img src={CIPM} alt="CIPM" className="home__img" />
           <div className="home__card-content">
             <h3>CIPM</h3>

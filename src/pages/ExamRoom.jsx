@@ -11,6 +11,8 @@ const EXAM_SECONDS = 60 * 10;
 export default function ExamRoom() {
   const [searchParams] = useSearchParams();
   const course = searchParams.get("course");
+  const company = searchParams.get("company");
+  const level = searchParams.get("level");
   const navigate = useNavigate();
 
   const [questions, setQuestions] = useState([]);
@@ -26,7 +28,7 @@ export default function ExamRoom() {
     document.documentElement.setAttribute("data-room", "exam");
     
     const saved = loadExamState();
-    if (saved && saved.course === course) {
+    if (saved && saved.course === course && saved.company === company && saved.level === level) {
       setIndex(saved.index);
       setHistory(saved.history);
       setTimeLeft(saved.timeLeft);
@@ -37,6 +39,8 @@ export default function ExamRoom() {
     async function fetchQuestions() {
       let query = supabase.from("questions").select("*");
       if (course) query = query.eq("course", course);
+      if (company) query = query.eq("company", company);
+      if (level) query = query.eq("level", level);
       
       const { data, error } = await query;
       if (error) {
@@ -51,13 +55,13 @@ export default function ExamRoom() {
     fetchQuestions();
 
     return () => document.documentElement.removeAttribute("data-room");
-  }, [course]);
+  }, [course, company, level]);
 
   useEffect(() => {
     if (!submitted && isLoaded && questions.length > 0) {
-      saveExamState(index, history, timeLeft, course);
+      saveExamState(index, history, timeLeft, course, company, level);
     }
-  }, [index, history, timeLeft, submitted, isLoaded, questions.length, course]);
+  }, [index, history, timeLeft, submitted, isLoaded, questions.length, course, company, level]);
 
   if (loading) {
     return (
@@ -84,6 +88,12 @@ export default function ExamRoom() {
 
   function pick(key) {
     if (submitted || chosen === key) return;
+    
+    if (key === "SKIP") {
+      next();
+      return;
+    }
+
     setHistory((prev) => {
       const qHistory = prev[q.id] || [];
       return { ...prev, [q.id]: [...qHistory, key] };
@@ -153,8 +163,8 @@ export default function ExamRoom() {
             <h2 className="exam__review-title">Solution Corner</h2>
             {missed.map((m) => {
               const picked = history[m.id][history[m.id].length - 1];
-              const pickedText = m.options.find((o) => o.key === picked)?.text ?? "";
-              const correctText = m.options.find((o) => o.key === m.correct)?.text ?? "";
+              const pickedText = m.options?.find((o) => o.key === picked)?.text ?? picked;
+              const correctText = m.options?.find((o) => o.key === m.correct)?.text ?? m.correct;
               return (
                 <article key={m.id} className="review-card">
                   <p className="review-card__stem">{m.stem}</p>
@@ -187,6 +197,12 @@ export default function ExamRoom() {
 
   return (
     <div className="exam">
+      <div className="exam__back-header">
+        <button className="exam__back-btn" onClick={() => navigate(-1)}>
+          ← Back
+        </button>
+      </div>
+
       <header className="exam__bar">
         <Timer seconds={timeLeft} onTick={setTimeLeft} onEnd={submit} />
         <span className="exam__count">{index + 1} / {total}</span>
@@ -197,8 +213,29 @@ export default function ExamRoom() {
       </div>
 
       <main className="exam__body">
-        <QuestionCard question={q} chosen={chosen} revealed={false} onPick={pick} />
+        <QuestionCard 
+          question={q} 
+          chosen={chosen} 
+          revealed={false} 
+          onPick={pick} 
+          isTheory={q.type === "theory" || !q.options || q.options.length === 0}
+        />
       </main>
+
+      <div className="exam__nav-grid">
+        {questions.map((item, i) => {
+          const hasAnswer = (history[item.id] || []).length > 0;
+          return (
+            <button 
+              key={item.id}
+              className={`exam__nav-dot ${hasAnswer ? "is-answered" : ""} ${i === index ? "is-current" : ""}`}
+              onClick={() => setIndex(i)}
+            >
+              {i + 1}
+            </button>
+          );
+        })}
+      </div>
 
       <footer className="exam__footer">
         <button className="exam__btn" onClick={prev} disabled={index === 0}>
@@ -206,11 +243,11 @@ export default function ExamRoom() {
         </button>
 
         {index < total - 1 ? (
-          <button className="exam__btn exam__btn--primary" onClick={next} disabled={!chosen}>
+          <button className="exam__btn exam__btn--primary" onClick={next}>
             Next →
           </button>
         ) : (
-          <button className="exam__btn exam__btn--primary" onClick={submit} disabled={!chosen}>
+          <button className="exam__btn exam__btn--primary" onClick={submit}>
             Submit exam
           </button>
         )}

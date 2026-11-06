@@ -4,8 +4,20 @@ import * as pdfjsLib from "pdfjs-dist/legacy/build/pdf.mjs";
 
 dotenv.config();
 
-async function extractQuestions(pdfPath) {
-  console.log("Reading PDF...");
+const args = process.argv.slice(2);
+const pdfPath = args[0];
+const course = args[1] || "ican";
+const company = args[2] || null;
+const level = args[3] || null;
+
+if (!pdfPath) {
+  console.log("Usage: node extract.js <path-to-pdf> <course> <company> <level>");
+  console.log("Example: node extract.js ./cipm-foundation.pdf cipm null foundation");
+  process.exit(1);
+}
+
+async function extractQuestions() {
+  console.log(`Reading ${pdfPath} for course: ${course}, company: ${company || 'N/A'}, level: ${level || 'N/A'}...`);
   
   const dataBuffer = new Uint8Array(fs.readFileSync(pdfPath));
   const loadingTask = pdfjsLib.getDocument({ 
@@ -46,16 +58,18 @@ async function extractQuestions(pdfPath) {
   for (let i = 0; i < chunks.length; i++) {
     console.log(`Processing chunk ${i + 1} of ${chunks.length}...`);
     
-    const prompt = `You are an expert ICAN examiner. Extract the exam questions from the text below.
+    const prompt = `You are an expert examiner. Extract the exam questions from the text below.
     
-    Ignore table of contents, forewords, and examiner reports. Focus ONLY on the actual questions (e.g., "QUESTION 1", "Required:").
+    Ignore table of contents, forewords, and examiner reports. Focus ONLY on the actual questions.
     
     Return a valid JSON array. Do not use markdown.
     
     If it is a theory question, use this format:
     {
-      "course": "ican",
-      "subject": "Financial Reporting",
+      "course": "${course}",
+      ${company ? `"company": "${company}",` : ""}
+      ${level ? `"level": "${level}",` : ""}
+      "subject": "General",
       "topic": "General",
       "type": "theory",
       "stem": "The question text",
@@ -67,8 +81,10 @@ async function extractQuestions(pdfPath) {
     
     If it is a multiple choice question, use this format:
     {
-      "course": "ican",
-      "subject": "Financial Reporting",
+      "course": "${course}",
+      ${company ? `"company": "${company}",` : ""}
+      ${level ? `"level": "${level}",` : ""}
+      "subject": "General",
       "topic": "General",
       "type": "mcq",
       "stem": "The question text",
@@ -100,7 +116,7 @@ async function extractQuestions(pdfPath) {
       
       if (!response.ok) {
         console.log(`GROQ ERROR on chunk ${i + 1}:`, JSON.stringify(result));
-        await new Promise((resolve) => setTimeout(resolve, 5000));
+        await new Promise((resolve) => setTimeout(resolve, 15000));
         continue;
       }
 
@@ -121,11 +137,11 @@ async function extractQuestions(pdfPath) {
       console.error(`NETWORK ERROR on chunk ${i + 1}:`, err.message);
     }
     
-    await new Promise((resolve) => setTimeout(resolve, 5000));
+    await new Promise((resolve) => setTimeout(resolve, 15000));
   }
 
   fs.writeFileSync("extracted_questions.json", JSON.stringify(allExtractedQuestions, null, 2));
   console.log(`\nDone! Extracted ${allExtractedQuestions.length} questions to extracted_questions.json`);
 }
 
-extractQuestions("./PATHFINDER_MAY_2026_SKILLS.pdf");
+extractQuestions();

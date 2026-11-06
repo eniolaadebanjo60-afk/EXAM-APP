@@ -34,7 +34,7 @@ export default function Graduate() {
           <button 
             key={company.id} 
             className="home__card" 
-            onClick={() => navigate(`/practice?course=graduate&company=${company.id}`)}
+            onClick={() => navigate(`/mode?course=graduate&company=${company.id}`)}
           >
             <img src={company.image} alt={company.name} className="home__img" />
             <div className="home__card-content">

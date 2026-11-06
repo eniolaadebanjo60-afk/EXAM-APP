@@ -9,6 +9,7 @@ export default function Practice() {
   const [searchParams] = useSearchParams();
   const course = searchParams.get("course");
   const company = searchParams.get("company");
+  const level = searchParams.get("level");
   const navigate = useNavigate();
   
   const [allQuestions, setAllQuestions] = useState([]);
@@ -24,13 +25,9 @@ export default function Practice() {
     async function fetchQuestions() {
       let query = supabase.from("questions").select("*");
       
-      if (course) {
-        query = query.eq("course", course);
-      }
-      
-      if (company) {
-        query = query.eq("company", company);
-      }
+      if (course) query = query.eq("course", course);
+      if (company) query = query.eq("company", company);
+      if (level) query = query.eq("level", level);
 
       const { data, error } = await query;
       
@@ -45,7 +42,7 @@ export default function Practice() {
     }
     
     fetchQuestions();
-  }, [course, company]);
+  }, [course, company, level]);
 
   const questions = currentSubject === "All" 
     ? allQuestions 
@@ -176,6 +173,12 @@ export default function Practice() {
 
   return (
     <div className="practice">
+      <div className="practice__back-header">
+        <button className="practice__back-btn" onClick={() => navigate(-1)}>
+          ← Back
+        </button>
+      </div>
+
       <div className="practice__top">
         <header className="practice__meta">
           <select 
@@ -221,7 +224,7 @@ export default function Practice() {
           onClick={prev} 
           disabled={index === 0}
         >
-          ← Back
+          ← Previous Q
         </button>
         
         {!chosen && (

@@ -6,6 +6,8 @@ import ExamRoom from "./pages/ExamRoom";
 import Home from "./pages/Home";
 import Auth from "./pages/Auth";
 import Graduate from "./pages/Graduate";
+import CipmLevels from "./pages/CipmLevels";
+import ModeSelection from "./pages/ModeSelection";
 import "./styles/App.css";
 
 function ProtectedRoute({ session }) {
@@ -119,10 +121,12 @@ export default function App() {
         <Route element={<ProtectedRoute session={session} />}>
           <Route path="/home" element={<><Nav session={session} /><Home /></>} />
           <Route path="/graduate" element={<><Nav session={session} /><Graduate /></>} />
+          <Route path="/cipm-levels" element={<><Nav session={session} /><CipmLevels /></>} />
           <Route path="/practice" element={<><Nav session={session} /><Practice /></>} />
           <Route path="/exam" element={<><Nav session={session} /><ExamRoom /></>} />
         </Route>
         <Route path="*" element={<Navigate to={session ? "/home" : "/auth"} replace />} />
+        <Route path="/mode" element={<><Nav session={session} /><ModeSelection /></>} />
       </Routes>
     </BrowserRouter>
   );
