@@ -1,0 +1,49 @@
+:root {
+  --bg: #f8fafc;
+  --bg-gradient: radial-gradient(circle at top, #ffffff 0%, #f1f5f9 100%);
+  --surface: #ffffff;
+  --surface-2: #f8fafc;
+  
+  --text: #0f172a;
+  --text-muted: #64748b;
+  --accent: #4f46e5;
+  --accent-hover: #4338ca;
+  --accent-contrast: #ffffff;
+  --border: #e2e8f0;
+  
+  --success: #10b981;
+  --success-soft: #ecfdf5;
+  --danger: #ef4444;
+  --danger-soft: #fef2f2;
+
+  --radius: 20px;
+  --radius-sm: 14px;
+  
+  --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.05);
+  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
+  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.05), 0 4px 6px -2px rgba(0, 0, 0, 0.02);
+  --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.05), 0 10px 10px -5px rgba(0, 0, 0, 0.02);
+
+  --font-body: "Inter", system-ui, -apple-system, sans-serif;
+  --maxw: 720px;
+  --pad: clamp(16px, 5vw, 32px);
+}
+
+[data-room="exam"] {
+  --bg: #0f172a;
+  --bg-gradient: radial-gradient(circle at top, #1e293b 0%, #0f172a 100%);
+  --surface: #1e293b;
+  --surface-2: #334155;
+  
+  --text: #f8fafc;
+  --text-muted: #94a3b8;
+  --accent: #6366f1;
+  --accent-hover: #818cf8;
+  --accent-contrast: #ffffff;
+  --border: #334155;
+  
+  --success: #34d399;
+  --success-soft: rgba(52, 211, 153, 0.1);
+  --danger: #f87171;
+  --danger-soft: rgba(248, 113, 113, 0.1);
+}

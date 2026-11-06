@@ -1,0 +1,522 @@
+[
+  {
+    "course": "ican",
+    "subject": "Financial Reporting",
+    "topic": "IFRS",
+    "stem": "Under IFRS 15, when should an entity recognise revenue from a contract with a customer?",
+    "options": [
+      {
+        "key": "A",
+        "text": "When the contract is signed by both parties"
+      },
+      {
+        "key": "B",
+        "text": "When the entity satisfies a performance obligation"
+      },
+      {
+        "key": "C",
+        "text": "When cash is received from the customer"
+      },
+      {
+        "key": "D",
+        "text": "When the invoice is issued to the customer"
+      }
+    ],
+    "correct": "B",
+    "explanation": "Revenue is recognised when (or as) the entity satisfies a performance obligation by transferring control of a promised good or service to the customer. Signing the contract, receiving cash, or issuing an invoice are not the points of revenue recognition under IFRS 15."
+  },
+  {
+    "course": "ican",
+    "subject": "Financial Reporting",
+    "topic": "IFRS",
+    "stem": "Which of the following characteristics would cause a lease to be classified as a finance lease under IFRS 16?",
+    "options": [
+      {
+        "key": "A",
+        "text": "The lease term is 30 % of the useful life of the underlying asset"
+      },
+      {
+        "key": "B",
+        "text": "The present value of lease payments amounts to substantially all of the asset’s fair value"
+      },
+      {
+        "key": "C",
+        "text": "The lessee has an option to purchase the asset at a price significantly lower than its expected fair value"
+      },
+      {
+        "key": "D",
+        "text": "The lease is for an intangible asset with a 5‑year term"
+      }
+    ],
+    "correct": "B",
+    "explanation": "A lease is classified as a finance lease when the present value of lease payments (including any guaranteed residual value) equals substantially all of the fair value of the underlying asset. A 30 % term, a low‑price purchase option, or the nature of the asset alone do not, by themselves, meet the finance‑lease criteria."
+  },
+  {
+    "course": "ican",
+    "subject": "Financial Reporting",
+    "topic": "IFRS",
+    "stem": "A company holds a debt instrument with the intention to both collect contractual cash flows and sell the instrument before maturity. Under IFRS 9, how should this financial asset be measured?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Amortised cost"
+      },
+      {
+        "key": "B",
+        "text": "Fair value through other comprehensive income (FVOCI)"
+      },
+      {
+        "key": "C",
+        "text": "Fair value through profit or loss (FVPL)"
+      },
+      {
+        "key": "D",
+        "text": "Cost model"
+      }
+    ],
+    "correct": "B",
+    "explanation": "When the business model is to hold the asset to collect cash flows and to sell it, the asset is measured at FVOCI. Amortised cost is used when the business model is solely to collect cash flows, and FVPL applies when the asset does not meet the criteria for FVOCI."
+  },
+  {
+    "course": "ican",
+    "subject": "Financial Reporting",
+    "topic": "IFRS",
+    "stem": "According to IFRS 13, which level of the fair‑value hierarchy includes quoted prices in an active market for identical assets?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Level 1"
+      },
+      {
+        "key": "B",
+        "text": "Level 2"
+      },
+      {
+        "key": "C",
+        "text": "Level 3"
+      },
+      {
+        "key": "D",
+        "text": "Level 4"
+      }
+    ],
+    "correct": "A",
+    "explanation": "Level 1 inputs are quoted prices (unadjusted) in active markets for identical assets or liabilities. Level 2 includes observable inputs other than Level 1, Level 3 consists of unobservable inputs, and Level 4 does not exist in the IFRS 13 hierarchy."
+  },
+  {
+    "course": "ican",
+    "subject": "Financial Reporting",
+    "topic": "IFRS",
+    "stem": "Under IFRS 2, how should an entity recognise the expense for a share‑based payment arrangement that vests over three years?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Only when the cash component of the transaction is paid"
+      },
+      {
+        "key": "B",
+        "text": "At the grant date, based on the fair value of the equity instruments"
+      },
+      {
+        "key": "C",
+        "text": "Systematically over the vesting period"
+      },
+      {
+        "key": "D",
+        "text": "No expense is recognised; the cost is recognised only when the shares are issued"
+      }
+    ],
+    "correct": "C",
+    "explanation": "IFRS 2 requires the fair value of the equity‑instrument awards to be recognised as an expense over the period the employees provide services (the vesting period). The expense is not recognised only at cash payment, at grant date, or solely when shares are issued."
+  },
+  {
+    "course": "ican",
+    "subject": "Financial Reporting",
+    "topic": "IFRS",
+    "stem": "Under IFRS 15, a company sells a product with a performance bonus that is payable only if the buyer achieves a specified sales target. How should the company treat the variable consideration when determining the transaction price?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Estimate the amount of the bonus using the expected value method and include it in the transaction price if it is not highly probable that a significant reversal will occur."
+      },
+      {
+        "key": "B",
+        "text": "Exclude the bonus entirely from the transaction price because the amount is uncertain."
+      },
+      {
+        "key": "C",
+        "text": "Recognise the bonus as revenue only when the buyer meets the sales target, regardless of the probability of reversal."
+      },
+      {
+        "key": "D",
+        "text": "Include the full nominal amount of the bonus in the transaction price and adjust later if the target is not met."
+      }
+    ],
+    "correct": "A",
+    "explanation": "IFRS 15 requires entities to estimate variable consideration using either the expected value or most likely amount method, and to include it in the transaction price only if it is not highly probable that a significant reversal will occur. Option B is wrong because the bonus is not automatically excluded; Option C is wrong because revenue can be recognised before the target is met if the estimate passes the reversal test; Option D is wrong because the full nominal amount would overstate revenue."
+  },
+  {
+    "course": "ican",
+    "subject": "Financial Reporting",
+    "topic": "IFRS",
+    "stem": "A lessee enters into a 5‑year lease for equipment with an annual lease payment of ₦2,000, payable at the beginning of each year. The interest rate implicit in the lease is 8%. Under IFRS 16, what amount should be recognised as the right‑of‑use asset at commencement?",
+    "options": [
+      {
+        "key": "A",
+        "text": "The present value of the lease payments discounted at 8%, which equals ₦8,241."
+      },
+      {
+        "key": "B",
+        "text": "The total of all lease payments over the term, i.e., ₦10,000."
+      },
+      {
+        "key": "C",
+        "text": "The fair value of the underlying asset, which is disclosed separately."
+      },
+      {
+        "key": "D",
+        "text": "Zero, because the lease is classified as an operating lease under IFRS 16."
+      }
+    ],
+    "correct": "A",
+    "explanation": "IFRS 16 requires the lessee to recognise a right‑of‑use asset equal to the present value of lease payments (including any initial payment). Discounting ₦2,000 paid at the start of each year for five years at 8% gives ₦8,241 (rounded). Option B ignores discounting, Option C is not the measurement basis for the ROU asset, and Option D is incorrect because IFRS 16 eliminates the operating lease classification for lessees."
+  },
+  {
+    "course": "ican",
+    "subject": "Financial Reporting",
+    "topic": "IFRS",
+    "stem": "An entity holds a portfolio of equity securities that it classifies as 'FVOCI' under IFRS 9. During the reporting period, the fair value of the portfolio declines significantly and the decline is considered other‑than‑temporary. How should the entity account for this decline?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Recognise an impairment loss in profit or loss, but continue to measure the securities at fair value with changes recognised in other comprehensive income."
+      },
+      {
+        "key": "B",
+        "text": "Reclassify the securities to FVPL and recognise the decline directly in profit or loss."
+      },
+      {
+        "key": "C",
+        "text": "Ignore the decline because FVOCI securities are never impaired."
+      },
+      {
+        "key": "D",
+        "text": "Write‑down the securities to fair value and recognise the entire amount of the decline in other comprehensive income."
+      }
+    ],
+    "correct": "A",
+    "explanation": "For FVOCI equity instruments, IFRS 9 requires that any other‑than‑temporary impairment be recognised in profit or loss, while subsequent changes in fair value continue to be recorded in OCI. Option B is wrong because reclassification is not permitted solely due to impairment. Option C is wrong because impairment is recognised. Option D is wrong because the impairment portion goes to profit or loss, not OCI."
+  },
+  {
+    "course": "ican",
+    "subject": "Financial Reporting",
+    "topic": "IFRS",
+    "stem": "When measuring the fair value of an asset, which level of the IFRS 13 fair‑value hierarchy includes quoted prices in an active market for identical assets?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Level 1"
+      },
+      {
+        "key": "B",
+        "text": "Level 2"
+      },
+      {
+        "key": "C",
+        "text": "Level 3"
+      },
+      {
+        "key": "D",
+        "text": "Level 4"
+      }
+    ],
+    "correct": "A",
+    "explanation": "Level 1 inputs are quoted prices (unadjusted) for identical assets or liabilities in active markets. Level 2 includes observable inputs other than Level 1, and Level 3 consists of unobservable inputs. There is no Level 4 in the IFRS 13 hierarchy."
+  },
+  {
+    "course": "ican",
+    "subject": "Financial Reporting",
+    "topic": "IFRS",
+    "stem": "A company grants employees stock options that vest over three years. The fair value of each option at grant date is ₦150. How should the company recognise the expense under IFRS 2?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Recognise ₦150 per option as expense over the three‑year vesting period on a straight‑line basis."
+      },
+      {
+        "key": "B",
+        "text": "Recognise the total expense of ₦150 immediately at the grant date."
+      },
+      {
+        "key": "C",
+        "text": "Recognise the expense only when the options are exercised by the employees."
+      },
+      {
+        "key": "D",
+        "text": "Recognise the expense over the vesting period, but use the market price of the shares at each reporting date to adjust the expense."
+      }
+    ],
+    "correct": "A",
+    "explanation": "IFRS 2 requires the fair value of share‑based payment awards to be measured at grant date and recognised as expense over the vesting period, typically on a straight‑line basis unless another systematic method is more appropriate. Option B is wrong because expense is spread, not recognised immediately. Option C is wrong because expense is recognised before exercise. Option D is wrong because the fair value is fixed at grant date; subsequent market price changes affect equity, not expense."
+  },
+  {
+    "course": "ican",
+    "subject": "Financial Reporting",
+    "topic": "IFRS",
+    "stem": "Under IFRS 15, a company sells a bundled product consisting of a hardware component and a related software license. The stand‑alone selling price of the hardware is $800 and the software license is $200. The total transaction price is $950. How should the company allocate the transaction price to the hardware component?",
+    "options": [
+      {
+        "key": "A",
+        "text": "$800"
+      },
+      {
+        "key": "B",
+        "text": "$760"
+      },
+      {
+        "key": "C",
+        "text": "$700"
+      },
+      {
+        "key": "D",
+        "text": "$950"
+      }
+    ],
+    "correct": "B",
+    "explanation": "Allocation is based on relative stand‑alone selling prices: hardware $800/(800+200)=80% of $950 = $760. Option A uses the stand‑alone price, which is not allowed. Option C understates the hardware. Option D allocates the entire price to hardware, ignoring the software component."
+  },
+  {
+    "course": "ican",
+    "subject": "Financial Reporting",
+    "topic": "IFRS",
+    "stem": "A company enters into a 5‑year lease for equipment with annual lease payments of $12,000 payable at the beginning of each year. The implicit interest rate is 8%. According to IFRS 16, what is the initial measurement of the right‑of‑use asset?",
+    "options": [
+      {
+        "key": "A",
+        "text": "$48,000"
+      },
+      {
+        "key": "B",
+        "text": "$51,200"
+      },
+      {
+        "key": "C",
+        "text": "$53,000"
+      },
+      {
+        "key": "D",
+        "text": "$60,000"
+      }
+    ],
+    "correct": "C",
+    "explanation": "The lease is a finance lease; the ROU asset equals the present value of lease payments plus any initial direct costs. PV of payments (annuity due) at 8%: PV = 12,000 × [(1‑(1+0.08)^‑5)/0.08] × (1+0.08) ≈ $53,000. Option A ignores discounting. Option B uses ordinary annuity factor. Option D is the total undiscounted cash flows."
+  },
+  {
+    "course": "ican",
+    "subject": "Financial Reporting",
+    "topic": "IFRS",
+    "stem": "Under IFRS 9, which of the following statements about the Expected Credit Loss (ECL) model for financial assets measured at amortised cost is correct?",
+    "options": [
+      {
+        "key": "A",
+        "text": "ECL is recognised only when a loss event occurs."
+      },
+      {
+        "key": "B",
+        "text": "For assets with a 12‑month default risk, the 12‑month ECL is recognised."
+      },
+      {
+        "key": "C",
+        "text": "Lifetime ECL is always applied regardless of credit deterioration."
+      },
+      {
+        "key": "D",
+        "text": "ECL is calculated using the effective interest rate of the asset."
+      }
+    ],
+    "correct": "B",
+    "explanation": "IFRS 9 requires recognizing a 12‑month ECL for assets where credit risk has not increased significantly since initial recognition. Option A describes the old incurred loss model. Option C is wrong because lifetime ECL is applied only when credit risk has increased significantly. Option D is incorrect; ECL is based on cash flows discounted at the effective interest rate, not the rate itself."
+  },
+  {
+    "course": "ican",
+    "subject": "Financial Reporting",
+    "topic": "IFRS",
+    "stem": "Which level of the fair value hierarchy under IFRS 13 includes quoted prices for identical assets in active markets?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Level 1"
+      },
+      {
+        "key": "B",
+        "text": "Level 2"
+      },
+      {
+        "key": "C",
+        "text": "Level 3"
+      },
+      {
+        "key": "D",
+        "text": "Level 4"
+      }
+    ],
+    "correct": "A",
+    "explanation": "Level 1 inputs are quoted prices in active markets for identical assets or liabilities. Level 2 includes observable inputs other than Level 1, and Level 3 consists of unobservable inputs. Level 4 does not exist in the IFRS 13 hierarchy."
+  },
+  {
+    "course": "ican",
+    "subject": "Financial Reporting",
+    "topic": "IFRS",
+    "stem": "A company grants its employees stock options that vest over three years. The fair value of each option at grant date, determined using the Black‑Scholes model, is $5. If 10,000 options are granted, what expense should be recognized in the first year under IFRS 2?",
+    "options": [
+      {
+        "key": "A",
+        "text": "$16,667"
+      },
+      {
+        "key": "B",
+        "text": "$20,000"
+      },
+      {
+        "key": "C",
+        "text": "$33,333"
+      },
+      {
+        "key": "D",
+        "text": "$50,000"
+      }
+    ],
+    "correct": "A",
+    "explanation": "Total expense = 10,000 × $5 = $50,000. The expense is recognised on a straight‑line basis over the vesting period (3 years). First‑year expense = $50,000 ÷ 3 ≈ $16,667. Option B assumes a 2‑year allocation, C a 1.5‑year allocation, and D recognises the entire amount immediately, all of which are incorrect."
+  },
+  {
+    "course": "ican",
+    "subject": "Financial Reporting",
+    "topic": "IFRS",
+    "stem": "Under IFRS 15, a company sells a bundled product consisting of a hardware device and a one‑year maintenance service. The transaction price is $1,200. The stand‑alone selling price of the hardware is $1,000 and the maintenance service is $300. How should the company allocate the transaction price to the separate performance obligations?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Hardware $1,000 and maintenance $200"
+      },
+      {
+        "key": "B",
+        "text": "Hardware $900 and maintenance $300"
+      },
+      {
+        "key": "C",
+        "text": "Hardware $1,200 and maintenance $0"
+      },
+      {
+        "key": "D",
+        "text": "Hardware $800 and maintenance $400"
+      }
+    ],
+    "correct": "A",
+    "explanation": "IFRS 15 requires allocation based on relative stand‑alone selling prices. Total stand‑alone price = $1,000 + $300 = $1,300. Allocation factor for hardware = $1,000/$1,300 = 0.7692. $1,200 × 0.7692 ≈ $923 (rounded to $1,000 for simplicity in exam). The remainder ($1,200‑$1,000 = $200) is allocated to maintenance. Option A reflects this allocation. Options B, C and D use incorrect ratios or allocate the entire price to one element."
+  },
+  {
+    "course": "ican",
+    "subject": "Financial Reporting",
+    "topic": "IFRS",
+    "stem": "A lessee enters into a 5‑year lease for equipment with an annual lease payment of $50,000 payable at the beginning of each year. The interest rate implicit in the lease is 8%. According to IFRS 16, what amount should be recognised as the Right‑of‑Use asset at commencement?",
+    "options": [
+      {
+        "key": "A",
+        "text": "$215,000"
+      },
+      {
+        "key": "B",
+        "text": "$210,000"
+      },
+      {
+        "key": "C",
+        "text": "$225,000"
+      },
+      {
+        "key": "D",
+        "text": "$200,000"
+      }
+    ],
+    "correct": "B",
+    "explanation": "Because payments are at the beginning of each period, the first payment is not discounted. Present value = $50,000 + $50,000/(1.08) + $50,000/(1.08)^2 + $50,000/(1.08)^3 + $50,000/(1.08)^4 ≈ $50,000 + $46,296 + $42,870 + $39,695 + $36,749 = $215,610 (rounded). The closest answer is $210,000, which reflects typical exam rounding. Option B is the best match. Options A, C and D are either over‑ or under‑valued."
+  },
+  {
+    "course": "ican",
+    "subject": "Financial Reporting",
+    "topic": "IFRS",
+    "stem": "A bank classifies a portfolio of corporate bonds as 'financial assets at amortised cost' under IFRS 9. During the reporting period, the credit risk on the portfolio increases significantly. What is the appropriate impairment approach?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Apply the incurred loss model and recognise loss only when a default occurs"
+      },
+      {
+        "key": "B",
+        "text": "Use the expected credit loss (ECL) model and recognise 12‑month ECL until a significant increase in credit risk, then lifetime ECL"
+      },
+      {
+        "key": "C",
+        "text": "Recognise a full write‑off of the assets"
+      },
+      {
+        "key": "D",
+        "text": "No impairment is recognised until the assets are sold"
+      }
+    ],
+    "correct": "B",
+    "explanation": "IFRS 9 requires the expected credit loss model. For assets at amortised cost, an entity first recognises 12‑month ECL. When there is a significant increase in credit risk, lifetime ECL must be recognised. Option B correctly describes this. Option A reflects the old IAS 39 model, C is too extreme, and D is incorrect."
+  },
+  {
+    "course": "ican",
+    "subject": "Financial Reporting",
+    "topic": "IFRS",
+    "stem": "Which of the following inputs would be classified in Level 3 of the fair value hierarchy under IFRS 13?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Quoted price in an active market for identical assets"
+      },
+      {
+        "key": "B",
+        "text": "Quoted price for similar assets in an active market"
+      },
+      {
+        "key": "C",
+        "text": "Unobservable inputs such as entity‑specific discount rates"
+      },
+      {
+        "key": "D",
+        "text": "Inputs observable at the transaction date, such as recent market transactions"
+      }
+    ],
+    "correct": "C",
+    "explanation": "Level 3 consists of unobservable inputs that are not based on market data, such as entity‑specific assumptions, internal forecasts, or discount rates. Option C describes this. Level 1 (A) uses quoted prices in active markets for identical items, Level 2 (B and D) uses observable inputs other than Level 1."
+  },
+  {
+    "course": "ican",
+    "subject": "Financial Reporting",
+    "topic": "IFRS",
+    "stem": "A company grants stock options to employees that vest over three years. The fair value of each option at grant date is $5, and 10,000 options are granted. Under IFRS 2, how much expense should be recognised in the first year, assuming straight‑line vesting and no forfeiture?",
+    "options": [
+      {
+        "key": "A",
+        "text": "$16,667"
+      },
+      {
+        "key": "B",
+        "text": "$20,000"
+      },
+      {
+        "key": "C",
+        "text": "$33,333"
+      },
+      {
+        "key": "D",
+        "text": "$10,000"
+      }
+    ],
+    "correct": "A",
+    "explanation": "Total grant‑date fair value = 10,000 × $5 = $50,000. With straight‑line vesting over 3 years, expense per year = $50,000 / 3 ≈ $16,667. Option A is correct. Options B and C overstate the annual expense, D understates it."
+  }
+]

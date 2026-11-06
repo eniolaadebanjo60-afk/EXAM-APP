@@ -1,0 +1,93 @@
+.explain {
+  background: var(--surface);
+  border-radius: var(--radius);
+  padding: clamp(20px, 5vw, 32px);
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  box-shadow: var(--shadow-lg);
+  border-top: 6px solid var(--accent);
+  margin-top: 10px;
+  animation: rise 300ms ease;
+}
+
+@keyframes rise {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.explain__verdict {
+  font-weight: 800;
+  font-size: 0.8rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+.explain__verdict.is-correct { color: var(--success); }
+.explain__verdict.is-wrong { color: var(--danger); }
+
+.explain__chosen {
+  font-size: 0.95rem;
+  color: var(--text-muted);
+  padding-bottom: 16px;
+  border-bottom: 1px solid var(--border);
+}
+.explain__chosen strong { color: var(--text); }
+
+.explain__text { line-height: 1.6; font-size: 1rem; }
+
+.explain__ask { 
+  display: flex; 
+  flex-direction: column; 
+  gap: 10px; 
+}
+
+.explain__input {
+  width: 100%;
+  padding: 14px 16px;
+  border: 2px solid var(--border);
+  border-radius: var(--radius-sm);
+  background: var(--surface-2);
+  color: var(--text);
+  font-size: 1rem;
+}
+.explain__input:focus { outline: none; border-color: var(--accent); }
+
+.explain__ask-btn {
+  width: 100%;
+  padding: 14px;
+  border-radius: var(--radius-sm);
+  background: var(--accent);
+  color: white;
+  font-weight: 700;
+}
+
+.explain__reply {
+  background: var(--surface-2);
+  border-radius: var(--radius-sm);
+  padding: 16px;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  border-left: 4px solid var(--accent);
+}
+
+.explain__next {
+  align-self: flex-start;
+  margin-top: 10px;
+  padding: 14px 24px;
+  border-radius: 999px;
+  background: var(--accent);
+  color: white;
+  font-weight: 700;
+  font-size: 0.95rem;
+  box-shadow: 0 4px 12px rgba(79, 70, 229, 0.3);
+}
+
+@media (min-width: 500px) {
+  .explain__ask {
+    flex-direction: row;
+  }
+  .explain__ask-btn {
+    width: auto;
+    padding: 14px 24px;
+  }
+}
