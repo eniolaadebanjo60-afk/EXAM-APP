@@ -26,7 +26,7 @@ export default function ModeSelection() {
         <p>How do you want to study today?</p>
       </div>
 
-      <div className="home__grid" style={{ gridTemplateColumns: '1fr 1fr' }}>
+      <div className="home__grid" style={{ gridTemplateColumns: 'repeat(auto-fit, minmax(140px, 1fr))' }}>
         <button 
           className="home__card" 
           onClick={() => navigate(`/practice${queryString}`)}

@@ -1,0 +1,129 @@
+.landing {
+  min-height: 100vh;
+  background: var(--bg);
+  background-image: var(--bg-gradient);
+  display: flex;
+  flex-direction: column;
+  padding: 0 var(--pad);
+}
+
+.landing__nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 24px 0;
+  max-width: 1000px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.landing__nav h2 {
+  font-size: 1.5rem;
+  color: var(--text);
+  font-weight: 800;
+}
+
+.landing__nav button {
+  padding: 10px 24px;
+  border-radius: 999px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  font-weight: 600;
+  color: var(--text);
+}
+
+.landing__hero {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 60px 0;
+}
+
+.landing__hero h1 {
+  font-size: clamp(2.5rem, 6vw, 4rem);
+  font-weight: 800;
+  line-height: 1.1;
+  color: var(--text);
+  margin-bottom: 24px;
+  letter-spacing: -0.03em;
+}
+
+.landing__hero p {
+  font-size: clamp(1.1rem, 3vw, 1.3rem);
+  color: var(--text-muted);
+  line-height: 1.6;
+  margin-bottom: 40px;
+  max-width: 600px;
+}
+
+.landing__actions {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.landing__btn-primary {
+  padding: 18px 36px;
+  border-radius: 999px;
+  background: var(--accent);
+  color: white;
+  font-weight: 700;
+  font-size: 1.1rem;
+  box-shadow: 0 8px 20px -6px rgba(79, 70, 229, 0.5);
+  transition: all 200ms ease;
+}
+
+.landing__btn-primary:hover {
+  background: var(--accent-hover);
+  transform: translateY(-2px);
+}
+
+.landing__btn-secondary {
+  padding: 18px 36px;
+  border-radius: 999px;
+  background: var(--surface);
+  border: 2px solid var(--border);
+  color: var(--text);
+  font-weight: 700;
+  font-size: 1.1rem;
+  transition: all 200ms ease;
+}
+
+.landing__btn-secondary:hover {
+  border-color: var(--accent);
+}
+
+.landing__features {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 24px;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 60px 0;
+  width: 100%;
+}
+
+.landing__feature-card {
+  background: var(--surface);
+  padding: 32px;
+  border-radius: var(--radius);
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow-md);
+}
+
+.landing__feature-card h3 {
+  font-size: 1.25rem;
+  margin-bottom: 12px;
+  color: var(--text);
+}
+
+.landing__feature-card p {
+  color: var(--text-muted);
+  line-height: 1.6;
+}

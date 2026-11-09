@@ -1,0 +1,1017 @@
+[
+  {
+    "course": "cipm",
+    "company": "null",
+    "level": "foundation",
+    "subject": "Principles of Management and Business Development",
+    "topic": "General",
+    "type": "mcq",
+    "stem": "What does the organising function of management involve?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Motivating employees"
+      },
+      {
+        "key": "B",
+        "text": "Allocating resources and tasks"
+      },
+      {
+        "key": "C",
+        "text": "Monitoring performance"
+      },
+      {
+        "key": "D",
+        "text": "Setting performance standards"
+      }
+    ],
+    "correct": "B",
+    "explanation": "Organising focuses on arranging and allocating resources, tasks and responsibilities to achieve objectives."
+  },
+  {
+    "course": "cipm",
+    "company": "null",
+    "level": "foundation",
+    "subject": "Principles of Management and Business Development",
+    "topic": "General",
+    "type": "mcq",
+    "stem": "In the context of organising, what is the purpose of creating an organisational structure?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Enhancing creativity"
+      },
+      {
+        "key": "B",
+        "text": "Facilitating communication"
+      },
+      {
+        "key": "C",
+        "text": "Providing a framework for roles"
+      },
+      {
+        "key": "D",
+        "text": "Setting individual goals"
+      }
+    ],
+    "correct": "C",
+    "explanation": "An organisational structure defines the hierarchy and framework of roles, clarifying responsibilities and reporting relationships."
+  },
+  {
+    "course": "cipm",
+    "company": "null",
+    "level": "foundation",
+    "subject": "Principles of Management and Business Development",
+    "topic": "General",
+    "type": "mcq",
+    "stem": "………………….. is the managerial function which involves leading and motivating employees to achieve organisational goals.",
+    "options": [
+      {
+        "key": "A",
+        "text": "Controlling"
+      },
+      {
+        "key": "B",
+        "text": "Planning"
+      },
+      {
+        "key": "C",
+        "text": "Directing"
+      },
+      {
+        "key": "D",
+        "text": "Organising"
+      }
+    ],
+    "correct": "C",
+    "explanation": "Directing (or leading) is the function that focuses on guiding, influencing and motivating staff toward goal attainment."
+  },
+  {
+    "course": "cipm",
+    "company": "null",
+    "level": "foundation",
+    "subject": "Principles of Management and Business Development",
+    "topic": "General",
+    "type": "mcq",
+    "stem": "The fundamental concepts that guide effective management practices in an organisation are best described as ……",
+    "options": [
+      {
+        "key": "A",
+        "text": "the guidelines of administration."
+      },
+      {
+        "key": "B",
+        "text": "the principles of management."
+      },
+      {
+        "key": "C",
+        "text": "the hierarchy of organisational management."
+      },
+      {
+        "key": "D",
+        "text": "techniques for cost‑cutting in business."
+      }
+    ],
+    "correct": "B",
+    "explanation": "The core ideas that underpin sound management are known as the principles of management."
+  },
+  {
+    "course": "cipm",
+    "company": "null",
+    "level": "foundation",
+    "subject": "Principles of Management and Business Development",
+    "topic": "General",
+    "type": "mcq",
+    "stem": "…………… is the principle of management which explains that each employee should receive orders from only one manager.",
+    "options": [
+      {
+        "key": "A",
+        "text": "Unity of command"
+      },
+      {
+        "key": "B",
+        "text": "Division of labour"
+      },
+      {
+        "key": "C",
+        "text": "Scalar chain"
+      },
+      {
+        "key": "D",
+        "text": "Unity of direction"
+      }
+    ],
+    "correct": "A",
+    "explanation": "Unity of command states that an employee should report to a single supervisor to avoid confusion and conflict."
+  },
+  {
+    "course": "cipm",
+    "company": "null",
+    "level": "foundation",
+    "subject": "Principles of Management and Business Development",
+    "topic": "General",
+    "type": "mcq",
+    "stem": "Benefit of forming strategic partnerships in business development is to…………",
+    "options": [
+      {
+        "key": "A",
+        "text": "decrease market competition and forecasting."
+      },
+      {
+        "key": "B",
+        "text": "reduce operational costs and overhead."
+      },
+      {
+        "key": "C",
+        "text": "expand resources and capabilities."
+      },
+      {
+        "key": "D",
+        "text": "minimise customer feedback and communication."
+      }
+    ],
+    "correct": "C",
+    "explanation": "Strategic partnerships are primarily used to broaden a firm’s resources and capabilities, allowing access to new skills, technologies, and markets."
+  },
+  {
+    "course": "cipm",
+    "company": "null",
+    "level": "foundation",
+    "subject": "Principles of Management and Business Development",
+    "topic": "General",
+    "type": "mcq",
+    "stem": "In the context of business development, “Diversification” means …",
+    "options": [
+      {
+        "key": "A",
+        "text": "expanding into new markets with existing products."
+      },
+      {
+        "key": "B",
+        "text": "introducing new products to existing markets."
+      },
+      {
+        "key": "C",
+        "text": "acquiring competitors in the same industry."
+      },
+      {
+        "key": "D",
+        "text": "entering unrelated business areas."
+      }
+    ],
+    "correct": "D",
+    "explanation": "Diversification involves moving into new, unrelated business areas, reducing reliance on existing markets or products."
+  },
+  {
+    "course": "cipm",
+    "company": "null",
+    "level": "foundation",
+    "subject": "Principles of Management and Business Development",
+    "topic": "General",
+    "type": "mcq",
+    "stem": "The father of scientific management is ………………",
+    "options": [
+      {
+        "key": "A",
+        "text": "Max Weber."
+      },
+      {
+        "key": "B",
+        "text": "Frederick Taylor."
+      },
+      {
+        "key": "C",
+        "text": "Henri Fayol."
+      },
+      {
+        "key": "D",
+        "text": "Elton Mayo."
+      }
+    ],
+    "correct": "B",
+    "explanation": "Frederick Taylor is recognized as the founder of scientific management, emphasizing time‑and‑motion studies and task optimization."
+  },
+  {
+    "course": "cipm",
+    "company": "null",
+    "level": "foundation",
+    "subject": "Principles of Management and Business Development",
+    "topic": "General",
+    "type": "mcq",
+    "stem": "………………………is the management process that describes the allocation of work which is undertaken by a specialist.",
+    "options": [
+      {
+        "key": "A",
+        "text": "Human relations"
+      },
+      {
+        "key": "B",
+        "text": "Division of labor"
+      },
+      {
+        "key": "C",
+        "text": "Hierarchy of authority"
+      },
+      {
+        "key": "D",
+        "text": "Unity of command"
+      }
+    ],
+    "correct": "B",
+    "explanation": "Division of labor refers to assigning specific tasks to specialists to increase efficiency and expertise."
+  },
+  {
+    "course": "cipm",
+    "company": "null",
+    "level": "foundation",
+    "subject": "Principles of Management and Business Development",
+    "topic": "General",
+    "type": "mcq",
+    "stem": "The theorist that is associated with the Hawthorne Studies is …………",
+    "options": [
+      {
+        "key": "A",
+        "text": "Frederick Taylor."
+      },
+      {
+        "key": "B",
+        "text": "Max Weber."
+      },
+      {
+        "key": "C",
+        "text": "Elton Mayo."
+      },
+      {
+        "key": "D",
+        "text": "Douglas McGregor."
+      }
+    ],
+    "correct": "C",
+    "explanation": "Elton Mayo led the Hawthorne Studies, which highlighted the importance of social factors and employee morale in productivity."
+  },
+  {
+    "course": "cipm",
+    "company": "null",
+    "level": "foundation",
+    "subject": "Principles of Management and Business Development",
+    "topic": "General",
+    "type": "mcq",
+    "stem": "The purpose of setting objectives in the planning process by management is to ……",
+    "options": [
+      {
+        "key": "A",
+        "text": "monitor performance of organisation."
+      },
+      {
+        "key": "B",
+        "text": "motivate employees for greater productivity."
+      },
+      {
+        "key": "C",
+        "text": "provide a framework for responsibilities."
+      },
+      {
+        "key": "D",
+        "text": "provide directions for organisation."
+      }
+    ],
+    "correct": "D",
+    "explanation": "Setting objectives gives the organisation a clear direction and purpose, guiding future actions."
+  },
+  {
+    "course": "cipm",
+    "company": "null",
+    "level": "foundation",
+    "subject": "Principles of Management and Business Development",
+    "topic": "General",
+    "type": "mcq",
+    "stem": "………………….. is the term for an individual’s overall attitude and feeling towards their work.",
+    "options": [
+      {
+        "key": "A",
+        "text": "Staff motivation"
+      },
+      {
+        "key": "B",
+        "text": "Job satisfaction"
+      },
+      {
+        "key": "C",
+        "text": "Work ethic"
+      },
+      {
+        "key": "D",
+        "text": "Performance appraisal"
+      }
+    ],
+    "correct": "B",
+    "explanation": "Job satisfaction describes how an employee feels about their job overall."
+  },
+  {
+    "course": "cipm",
+    "company": "null",
+    "level": "foundation",
+    "subject": "Principles of Management and Business Development",
+    "topic": "General",
+    "type": "mcq",
+    "stem": "The psychological theory that individuals are motivated by a hierarchy of needs was propounded by ………….",
+    "options": [
+      {
+        "key": "A",
+        "text": "Max Weber"
+      },
+      {
+        "key": "B",
+        "text": "Abraham Maslow"
+      },
+      {
+        "key": "C",
+        "text": "Peter Drucke"
+      },
+      {
+        "key": "D",
+        "text": "Judith Weber"
+      }
+    ],
+    "correct": "B",
+    "explanation": "Maslow introduced the well‑known hierarchy of needs theory."
+  },
+  {
+    "course": "cipm",
+    "company": "null",
+    "level": "foundation",
+    "subject": "Principles of Management and Business Development",
+    "topic": "General",
+    "type": "mcq",
+    "stem": "Mr Ade works for 40 hours per week but uses 50 hours for his personal activities. Assuming there are 5 days in a week, his “work‑life balance” per week is ………",
+    "options": [
+      {
+        "key": "A",
+        "text": "80%."
+      },
+      {
+        "key": "B",
+        "text": "120%."
+      },
+      {
+        "key": "C",
+        "text": "33 1/3 %."
+      },
+      {
+        "key": "D",
+        "text": "300%."
+      }
+    ],
+    "correct": "A",
+    "explanation": "Work‑life balance is often expressed as work hours ÷ personal hours ×100; 40/50 × 100 = 80%."
+  },
+  {
+    "course": "cipm",
+    "company": "null",
+    "level": "foundation",
+    "subject": "Principles of Management and Business Development",
+    "topic": "General",
+    "type": "mcq",
+    "stem": "What is the role of perception in understanding people at work? It …………………..",
+    "options": [
+      {
+        "key": "A",
+        "text": "helps in identifying their values and beliefs."
+      },
+      {
+        "key": "B",
+        "text": "influences their personality traits."
+      },
+      {
+        "key": "C",
+        "text": "guides their decision‑making process."
+      },
+      {
+        "key": "D",
+        "text": "shapes how they interpret and respond to stimuli."
+      }
+    ],
+    "correct": "D",
+    "explanation": "Perception determines how individuals interpret information and react to workplace situations."
+  },
+  {
+    "course": "cipm",
+    "company": "null",
+    "level": "foundation",
+    "subject": "Principles of Management and Business Development",
+    "topic": "General",
+    "type": "mcq",
+    "stem": "An effective situational leader would deal with a team member who is highly competent but lacks confidence by………….",
+    "options": [
+      {
+        "key": "A",
+        "text": "providing detailed instructions and supervisions."
+      },
+      {
+        "key": "B",
+        "text": "delegating tasks and responsibilities."
+      },
+      {
+        "key": "C",
+        "text": "supporting and encouraging the team member."
+      },
+      {
+        "key": "D",
+        "text": "adopting a directive leadership style."
+      }
+    ],
+    "correct": "C",
+    "explanation": "A competent but insecure member needs encouragement and support to build confidence, making option C the best choice."
+  },
+  {
+    "course": "cipm",
+    "company": "null",
+    "level": "foundation",
+    "subject": "Principles of Management and Business Development",
+    "topic": "General",
+    "type": "mcq",
+    "stem": "The primary purpose of effective communication in the workplace is to ………….",
+    "options": [
+      {
+        "key": "A",
+        "text": "enhance individual achievements precisely and plainly."
+      },
+      {
+        "key": "B",
+        "text": "increase competition exactly and evidently."
+      },
+      {
+        "key": "C",
+        "text": "convey information accurately and clearly."
+      },
+      {
+        "key": "D",
+        "text": "create conflicts truthfully and visibly."
+      }
+    ],
+    "correct": "C",
+    "explanation": "Effective workplace communication aims to transmit information accurately and clearly, which is described in option C."
+  },
+  {
+    "course": "cipm",
+    "company": "null",
+    "level": "foundation",
+    "subject": "Principles of Management and Business Development",
+    "topic": "General",
+    "type": "mcq",
+    "stem": "The significance of feedback in the communication process is   ……………   the message.",
+    "options": [
+      {
+        "key": "A",
+        "text": "initiating"
+      },
+      {
+        "key": "B",
+        "text": "encoding"
+      },
+      {
+        "key": "C",
+        "text": "understanding"
+      },
+      {
+        "key": "D",
+        "text": "leading"
+      }
+    ],
+    "correct": "C",
+    "explanation": "Feedback allows the receiver to understand (interpret) the message, so option C is correct."
+  },
+  {
+    "course": "cipm",
+    "company": "null",
+    "level": "foundation",
+    "subject": "Principles of Management and Business Development",
+    "topic": "General",
+    "type": "mcq",
+    "stem": "……… is the   type of communication that describes the occurrence within a person’s mind and which involves self-talk.",
+    "options": [
+      {
+        "key": "A",
+        "text": "intrapersonal"
+      },
+      {
+        "key": "B",
+        "text": "interpersonal"
+      },
+      {
+        "key": "C",
+        "text": "group"
+      },
+      {
+        "key": "D",
+        "text": "mass"
+      }
+    ],
+    "correct": "A",
+    "explanation": "Communication that occurs within an individual’s own mind (self‑talk) is intrapersonal communication, option A."
+  },
+  {
+    "course": "cipm",
+    "company": "null",
+    "level": "foundation",
+    "subject": "Principles of Management and Business Development",
+    "topic": "General",
+    "type": "mcq",
+    "stem": "The Group Managing Director of ZEON Ltd, Mr Musa gave a directive that all staff of ZEON should stay at home on election days. Mr Musa is adopting ………. communication.",
+    "options": [
+      {
+        "key": "A",
+        "text": "upward"
+      },
+      {
+        "key": "B",
+        "text": "downward"
+      },
+      {
+        "key": "C",
+        "text": "line"
+      },
+      {
+        "key": "D",
+        "text": "straight"
+      }
+    ],
+    "correct": "B",
+    "explanation": "A directive from a senior manager to subordinates is downward communication, making option B correct."
+  },
+  {
+    "course": "cipm",
+    "company": "null",
+    "level": "foundation",
+    "subject": "Principles of Management and Business Development",
+    "topic": "General",
+    "type": "mcq",
+    "stem": "What is the primary focus of Total Quality Management?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Maximising individual achievements at all costs"
+      },
+      {
+        "key": "B",
+        "text": "Minimising and optimising costs and products"
+      },
+      {
+        "key": "C",
+        "text": "Ensures continuous improvement"
+      },
+      {
+        "key": "D",
+        "text": "Increasing employee turnover and product ranges"
+      }
+    ],
+    "correct": "C",
+    "explanation": "TQM is centred on continuous improvement of processes, products and services."
+  },
+  {
+    "course": "cipm",
+    "company": "null",
+    "level": "foundation",
+    "subject": "Principles of Management and Business Development",
+    "topic": "General",
+    "type": "mcq",
+    "stem": "The events outside a company that have the potential to influence or affect operations is known as “.............................................”",
+    "options": [
+      {
+        "key": "A",
+        "text": "Task environment."
+      },
+      {
+        "key": "B",
+        "text": "External environment."
+      },
+      {
+        "key": "C",
+        "text": "Internal environment."
+      },
+      {
+        "key": "D",
+        "text": "Dynamic environment."
+      }
+    ],
+    "correct": "B",
+    "explanation": "Factors external to the organisation that can affect its performance are referred to as the external environment."
+  },
+  {
+    "course": "cipm",
+    "company": "null",
+    "level": "foundation",
+    "subject": "Principles of Management and Business Development",
+    "topic": "General",
+    "type": "mcq",
+    "stem": "The TQM principle which emphasises the importance of involving all employees in the quality improvement process is ……",
+    "options": [
+      {
+        "key": "A",
+        "text": "customer focus."
+      },
+      {
+        "key": "B",
+        "text": "inclusiveness."
+      },
+      {
+        "key": "C",
+        "text": "improvement."
+      },
+      {
+        "key": "D",
+        "text": "process improvement."
+      }
+    ],
+    "correct": "B",
+    "explanation": "Inclusiveness means every employee participates in quality improvement activities."
+  },
+  {
+    "course": "cipm",
+    "company": "null",
+    "level": "foundation",
+    "subject": "Principles of Management and Business Development",
+    "topic": "General",
+    "type": "mcq",
+    "stem": "The universal TQM belief is explained as ……………",
+    "options": [
+      {
+        "key": "A",
+        "text": "Quantity is everyone ’ s right."
+      },
+      {
+        "key": "B",
+        "text": "Quantity is everyone ’ s responsibility."
+      },
+      {
+        "key": "C",
+        "text": "Quality is everyone ’ s responsibility."
+      },
+      {
+        "key": "D",
+        "text": "Quality is everyone ’ s right."
+      }
+    ],
+    "correct": "C",
+    "explanation": "TQM holds that quality is the responsibility of every person in the organisation."
+  },
+  {
+    "course": "cipm",
+    "company": "null",
+    "level": "foundation",
+    "subject": "Principles of Management and Business Development",
+    "topic": "General",
+    "type": "mcq",
+    "stem": "According to TQM principles, what is the significance of benchmarking?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Copying competitors' strategies"
+      },
+      {
+        "key": "B",
+        "text": "Setting the acceptable standard to improve the quality of the company"
+      },
+      {
+        "key": "C",
+        "text": "Comparing performance to industry best practices"
+      },
+      {
+        "key": "D",
+        "text": "Ignoring external benchmarks"
+      }
+    ],
+    "correct": "C",
+    "explanation": "Benchmarking involves comparing an organisation's performance with best‑in‑class practices to identify improvement opportunities."
+  },
+  {
+    "course": "cipm",
+    "company": "null",
+    "level": "foundation",
+    "subject": "Principles of Management and Business Development",
+    "topic": "General",
+    "type": "mcq",
+    "stem": "What is the primary goal of health and safety practices in the workplace?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Creating a health center."
+      },
+      {
+        "key": "B",
+        "text": "Enhancing employee satisfaction"
+      },
+      {
+        "key": "C",
+        "text": "Ensuring a safe and healthy work environment"
+      },
+      {
+        "key": "D",
+        "text": "Avoiding sanction among the staffs"
+      }
+    ],
+    "correct": "C",
+    "explanation": "The main aim of health and safety practices is to ensure that the workplace is safe and healthy for all employees."
+  },
+  {
+    "course": "cipm",
+    "company": "null",
+    "level": "foundation",
+    "subject": "Principles of Management and Business Development",
+    "topic": "General",
+    "type": "mcq",
+    "stem": "Why is it important for organisations to prioritise workplace health and safety?",
+    "options": [
+      {
+        "key": "A",
+        "text": "comply with legal regulations."
+      },
+      {
+        "key": "B",
+        "text": "increase workload for employees."
+      },
+      {
+        "key": "C",
+        "text": "minimize employee involvement."
+      },
+      {
+        "key": "D",
+        "text": "promote a positive work culture."
+      }
+    ],
+    "correct": "A",
+    "explanation": "Compliance with legal regulations is a primary driver for organisations to give priority to health and safety."
+  },
+  {
+    "course": "cipm",
+    "company": "null",
+    "level": "foundation",
+    "subject": "Principles of Management and Business Development",
+    "topic": "General",
+    "type": "mcq",
+    "stem": "What is the purpose of conducting regular safety training for employees?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Increasing employee stress and idleness"
+      },
+      {
+        "key": "B",
+        "text": "Enhancing employee turnover and job"
+      },
+      {
+        "key": "C",
+        "text": "Reducing organisational resources and costs"
+      },
+      {
+        "key": "D",
+        "text": "Improving awareness and preventing accidents"
+      }
+    ],
+    "correct": "D",
+    "explanation": "Regular safety training raises awareness of hazards and equips staff to prevent accidents."
+  },
+  {
+    "course": "cipm",
+    "company": "null",
+    "level": "foundation",
+    "subject": "Principles of Management and Business Development",
+    "topic": "General",
+    "type": "mcq",
+    "stem": "“We have sufficient personal protective equipment for the tasks to be done on the site.” This is the submission of Arab contractor’s site manager. The manager is ……. cautious.",
+    "options": [
+      {
+        "key": "A",
+        "text": "fire alarms and emergency"
+      },
+      {
+        "key": "B",
+        "text": "safety signs, aligns and labels"
+      },
+      {
+        "key": "C",
+        "text": "safety, health and environmental"
+      },
+      {
+        "key": "D",
+        "text": "first aid kits and eyewash stations"
+      }
+    ],
+    "correct": "C",
+    "explanation": "Mentioning PPE reflects a focus on overall safety, health and environmental (SHE) considerations."
+  },
+  {
+    "course": "cipm",
+    "company": "null",
+    "level": "foundation",
+    "subject": "Principles of Management and Business Development",
+    "topic": "General",
+    "type": "mcq",
+    "stem": "What is the role of employees in maintaining workplace health and safety?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Only management is responsible for workplace health and safety"
+      },
+      {
+        "key": "B",
+        "text": "Employees have no role in maintaining workplace health and safety"
+      },
+      {
+        "key": "C",
+        "text": "Employees should report hazards and participate in safety programme"
+      },
+      {
+        "key": "D",
+        "text": "Employees should browse safety concerns and focus on their work"
+      }
+    ],
+    "correct": "C",
+    "explanation": "Employees are expected to actively report hazards and take part in safety programs to maintain a safe workplace."
+  },
+  {
+    "course": "cipm",
+    "company": "null",
+    "level": "foundation",
+    "subject": "Principles of Management and Business Development",
+    "topic": "General",
+    "type": "mcq",
+    "stem": "Which function is responsible for managing the organisation's workforce, including recruitment and training?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Accounting and Finance"
+      },
+      {
+        "key": "B",
+        "text": "Operation"
+      },
+      {
+        "key": "C",
+        "text": "Marketing"
+      },
+      {
+        "key": "D",
+        "text": "Human Resources"
+      }
+    ],
+    "correct": "D",
+    "explanation": "Human Resources handles recruitment, training and overall workforce management."
+  },
+  {
+    "course": "cipm",
+    "company": "null",
+    "level": "foundation",
+    "subject": "Principles of Management and Business Development",
+    "topic": "General",
+    "type": "mcq",
+    "stem": "Why is collaboration between finance and human resources crucial for organisational growth?",
+    "options": [
+      {
+        "key": "A",
+        "text": "avoid budgeting altogether"
+      },
+      {
+        "key": "B",
+        "text": "maintain financial secrecy"
+      },
+      {
+        "key": "C",
+        "text": "align budgeting with talent management"
+      },
+      {
+        "key": "D",
+        "text": "limit the influence of human resources"
+      }
+    ],
+    "correct": "C",
+    "explanation": "Aligning budgeting with talent management ensures financial resources support workforce planning and development."
+  },
+  {
+    "course": "cipm",
+    "company": "null",
+    "level": "foundation",
+    "subject": "Principles of Management and Business Development",
+    "topic": "General",
+    "type": "mcq",
+    "stem": "How do interdependent functions support decision‑making in an organisation?",
+    "options": [
+      {
+        "key": "A",
+        "text": "minimising collaboration and information sharing"
+      },
+      {
+        "key": "B",
+        "text": "prioritising individual goals over organisational goals"
+      },
+      {
+        "key": "C",
+        "text": "considering diverse perspectives and expertise"
+      },
+      {
+        "key": "D",
+        "text": "promoting hierarchical decision‑making processes"
+      }
+    ],
+    "correct": "C",
+    "explanation": "Interdependent functions bring varied expertise, leading to more informed and balanced decisions."
+  },
+  {
+    "course": "cipm",
+    "company": "null",
+    "level": "foundation",
+    "subject": "Principles of Management and Business Development",
+    "topic": "General",
+    "type": "mcq",
+    "stem": "How does the operations function contribute to interdependent business organic functions?",
+    "options": [
+      {
+        "key": "A",
+        "text": "managing the organisation’s finances and budgeting"
+      },
+      {
+        "key": "B",
+        "text": "identifying customer needs and developing marketing strategies"
+      },
+      {
+        "key": "C",
+        "text": "managing production processes and supply chain activities"
+      },
+      {
+        "key": "D",
+        "text": "recruiting and training employees for the organisation"
+      }
+    ],
+    "correct": "C",
+    "explanation": "Operations oversees production and supply‑chain activities, which are essential for delivering products and services."
+  },
+  {
+    "course": "cipm",
+    "company": "null",
+    "level": "foundation",
+    "subject": "Principles of Management and Business Development",
+    "topic": "General",
+    "type": "mcq",
+    "stem": "The management function responsible for managing the production processes and supply chain within an organisation is defined as",
+    "options": [
+      {
+        "key": "A",
+        "text": "Finance"
+      },
+      {
+        "key": "B",
+        "text": "Operations"
+      },
+      {
+        "key": "C",
+        "text": "Marketing"
+      },
+      {
+        "key": "D",
+        "text": "Human Resources"
+      }
+    ],
+    "correct": "B",
+    "explanation": "The Operations function handles production processes and supply‑chain management."
+  }
+]

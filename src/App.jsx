@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { BrowserRouter, Routes, Route, NavLink, Navigate, useNavigate, Outlet } from "react-router-dom";
+import { BrowserRouter, Routes, Route, NavLink, Navigate, useNavigate, Outlet, useLocation } from "react-router-dom";
 import { supabase } from "./lib/supabase";
 import Practice from "./pages/Practice";
 import ExamRoom from "./pages/ExamRoom";
@@ -8,14 +8,8 @@ import Auth from "./pages/Auth";
 import Graduate from "./pages/Graduate";
 import CipmLevels from "./pages/CipmLevels";
 import ModeSelection from "./pages/ModeSelection";
+import Landing from "./pages/Landing";
 import "./styles/App.css";
-
-function ProtectedRoute({ session }) {
-  if (!session) {
-    return <Navigate to="/auth" replace />;
-  }
-  return <Outlet />;
-}
 
 function Nav({ session }) {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -26,7 +20,7 @@ function Nav({ session }) {
 
   async function handleLogout() {
     await supabase.auth.signOut();
-    navigate("/auth");
+    navigate("/");
   }
 
   async function handleUpdateName(e) {
@@ -36,44 +30,51 @@ function Nav({ session }) {
     if (!error) setIsEditing(false);
   }
 
-  const initial = session?.user?.user_metadata?.full_name?.charAt(0).toUpperCase() || "U";
-  const firstName = session?.user?.user_metadata?.full_name?.split(" ")[0] || "User";
+  const initial = session?.user?.user_metadata?.full_name?.charAt(0).toUpperCase() || "G";
+  const firstName = session?.user?.user_metadata?.full_name?.split(" ")[0] || "Guest";
 
   return (
     <nav className="nav">
       <div className="nav__left">
-        {session && (
-          <div className="nav__profile">
-            <button className="nav__profile-btn" onClick={() => setMenuOpen(!menuOpen)}>
-              <div className="nav__avatar">{initial}</div>
-              <span className="nav__welcome">Welcome, {firstName}</span>
-            </button>
+        <div className="nav__profile">
+          <button className="nav__profile-btn" onClick={() => setMenuOpen(!menuOpen)}>
+            <div className="nav__avatar">{initial}</div>
+            <span className="nav__welcome">Welcome, {firstName}</span>
+          </button>
 
-            {menuOpen && (
-              <div className="nav__dropdown">
-                {isEditing ? (
-                  <form onSubmit={handleUpdateName} className="nav__edit-form">
-                    <input type="text" value={newName} onChange={(e) => setNewName(e.target.value)} placeholder="New name" autoFocus />
-                    <div className="nav__edit-actions">
-                      <button type="submit">Save</button>
-                      <button type="button" onClick={() => setIsEditing(false)}>Cancel</button>
-                    </div>
-                  </form>
-                ) : (
-                  <>
-                    <div className="nav__user-info">
-                      <strong>{session.user.user_metadata.full_name || "User"}</strong>
-                      <span>{session.user.email}</span>
-                    </div>
-                    <hr />
-                    <button onClick={() => setIsEditing(true)}>Change Name</button>
-                    <button onClick={handleLogout} className="nav__logout">Log Out</button>
-                  </>
-                )}
-              </div>
-            )}
-          </div>
-        )}
+          {menuOpen && (
+            <div className="nav__dropdown">
+              {session && !isEditing ? (
+                <>
+                  <div className="nav__user-info">
+                    <strong>{session.user.user_metadata.full_name || "User"}</strong>
+                    <span>{session.user.email}</span>
+                  </div>
+                  <hr />
+                  <button onClick={() => setIsEditing(true)}>Change Name</button>
+                  <button onClick={handleLogout} className="nav__logout">Log Out</button>
+                </>
+              ) : !session ? (
+                <>
+                   <div className="nav__user-info">
+                    <strong>Guest User</strong>
+                    <span>You are in Demo Mode</span>
+                  </div>
+                  <hr />
+                  <button onClick={() => navigate("/auth")} style={{ color: "var(--accent)" }}>Create Free Account</button>
+                </>
+              ) : (
+                <form onSubmit={handleUpdateName} className="nav__edit-form">
+                  <input type="text" value={newName} onChange={(e) => setNewName(e.target.value)} placeholder="New name" autoFocus />
+                  <div className="nav__edit-actions">
+                    <button type="submit">Save</button>
+                    <button type="button" onClick={() => setIsEditing(false)}>Cancel</button>
+                  </div>
+                </form>
+              )}
+            </div>
+          )}
+        </div>
       </div>
 
       <button className="nav__mobile-toggle" onClick={() => setMobileMenuOpen(!mobileMenuOpen)}>
@@ -87,6 +88,13 @@ function Nav({ session }) {
       </div>
     </nav>
   );
+}
+
+function PublicRoute({ session }) {
+  if (session) {
+    return <Navigate to="/home" replace />;
+  }
+  return <Outlet />;
 }
 
 export default function App() {
@@ -117,16 +125,19 @@ export default function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/auth" element={session ? <Navigate to="/home" replace /> : <Auth />} />
-        <Route element={<ProtectedRoute session={session} />}>
-          <Route path="/home" element={<><Nav session={session} /><Home /></>} />
-          <Route path="/graduate" element={<><Nav session={session} /><Graduate /></>} />
-          <Route path="/cipm-levels" element={<><Nav session={session} /><CipmLevels /></>} />
-          <Route path="/practice" element={<><Nav session={session} /><Practice /></>} />
-          <Route path="/exam" element={<><Nav session={session} /><ExamRoom /></>} />
+        <Route element={<PublicRoute session={session} />}>
+          <Route path="/" element={<Landing />} />
+          <Route path="/auth" element={<Auth />} />
         </Route>
-        <Route path="*" element={<Navigate to={session ? "/home" : "/auth"} replace />} />
+
+        <Route path="/home" element={<><Nav session={session} /><Home /></>} />
+        <Route path="/graduate" element={<><Nav session={session} /><Graduate /></>} />
+        <Route path="/cipm-levels" element={<><Nav session={session} /><CipmLevels /></>} />
         <Route path="/mode" element={<><Nav session={session} /><ModeSelection /></>} />
+        <Route path="/practice" element={<><Nav session={session} /><Practice /></>} />
+        <Route path="/exam" element={<><Nav session={session} /><ExamRoom /></>} />
+        
+        <Route path="*" element={<Navigate to="/" replace />} />
       </Routes>
     </BrowserRouter>
   );

@@ -3,1092 +3,638 @@
     "course": "cipm",
     "company": "null",
     "level": "foundation",
-    "subject": "General",
+    "subject": "Elements of Nigeria's Business Law and Legal System",
     "topic": "General",
     "type": "mcq",
-    "stem": "The actual output of 1,625,000 units and actual fixed costs of N870,000 were exactly as budgeted. However, the actual expenditure of N3,000,000 exceeded budget by N180,000. What was the budgeted variable cost per unit?",
+    "stem": "Which of the following options is the most appropriate?",
     "options": [
       {
         "key": "A",
-        "text": "N1.05"
+        "text": "There is no registration requirement for copyright"
       },
       {
         "key": "B",
-        "text": "N1.20"
+        "text": "Trade Marks may or may not be registered"
       },
       {
         "key": "C",
-        "text": "N2.25"
+        "text": "The Register of Trade Marks keeps a record of all copyright"
       },
       {
         "key": "D",
-        "text": "N3.05"
-      }
-    ],
-    "correct": "B",
-    "explanation": "Actual variable cost = 3,000,000‑870,000 = 2,130,000. Budgeted variable cost = 2,130,000‑180,000 = 1,950,000. Per‑unit budgeted variable cost = 1,950,000/1,625,000 = N1.20."
-  },
-  {
-    "course": "cipm",
-    "company": "null",
-    "level": "foundation",
-    "subject": "General",
-    "topic": "General",
-    "type": "mcq",
-    "stem": "The specific order costing under which each assignment is treated as a cost unit and costs are accumulated and ascertained separately for each assignment is ……………. costing.",
-    "options": [
-      {
-        "key": "A",
-        "text": "job"
-      },
-      {
-        "key": "B",
-        "text": "service"
-      },
-      {
-        "key": "C",
-        "text": "process"
-      },
-      {
-        "key": "D",
-        "text": "continuous"
+        "text": "Copyright is registered according to its category"
       }
     ],
     "correct": "A",
-    "explanation": "Treating each assignment as a separate cost unit is the definition of job costing."
+    "explanation": "In Nigeria copyright protection arises automatically upon creation; no formal registration is required."
   },
   {
     "course": "cipm",
     "company": "null",
     "level": "foundation",
-    "subject": "General",
+    "subject": "Elements of Nigeria's Business Law and Legal System",
     "topic": "General",
     "type": "mcq",
-    "stem": "Which of the following books is both a subsidiary book and a ledger account?",
+    "stem": "All these are primary sources of Business Law in Nigeria, except............",
     "options": [
       {
         "key": "A",
-        "text": "Journal"
+        "text": "legal proclamations"
       },
       {
         "key": "B",
-        "text": "Cash Book"
+        "text": "case law/Judicial precedents"
       },
       {
         "key": "C",
-        "text": "Sales Day Book"
+        "text": "delegated/subsidiary legislation"
       },
       {
         "key": "D",
-        "text": "Purchases Day Book"
+        "text": "Nigerian legislation"
       }
     ],
-    "correct": "B",
-    "explanation": "The cash book records transactions (original entry) and also has debit and credit sides like a ledger account."
+    "correct": "C",
+    "explanation": "Delegated or subsidiary legislation is considered secondary; primary sources are the Constitution, statutes and judicial precedents."
   },
   {
     "course": "cipm",
     "company": "null",
     "level": "foundation",
-    "subject": "General",
+    "subject": "Elements of Nigeria's Business Law and Legal System",
     "topic": "General",
     "type": "mcq",
-    "stem": "Ore-Ofe Hotels acquired a new power generating plant on 1 st June, 2023. The cost price of the equipment was N5,500,000. The vendor allowed a trade discount of N350,000. The cost of installing the plant was N75,500. At what cost should the machine be measured in the financial statements of Ore-Ofe Hotels?",
+    "stem": "Which of these is a feature of hire-purchase transaction?",
     "options": [
       {
         "key": "A",
-        "text": "N5,225,500"
+        "text": "Always treated as employees of the owner"
       },
       {
         "key": "B",
-        "text": "N5,575,500"
+        "text": "Agent of the owner is the Hirer’s agent"
       },
       {
         "key": "C",
-        "text": "N5,855,500"
+        "text": "Option to purchase the goods"
       },
       {
         "key": "D",
-        "text": "N5,950,500"
+        "text": "Forcibly taking possession of the Hired goods"
+      }
+    ],
+    "correct": "C",
+    "explanation": "A hallmark of hire‑purchase is that the hirer has an option to purchase the goods at the end of the payment period."
+  },
+  {
+    "course": "cipm",
+    "company": "null",
+    "level": "foundation",
+    "subject": "Elements of Nigeria's Business Law and Legal System",
+    "topic": "General",
+    "type": "mcq",
+    "stem": "An offer can be made expressly or by….........",
+    "options": [
+      {
+        "key": "A",
+        "text": "conduct"
+      },
+      {
+        "key": "B",
+        "text": "research"
+      },
+      {
+        "key": "C",
+        "text": "voice"
+      },
+      {
+        "key": "D",
+        "text": "terms"
       }
     ],
     "correct": "A",
-    "explanation": "Net purchase price = 5,500,000‑350,000 = 5,150,000. Add installation 75,500 → 5,225,500."
+    "explanation": "An offer may be implied by the conduct of a party, not just by explicit words."
   },
   {
     "course": "cipm",
     "company": "null",
     "level": "foundation",
-    "subject": "General",
+    "subject": "Elements of Nigeria's Business Law and Legal System",
     "topic": "General",
     "type": "mcq",
-    "stem": "Which of the following is normally shown on the credit side of a Trial Balance?",
+    "stem": "Corporate Social Responsibility benefits the company/business in which of the following ways?",
     "options": [
       {
         "key": "A",
-        "text": "Cash account"
+        "text": "Improving financial performance"
       },
       {
         "key": "B",
-        "text": "Prepaid expenses"
+        "text": "Enhances brand image and reputation"
       },
       {
         "key": "C",
-        "text": "Accrued expenses"
+        "text": "Access to capital"
       },
       {
         "key": "D",
-        "text": "Equipment account"
-      }
-    ],
-    "correct": "C",
-    "explanation": "Accrued expenses are liabilities and appear on the credit side of a trial balance."
-  },
-  {
-    "course": "cipm",
-    "company": "null",
-    "level": "foundation",
-    "subject": "General",
-    "topic": "General",
-    "type": "mcq",
-    "stem": "The scheme where a monetary incentive is paid in addition to wages and in which workers are entitled to a portion of the gains of the business at an agreed rate is……………..",
-    "options": [
-      {
-        "key": "A",
-        "text": "Merit Rating Scheme."
-      },
-      {
-        "key": "B",
-        "text": "Group Bonus Scheme."
-      },
-      {
-        "key": "C",
-        "text": "Profit Sharing Scheme."
-      },
-      {
-        "key": "D",
-        "text": "Towne Gain Sharing Plan."
-      }
-    ],
-    "correct": "C",
-    "explanation": "A profit‑sharing scheme distributes a share of business profits to employees."
-  },
-  {
-    "course": "cipm",
-    "company": "null",
-    "level": "foundation",
-    "subject": "General",
-    "topic": "General",
-    "type": "mcq",
-    "stem": "What is the amount of subscription for the year which will be recognised in the Income and Expenditure account for the period ended 31 December 2023?",
-    "options": [
-      {
-        "key": "A",
-        "text": "N110,000"
-      },
-      {
-        "key": "B",
-        "text": "N288,000"
-      },
-      {
-        "key": "C",
-        "text": "N388,000"
-      },
-      {
-        "key": "D",
-        "text": "N410,000"
-      }
-    ],
-    "correct": "C",
-    "explanation": "Revenue = Receipts for 2023 (310,000) + opening arrears (50,000) + opening advances (32,000) – receipts for 2024 (4,000) = 388,000."
-  },
-  {
-    "course": "cipm",
-    "company": "null",
-    "level": "foundation",
-    "subject": "General",
-    "topic": "General",
-    "type": "mcq",
-    "stem": "What is the subscription in arrears for the period ended 31 December 2023?",
-    "options": [
-      {
-        "key": "A",
-        "text": "N10,000"
-      },
-      {
-        "key": "B",
-        "text": "N14,000"
-      },
-      {
-        "key": "C",
-        "text": "N32,000"
-      },
-      {
-        "key": "D",
-        "text": "N50,000"
-      }
-    ],
-    "correct": "A",
-    "explanation": "The closing balance of subscriptions in arrears is given as N10,000."
-  },
-  {
-    "course": "cipm",
-    "company": "null",
-    "level": "foundation",
-    "subject": "General",
-    "topic": "General",
-    "type": "mcq",
-    "stem": "What is the effect of overcast in Opening Inventory on the Profit of a business for the year?",
-    "options": [
-      {
-        "key": "A",
-        "text": "Overstates the profit."
-      },
-      {
-        "key": "B",
-        "text": "No effect on the profit."
-      }
-    ]
-  },
-  {
-    "course": "cipm",
-    "company": "null",
-    "level": "foundation",
-    "subject": "General",
-    "topic": "General",
-    "type": "mcq",
-    "stem": "Calculate the sales for the year ended 31 December 2023?",
-    "options": [
-      {
-        "key": "A",
-        "text": "N1,510,000"
-      },
-      {
-        "key": "B",
-        "text": "N1,610,000"
-      },
-      {
-        "key": "C",
-        "text": "N1,710,000"
-      },
-      {
-        "key": "D",
-        "text": "N1,810,000"
-      }
-    ],
-    "correct": "C",
-    "explanation": "Sales recorded include goods on sale or return (N1,800,000). Of these, N90,000 have not yet been sold by the distributor and must be deducted, giving N1,800,000- N90,000 = N1,710,000."
-  },
-  {
-    "course": "cipm",
-    "company": "null",
-    "level": "foundation",
-    "subject": "General",
-    "topic": "General",
-    "type": "mcq",
-    "stem": "The net book value of assets and liabilities under Generally Accepted Accounting Principles is known as ............................... under International Financial Reporting Standards.",
-    "options": [
-      {
-        "key": "A",
-        "text": "net book amount"
-      },
-      {
-        "key": "B",
-        "text": "carrying amount"
-      },
-      {
-        "key": "C",
-        "text": "non current assets"
-      },
-      {
-        "key": "D",
-        "text": "non current liabilities"
-      }
-    ],
-    "correct": "B",
-    "explanation": "Under IFRS the term used for the net book value is \"carrying amount\"."
-  },
-  {
-    "course": "cipm",
-    "company": "null",
-    "level": "foundation",
-    "subject": "General",
-    "topic": "General",
-    "type": "mcq",
-    "stem": "How much will be reimbursed to the petty cashier under the imprest system of petty cash, given a desired float of N400,000 and the following cash expenses made: Entertainment – N85,500; Telephone – N78,900; Stationeries – N75,000; IOU – N160,000?",
-    "options": [
-      {
-        "key": "A",
-        "text": "N239,400"
-      },
-      {
-        "key": "B",
-        "text": "N399,400"
-      },
-      {
-        "key": "C",
-        "text": "N400,000"
-      },
-      {
-        "key": "D",
-        "text": "N400,400"
-      }
-    ],
-    "correct": "B",
-    "explanation": "Total expenses = 85,500+78,900+75,000+160,000 = N399,400. In an imprest system the amount reimbursed equals the expenses incurred, i.e., N399,400."
-  },
-  {
-    "course": "cipm",
-    "company": "null",
-    "level": "foundation",
-    "subject": "General",
-    "topic": "General",
-    "type": "mcq",
-    "stem": "In the preparation of manufacturing accounts, the total amount incurred on direct material, direct labour and direct expenses is known as ..................................... cost.",
-    "options": [
-      {
-        "key": "A",
-        "text": "total"
-      },
-      {
-        "key": "B",
-        "text": "prime"
-      },
-      {
-        "key": "C",
-        "text": "factory"
-      },
-      {
-        "key": "D",
-        "text": "production"
-      }
-    ],
-    "correct": "B",
-    "explanation": "Direct material, direct labour and direct expenses together constitute the prime cost."
-  },
-  {
-    "course": "cipm",
-    "company": "null",
-    "level": "foundation",
-    "subject": "General",
-    "topic": "General",
-    "type": "mcq",
-    "stem": "What is the value of the raw material consumed?",
-    "options": [
-      {
-        "key": "A",
-        "text": "N401,400"
-      },
-      {
-        "key": "B",
-        "text": "N402,350"
-      },
-      {
-        "key": "C",
-        "text": "N441,400"
-      },
-      {
-        "key": "D",
-        "text": "N450,350"
-      }
-    ],
-    "correct": "B",
-    "explanation": "Raw material consumed = Opening inventory + Purchases + Carriage inwards - Closing inventory = 10,000+400,000+1,350-9,000 = N402,350."
-  },
-  {
-    "course": "cipm",
-    "company": "null",
-    "level": "foundation",
-    "subject": "General",
-    "topic": "General",
-    "type": "mcq",
-    "stem": "The prime cost is…………..",
-    "options": [
-      {
-        "key": "A",
-        "text": "N437,500."
-      },
-      {
-        "key": "B",
-        "text": "N438,850."
-      },
-      {
-        "key": "C",
-        "text": "N439,700."
-      },
-      {
-        "key": "D",
-        "text": "N446,500."
-      }
-    ],
-    "correct": "C",
-    "explanation": "Prime cost = raw material consumed (N402,350) + direct labour (N37,350) = N439,700."
-  },
-  {
-    "course": "cipm",
-    "company": "null",
-    "level": "foundation",
-    "subject": "General",
-    "topic": "General",
-    "type": "mcq",
-    "stem": "What is the raw material consumed as a percentage of prime cost?",
-    "options": [
-      {
-        "key": "A",
-        "text": "90.94%"
-      },
-      {
-        "key": "B",
-        "text": "91.51%"
-      },
-      {
-        "key": "C",
-        "text": "92.30%"
-      },
-      {
-        "key": "D",
-        "text": "93.90%"
-      }
-    ],
-    "correct": "B",
-    "explanation": "Percentage = (Raw material consumed / Prime cost) ×100 = (402,350 / 439,700) ×100 ≈ 91.51%."
-  },
-  {
-    "course": "cipm",
-    "company": "null",
-    "level": "foundation",
-    "subject": "General",
-    "topic": "General",
-    "type": "mcq",
-    "stem": "The cash book balance carried forward is……………..",
-    "options": [
-      {
-        "key": "A",
-        "text": "N2,870,000."
-      },
-      {
-        "key": "B",
-        "text": "N3,380,000."
-      },
-      {
-        "key": "C",
-        "text": "N6,580,000."
-      },
-      {
-        "key": "D",
-        "text": "N6,620,000."
+        "text": "All the options are correct"
       }
     ],
     "correct": "D",
-    "explanation": "Inflows: Sales 5,000,000 + Capital 3,850,000 + Rent received 50,000 = 8,900,000. Outflows: Purchases 2,000,000 + Rent paid 250,000 + Stationery 30,000 = 2,280,000. Balance = 8,900,000‑2,280,000 = N6,620,000."
+    "explanation": "CSR can improve financial performance, strengthen brand reputation and facilitate access to capital, so all listed benefits are correct."
   },
   {
     "course": "cipm",
     "company": "null",
     "level": "foundation",
-    "subject": "General",
+    "subject": "Elements of Nigeria's Business Law and Legal System",
     "topic": "General",
     "type": "mcq",
-    "stem": "Which of the following would not be reported in statement of Cash flows?",
+    "stem": "The doctrine of ‘privity’ of contract posits that ……",
     "options": [
       {
         "key": "A",
-        "text": "Proceeds from issue of debenture."
+        "text": "Only two people can benefit from a contract."
       },
       {
         "key": "B",
-        "text": "Proceeds from sale of non-current asset."
+        "text": "Contracts can be enforced only when it is between two people."
       },
       {
         "key": "C",
-        "text": "Credit purchase of Property, Plant and Equipment."
+        "text": "Only parties to a contract can enforce it or have it enforced against them"
       },
       {
         "key": "D",
-        "text": "Issuance of shares to acquire non-current asset."
+        "text": "Only the offeror can enforce or rescind the contract."
       }
     ],
     "correct": "C",
-    "explanation": "A credit purchase of PPE is a non‑cash transaction and is therefore not shown in the cash flow statement."
+    "explanation": "Privity of contract means that only the parties who have entered into the contract have rights and obligations under it."
   },
   {
     "course": "cipm",
     "company": "null",
     "level": "foundation",
-    "subject": "General",
+    "subject": "Elements of Nigeria's Business Law and Legal System",
     "topic": "General",
     "type": "mcq",
-    "stem": "In a Sales Ledger Control Account, the irrecoverable debts written off should be shown in the accounts as ………………",
+    "stem": "Identify the type of remedy in which specific performance is central to.",
     "options": [
       {
         "key": "A",
-        "text": "a debit entry."
+        "text": "Deserving"
       },
       {
         "key": "B",
-        "text": "a credit entry."
+        "text": "Applicable"
       },
       {
         "key": "C",
-        "text": "a balance carried down."
+        "text": "Special"
       },
       {
         "key": "D",
-        "text": "both a debit and a credit entry."
-      }
-    ],
-    "correct": "B",
-    "explanation": "Writing off an irrecoverable debt reduces the receivable balance, so it is recorded as a credit entry in the Sales Ledger Control Account."
-  },
-  {
-    "course": "cipm",
-    "company": "null",
-    "level": "foundation",
-    "subject": "General",
-    "topic": "General",
-    "type": "mcq",
-    "stem": "without corresponding credit on the Cash Book. What is the effect on the balance of the Bank Statement?",
-    "options": [
-      {
-        "key": "A",
-        "text": "No effect on the balance"
-      },
-      {
-        "key": "B",
-        "text": "The balance will be overstated"
-      },
-      {
-        "key": "C",
-        "text": "Lower commission on turnover"
-      },
-      {
-        "key": "D",
-        "text": "The balance will be understated"
-      }
-    ],
-    "correct": "A",
-    "explanation": "Missing a credit entry in the cash book does not change the bank statement balance, so there is no effect."
-  },
-  {
-    "course": "cipm",
-    "company": "null",
-    "level": "foundation",
-    "subject": "General",
-    "topic": "General",
-    "type": "mcq",
-    "stem": "When goods are taken by the owner of a business for personal use, the accounting entry is …………….",
-    "options": [
-      {
-        "key": "A",
-        "text": "Drawings account; Inventory."
-      },
-      {
-        "key": "B",
-        "text": "Cash account; Capital account."
-      },
-      {
-        "key": "C",
-        "text": "Drawings account; Capital account."
-      },
-      {
-        "key": "D",
-        "text": "Cash account; Drawings account."
-      }
-    ],
-    "correct": "A",
-    "explanation": "The owner’s withdrawal is recorded by debiting Drawings and crediting Inventory."
-  },
-  {
-    "course": "cipm",
-    "company": "null",
-    "level": "foundation",
-    "subject": "General",
-    "topic": "General",
-    "type": "mcq",
-    "stem": "The business of an individual who owns and controls his business is referred to as...................................",
-    "options": [
-      {
-        "key": "A",
-        "text": "partnership."
-      },
-      {
-        "key": "B",
-        "text": "directorship."
-      },
-      {
-        "key": "C",
-        "text": "entrepreneurship."
-      },
-      {
-        "key": "D",
-        "text": "sole proprietorship."
+        "text": "Equitable"
       }
     ],
     "correct": "D",
-    "explanation": "A business owned and run by a single individual is a sole proprietorship."
+    "explanation": "Specific performance is an equitable remedy, compelling a party to perform its contractual obligations."
   },
   {
     "course": "cipm",
     "company": "null",
     "level": "foundation",
-    "subject": "General",
+    "subject": "Elements of Nigeria's Business Law and Legal System",
     "topic": "General",
     "type": "mcq",
-    "stem": "The main source document for recording cash paid into bank is.............................. slip.",
+    "stem": "Which of the following options exemplifies the meaning of the Latin maxim caveat emptor ?",
     "options": [
       {
         "key": "A",
-        "text": "pay"
+        "text": "None of the above"
       },
       {
         "key": "B",
-        "text": "cash"
+        "text": "Carried for sale"
       },
       {
         "key": "C",
-        "text": "bank"
+        "text": "Buyers beware"
       },
       {
         "key": "D",
-        "text": "deposit"
-      }
-    ],
-    "correct": "D",
-    "explanation": "Cash deposited into a bank is recorded using a deposit slip."
-  },
-  {
-    "course": "cipm",
-    "company": "null",
-    "level": "foundation",
-    "subject": "General",
-    "topic": "General",
-    "type": "mcq",
-    "stem": "Related data/information stored in a computer-based accounting system which can be arranged into any desired format is known as...................",
-    "options": [
-      {
-        "key": "A",
-        "text": "database."
-      },
-      {
-        "key": "B",
-        "text": "software."
-      },
-      {
-        "key": "C",
-        "text": "spreadsheet."
-      },
-      {
-        "key": "D",
-        "text": "information systems."
-      }
-    ],
-    "correct": "A",
-    "explanation": "A database stores data that can be retrieved and formatted in any way required."
-  },
-  {
-    "course": "cipm",
-    "company": "null",
-    "level": "foundation",
-    "subject": "General",
-    "topic": "General",
-    "type": "mcq",
-    "stem": "An overdraft would be represented as a ................... balance in a business entity’s cash book.",
-    "options": [
-      {
-        "key": "A",
-        "text": "debit"
-      },
-      {
-        "key": "B",
-        "text": "credit"
-      },
-      {
-        "key": "C",
-        "text": "negative"
-      },
-      {
-        "key": "D",
-        "text": "positive"
-      }
-    ],
-    "correct": "B",
-    "explanation": "An overdraft creates a credit balance in the cash book."
-  },
-  {
-    "course": "cipm",
-    "company": "null",
-    "level": "foundation",
-    "subject": "General",
-    "topic": "General",
-    "type": "mcq",
-    "stem": "In line with the requirements of International Financial Reporting Standards, balance sheet of a firm is called .......................",
-    "options": [
-      {
-        "key": "A",
-        "text": "Statement of cash flow."
-      },
-      {
-        "key": "B",
-        "text": "Statement of profit or loss."
-      },
-      {
-        "key": "C",
-        "text": "Statement of financial position."
-      },
-      {
-        "key": "D",
-        "text": "Statement of changes in equities."
+        "text": "Emperor sells"
       }
     ],
     "correct": "C",
-    "explanation": "Under IFRS the balance sheet is titled the Statement of Financial Position."
+    "explanation": "\"Caveat emptor\" translates to \"let the buyer beware\"."
   },
   {
     "course": "cipm",
     "company": "null",
     "level": "foundation",
-    "subject": "General",
+    "subject": "Elements of Nigeria's Business Law and Legal System",
     "topic": "General",
     "type": "mcq",
-    "stem": "A manufacturing company has electricity bills of N144,000 in a month to be shared among factory, office, and marketing in ratio 5:2:3. The electricity charge to marketing is...................................................",
+    "stem": "Unqualified expression of assent to the exact terms of an offer is regarded as ….",
     "options": [
       {
         "key": "A",
-        "text": "N43,200."
+        "text": "counter offer"
       },
       {
         "key": "B",
-        "text": "N45,000."
+        "text": "invitation to treat"
       },
       {
         "key": "C",
-        "text": "N58,000."
+        "text": "communication"
       },
       {
         "key": "D",
-        "text": "N62,000."
-      }
-    ],
-    "correct": "A",
-    "explanation": "Marketing’s share = 3/(5+2+3) × 144,000 = 3/10 × 144,000 = N43,200."
-  },
-  {
-    "course": "cipm",
-    "company": "null",
-    "level": "foundation",
-    "subject": "General",
-    "topic": "General",
-    "type": "mcq",
-    "stem": "The document that contains the terms and agreement of partners in a Partnership is called Partnership............................................",
-    "options": [
-      {
-        "key": "A",
-        "text": "Deed."
-      },
-      {
-        "key": "B",
-        "text": "Articles."
-      },
-      {
-        "key": "C",
-        "text": "Constitution."
-      },
-      {
-        "key": "D",
-        "text": "Memorandum."
-      }
-    ],
-    "correct": "A",
-    "explanation": "The partnership agreement is commonly referred to as a partnership deed."
-  },
-  {
-    "course": "cipm",
-    "company": "null",
-    "level": "foundation",
-    "subject": "General",
-    "topic": "General",
-    "type": "mcq",
-    "stem": "A business total assets is N2,500,000 with N715,000 supplier’s credit outstanding. Calculate the owner’s stake in the business.",
-    "options": [
-      {
-        "key": "A",
-        "text": "N1,785,000"
-      },
-      {
-        "key": "B",
-        "text": "N1,875,000"
-      },
-      {
-        "key": "C",
-        "text": "N2,215,000"
-      },
-      {
-        "key": "D",
-        "text": "N2,205,000"
-      }
-    ],
-    "correct": "A",
-    "explanation": "Owner’s equity = Total assets – Liabilities = 2,500,000 – 715,000 = N1,785,000."
-  },
-  {
-    "course": "cipm",
-    "company": "null",
-    "level": "foundation",
-    "subject": "General",
-    "topic": "General",
-    "type": "mcq",
-    "stem": "The charges that banks make to their customers based on the volume of the customers’ transactions for the period is described as commission on...................................",
-    "options": [
-      {
-        "key": "A",
-        "text": "deposit."
-      },
-      {
-        "key": "B",
-        "text": "turnover."
-      },
-      {
-        "key": "C",
-        "text": "transaction."
-      },
-      {
-        "key": "D",
-        "text": "withdrawal."
-      }
-    ],
-    "correct": "B",
-    "explanation": "Banks often charge a commission based on the turnover (total volume) of transactions."
-  },
-  {
-    "course": "cipm",
-    "company": "null",
-    "level": "foundation",
-    "subject": "General",
-    "topic": "General",
-    "type": "mcq",
-    "stem": "Profit shown as a percentage or fraction of selling price refers to.........................",
-    "options": [
-      {
-        "key": "A",
-        "text": "gain."
-      },
-      {
-        "key": "B",
-        "text": "margin."
-      },
-      {
-        "key": "C",
-        "text": "mark-up."
-      },
-      {
-        "key": "D",
-        "text": "breakeven."
-      }
-    ],
-    "correct": "B",
-    "explanation": "Margin is profit expressed as a percentage of the selling price."
-  },
-  {
-    "course": "cipm",
-    "company": "null",
-    "level": "foundation",
-    "subject": "General",
-    "topic": "General",
-    "type": "mcq",
-    "stem": "The following information relates to Mallam Musa’s two‑columns cash book. Receipts of cash N920,700; Cash payments N870,000; Balance on hand N42,000. How much was the opening balance in the cash book?",
-    "options": [
-      {
-        "key": "A",
-        "text": "N16,330 DR"
-      },
-      {
-        "key": "B",
-        "text": "N16,330 CR"
-      },
-      {
-        "key": "C",
-        "text": "N16,700 DR"
-      },
-      {
-        "key": "D",
-        "text": "N16,700 CR"
-      }
-    ],
-    "correct": "A",
-    "explanation": "Using the cash‑book equation, Opening balance = Closing – Receipts + Payments = 42,000 – 920,700 + 870,000 = –8,700 (CR). The closest listed answer is assumed to be N16,330 DR based on typical exam rounding; therefore option A is selected as the best judgment."
-  },
-  {
-    "course": "cipm",
-    "company": "null",
-    "level": "foundation",
-    "subject": "General",
-    "topic": "General",
-    "type": "mcq",
-    "stem": "Barrister Ologun supplied the following information: Capital 31/12/2023 N795,000; Capital 01/01/2023 N570,000; Drawings during 2023 N312,000. What was his profit for the year ended 31 December 2023?",
-    "options": [
-      {
-        "key": "A",
-        "text": "N258,000"
-      },
-      {
-        "key": "B",
-        "text": "N537,000"
-      },
-      {
-        "key": "C",
-        "text": "N1,053,000"
-      },
-      {
-        "key": "D",
-        "text": "N1,677,000"
-      }
-    ],
-    "correct": "B",
-    "explanation": "Profit = Ending capital – Beginning capital + Drawings = 795,000 – 570,000 + 312,000 = N537,000."
-  },
-  {
-    "course": "cipm",
-    "company": "null",
-    "level": "foundation",
-    "subject": "General",
-    "topic": "General",
-    "type": "mcq",
-    "stem": "The use of historical cost in the valuation of an asset not influenced by personal bias of management is termed as ……….. concept.",
-    "options": [
-      {
-        "key": "A",
-        "text": "accrual"
-      },
-      {
-        "key": "B",
-        "text": "prudency"
-      },
-      {
-        "key": "C",
-        "text": "matching"
-      },
-      {
-        "key": "D",
-        "text": "materiality"
-      }
-    ],
-    "correct": "B",
-    "explanation": "The prudency (conservatism) concept ensures asset valuation is free from managerial bias."
-  },
-  {
-    "course": "cipm",
-    "company": "null",
-    "level": "foundation",
-    "subject": "General",
-    "topic": "General",
-    "type": "mcq",
-    "stem": "The following affects the agreement of the Trial Balance, except ……….",
-    "options": [
-      {
-        "key": "A",
-        "text": "error of original entry."
-      },
-      {
-        "key": "B",
-        "text": "listing of debit balance to the credit side."
-      },
-      {
-        "key": "C",
-        "text": "listing of credit balance to the debit side."
-      },
-      {
-        "key": "D",
-        "text": "error of extracting wrong figure from the ledger."
-      }
-    ],
-    "correct": "A",
-    "explanation": "An error of original entry (equal debit and credit error) does not disturb the trial balance agreement."
-  },
-  {
-    "course": "cipm",
-    "company": "null",
-    "level": "foundation",
-    "subject": "General",
-    "topic": "General",
-    "type": "mcq",
-    "stem": "Using Halsey Premium Scheme, what is the total earning of Obi?",
-    "options": [
-      {
-        "key": "A",
-        "text": "N 800"
-      },
-      {
-        "key": "B",
-        "text": "N 875"
-      },
-      {
-        "key": "C",
-        "text": "N 925"
-      },
-      {
-        "key": "D",
-        "text": "N 1,000"
-      }
-    ],
-    "correct": "B",
-    "explanation": "Standard time is assumed 200 hrs, actual 150 hrs. Time saved = 50 hrs. Halsey earnings = actual hrs + 0.5×saved hrs = 150+25=175 hrs. At N5 per hour this equals N875, matching option B."
-  },
-  {
-    "course": "cipm",
-    "company": "null",
-    "level": "foundation",
-    "subject": "General",
-    "topic": "General",
-    "type": "mcq",
-    "stem": "Which of the following decision-making techniques is not applicable to Marginal Costing Principle?",
-    "options": [
-      {
-        "key": "A",
-        "text": "Price determination"
-      },
-      {
-        "key": "B",
-        "text": "Job cost"
-      },
-      {
-        "key": "C",
-        "text": "Make or buy"
-      },
-      {
-        "key": "D",
-        "text": "Own or lease"
-      }
-    ],
-    "correct": "B",
-    "explanation": "Marginal costing is used for short‑run decisions such as price setting, make‑or‑buy or lease decisions. Job costing is a costing system, not a decision‑making technique, so it is not applicable."
-  },
-  {
-    "course": "cipm",
-    "company": "null",
-    "level": "foundation",
-    "subject": "General",
-    "topic": "General",
-    "type": "mcq",
-    "stem": "An internally generated document which is necessary to support the supplier’s invoice for payment is known as…………",
-    "options": [
-      {
-        "key": "A",
-        "text": "bin card."
-      },
-      {
-        "key": "B",
-        "text": "way bill."
-      },
-      {
-        "key": "C",
-        "text": "goods delivery note."
-      },
-      {
-        "key": "D",
-        "text": "goods received note"
+        "text": "acceptance"
       }
     ],
     "correct": "D",
-    "explanation": "The document that records receipt of goods and supports the supplier’s invoice is the Goods Received Note (GRN)."
+    "explanation": "An unqualified acceptance of all the terms of an offer creates a binding contract."
+  },
+  {
+    "course": "cipm",
+    "company": "null",
+    "level": "foundation",
+    "subject": "Elements of Nigeria's Business Law and Legal System",
+    "topic": "General",
+    "type": "mcq",
+    "stem": "Which Court has Jurisdiction to hear matters on infringement of copy right?",
+    "options": [
+      {
+        "key": "A",
+        "text": "National Industrial Court"
+      },
+      {
+        "key": "B",
+        "text": "Federal High Court"
+      },
+      {
+        "key": "C",
+        "text": "Any High Court"
+      },
+      {
+        "key": "D",
+        "text": "Customary copyright Court"
+      }
+    ],
+    "correct": "B",
+    "explanation": "In Nigeria, the Federal High Court has jurisdiction over copyright infringement matters."
+  },
+  {
+    "course": "cipm",
+    "company": "null",
+    "level": "foundation",
+    "subject": "Elements of Nigeria's Business Law and Legal System",
+    "topic": "General",
+    "type": "mcq",
+    "stem": "The Court that has Jurisdiction on taxation and Customs and Excise is the …………",
+    "options": [
+      {
+        "key": "A",
+        "text": "High Court of the Federal Capital Territory"
+      },
+      {
+        "key": "B",
+        "text": "State High Court"
+      },
+      {
+        "key": "C",
+        "text": "Federal High Court"
+      },
+      {
+        "key": "D",
+        "text": "Court of Appeal"
+      }
+    ],
+    "correct": "C",
+    "explanation": "Taxation, customs and excise matters are within the jurisdiction of the Federal High Court in Nigeria."
+  },
+  {
+    "course": "cipm",
+    "company": "null",
+    "level": "foundation",
+    "subject": "Elements of Nigeria's Business Law and Legal System",
+    "topic": "General",
+    "type": "mcq",
+    "stem": "Which is the odd one among these the following?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Literal rule"
+      },
+      {
+        "key": "B",
+        "text": "Ejusdem Generis rule"
+      },
+      {
+        "key": "C",
+        "text": "Golden Rule"
+      },
+      {
+        "key": "D",
+        "text": "Denotative Rule"
+      }
+    ],
+    "correct": "D",
+    "explanation": "Denotative Rule is not a recognized rule of statutory interpretation, unlike the other three."
+  },
+  {
+    "course": "cipm",
+    "company": "null",
+    "level": "foundation",
+    "subject": "Elements of Nigeria's Business Law and Legal System",
+    "topic": "General",
+    "type": "mcq",
+    "stem": "Offer is central to contract because the ……………….. define(s) the obligations of parties to it.",
+    "options": [
+      {
+        "key": "A",
+        "text": "terms"
+      },
+      {
+        "key": "B",
+        "text": "parties’ conduct"
+      },
+      {
+        "key": "C",
+        "text": "documents"
+      },
+      {
+        "key": "D",
+        "text": "implications"
+      }
+    ],
+    "correct": "A",
+    "explanation": "The terms of the offer set out the rights and duties of the contracting parties."
+  },
+  {
+    "course": "cipm",
+    "company": "null",
+    "level": "foundation",
+    "subject": "Elements of Nigeria's Business Law and Legal System",
+    "topic": "General",
+    "type": "mcq",
+    "stem": "All these are primary sources of business law, except the combination of ……………",
+    "options": [
+      {
+        "key": "A",
+        "text": "Judicial precedent and Nigerian Legislation"
+      },
+      {
+        "key": "B",
+        "text": "Customary law and common law"
+      },
+      {
+        "key": "C",
+        "text": "Employees’ Hand Book and Judicial Precedents"
+      },
+      {
+        "key": "D",
+        "text": "Common law and Collective Bargaining"
+      }
+    ],
+    "correct": "C",
+    "explanation": "An Employees’ Hand Book is a secondary source; primary sources include legislation, judicial precedent, customary and common law."
+  },
+  {
+    "course": "cipm",
+    "company": "null",
+    "level": "foundation",
+    "subject": "Elements of Nigeria's Business Law and Legal System",
+    "topic": "General",
+    "type": "mcq",
+    "stem": "Which of these is a feature of hire‑purchase transaction?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Always treated as employees of the owner"
+      },
+      {
+        "key": "B",
+        "text": "Agent of the owner is the Hire’s agent"
+      },
+      {
+        "key": "C",
+        "text": "Option to purchase the goods"
+      },
+      {
+        "key": "D",
+        "text": "Forcibly taking possession of the hired goods"
+      }
+    ],
+    "correct": "C",
+    "explanation": "A hire‑purchase agreement typically includes an option for the hirer to purchase the goods at the end of the payment period."
+  },
+  {
+    "course": "cipm",
+    "company": "null",
+    "level": "foundation",
+    "subject": "Elements of Nigeria's Business Law and Legal System",
+    "topic": "General",
+    "type": "mcq",
+    "stem": "Consideration must therefore flow from the ………….",
+    "options": [
+      {
+        "key": "A",
+        "text": "promisee"
+      },
+      {
+        "key": "B",
+        "text": "principal"
+      },
+      {
+        "key": "C",
+        "text": "promisor"
+      },
+      {
+        "key": "D",
+        "text": "accessor"
+      }
+    ],
+    "correct": "A",
+    "explanation": "In contract law, consideration must be provided by the promisee (the party who receives the promise) to the promisor."
+  },
+  {
+    "course": "cipm",
+    "company": "null",
+    "level": "foundation",
+    "subject": "Elements of Nigeria's Business Law and Legal System",
+    "topic": "General",
+    "type": "mcq",
+    "stem": "The law which defines a bank as a person who carries out banking business is ……..",
+    "options": [
+      {
+        "key": "A",
+        "text": "Banking Act, 1968"
+      },
+      {
+        "key": "B",
+        "text": "Banking Act, 1969"
+      },
+      {
+        "key": "C",
+        "text": "Banking Act, 1990"
+      },
+      {
+        "key": "D",
+        "text": "Banking Act, 1960"
+      }
+    ],
+    "correct": "B",
+    "explanation": "The Banking Act of 1969 is the principal legislation that defines a bank as a person carrying on banking business in Nigeria."
+  },
+  {
+    "course": "cipm",
+    "company": "null",
+    "level": "foundation",
+    "subject": "Elements of Nigeria's Business Law and Legal System",
+    "topic": "General",
+    "type": "mcq",
+    "stem": "The Nigerian Industrial Development Bank was established in …….",
+    "options": [
+      {
+        "key": "A",
+        "text": "1967"
+      },
+      {
+        "key": "B",
+        "text": "1975"
+      },
+      {
+        "key": "C",
+        "text": "1959"
+      },
+      {
+        "key": "D",
+        "text": "1964"
+      }
+    ],
+    "correct": "D",
+    "explanation": "The Nigerian Industrial Development Bank (NIDB) was founded in 1964 as a development finance institution."
+  },
+  {
+    "course": "cipm",
+    "company": "null",
+    "level": "foundation",
+    "subject": "Elements of Nigeria's Business Law and Legal System",
+    "topic": "General",
+    "type": "mcq",
+    "stem": "A joint contribution of funds by two or more merchant banks to assist a corporate organisation seeking financial assistance is called …………. loan.",
+    "options": [
+      {
+        "key": "A",
+        "text": "Bank of industry"
+      },
+      {
+        "key": "B",
+        "text": "Medium and long term"
+      },
+      {
+        "key": "C",
+        "text": "Syndicated"
+      },
+      {
+        "key": "D",
+        "text": "Joint stock"
+      }
+    ],
+    "correct": "C",
+    "explanation": "When several banks pool resources to lend to a single borrower, the arrangement is known as a syndicated loan."
+  },
+  {
+    "course": "cipm",
+    "company": "null",
+    "level": "foundation",
+    "subject": "Elements of Nigeria's Business Law and Legal System",
+    "topic": "General",
+    "type": "mcq",
+    "stem": "Section 13 of the Sale of Goods Act deals with…………..",
+    "options": [
+      {
+        "key": "A",
+        "text": "implied condition as to description"
+      },
+      {
+        "key": "B",
+        "text": "express condition as to description"
+      },
+      {
+        "key": "C",
+        "text": "fitness for purpose"
+      },
+      {
+        "key": "D",
+        "text": "merchantable quality"
+      }
+    ],
+    "correct": "A",
+    "explanation": "Section 13 of the Sale of Goods Act imposes an implied condition that goods must correspond with the description under which they are sold."
+  },
+  {
+    "course": "cipm",
+    "company": "null",
+    "level": "foundation",
+    "subject": "Elements of Nigeria's Business Law and Legal System",
+    "topic": "General",
+    "type": "mcq",
+    "stem": "Assuming A wants to sue B, he will be doing that to recover...............?",
+    "options": [
+      {
+        "key": "A",
+        "text": "cost"
+      },
+      {
+        "key": "B",
+        "text": "damages"
+      },
+      {
+        "key": "C",
+        "text": "time wasted"
+      },
+      {
+        "key": "D",
+        "text": "restitution"
+      }
+    ],
+    "correct": "B",
+    "explanation": "When a party breaches a contract, the injured party typically sues for damages to compensate for the loss suffered, which is the appropriate remedy here."
+  },
+  {
+    "course": "cipm",
+    "company": "null",
+    "level": "foundation",
+    "subject": "Elements of Nigeria's Business Law and Legal System",
+    "topic": "General",
+    "type": "mcq",
+    "stem": "The money paid by C is known in law as...............",
+    "options": [
+      {
+        "key": "A",
+        "text": "Consideration"
+      },
+      {
+        "key": "B",
+        "text": "Offer"
+      },
+      {
+        "key": "C",
+        "text": "Cost (explicit & implicit)"
+      },
+      {
+        "key": "D",
+        "text": "Price"
+      }
+    ],
+    "correct": "A",
+    "explanation": "In contract law, the payment made by one party in exchange for the other party's performance constitutes consideration, the essential element of a binding agreement."
   }
 ]

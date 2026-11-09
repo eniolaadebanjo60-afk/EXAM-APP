@@ -9,44 +9,37 @@ const pdfPath = args[0];
 const course = args[1] || "ican";
 const company = args[2] || null;
 const level = args[3] || null;
+const exactSubject = args[4] || null;
 
-if (!pdfPath) {
-  console.log("Usage: node extract.js <path-to-pdf> <course> <company> <level>");
+if (!pdfPath || !exactSubject) {
+  console.log("Usage: node extract.js <path-to-pdf> <course> <company> <level> <exactSubject>");
+  console.log("Example: node extract.js ./cipm.pdf cipm null foundation \"Principles of Management\"");
   process.exit(1);
 }
 
 async function extractQuestions() {
-  console.log(`Reading ${pdfPath} for course: ${course}, company: ${company || 'N/A'}, level: ${level || 'N/A'}...`);
+  console.log(`Reading ${pdfPath} for subject: "${exactSubject}"...`);
   
   const dataBuffer = new Uint8Array(fs.readFileSync(pdfPath));
-  const loadingTask = pdfjsLib.getDocument({ 
-    data: dataBuffer,
-    useSystemFonts: true 
-  });
+  const loadingTask = pdfjsLib.getDocument({ data: dataBuffer, useSystemFonts: true });
   const pdfDoc = await loadingTask.promise;
   
   let fullText = "";
   for (let i = 1; i <= pdfDoc.numPages; i++) {
     const page = await pdfDoc.getPage(i);
     const content = await page.getTextContent();
-    
     let pageText = "";
     let lastY = null;
-    
     for (const item of content.items) {
-      if (lastY !== null && Math.abs(item.transform[5] - lastY) > 5) {
-        pageText += "\n"; 
-      } else if (lastY !== null) {
-        pageText += " "; 
-      }
+      if (lastY !== null && Math.abs(item.transform[5] - lastY) > 5) pageText += "\n"; 
+      else if (lastY !== null) pageText += " "; 
       pageText += item.str;
       lastY = item.transform[5];
     }
-    
     fullText += pageText + "\n\n";
   }
 
-  const chunkSize = 4000; 
+  const chunkSize = 2500; 
   const chunks = [];
   for (let i = 0; i < fullText.length; i += chunkSize) {
     chunks.push(fullText.substring(i, i + chunkSize));
@@ -61,15 +54,14 @@ async function extractQuestions() {
     
     Ignore table of contents, forewords, and examiner reports. Focus ONLY on the actual questions.
     
-    The correct answer is the option that is highlighted, bolded, or marked in the text. If you cannot find a highlight, use your best judgment to solve the question.
+    The correct answer is the option that is highlighted, bolded, or marked in the text. If there are no highlights, use your best judgment to solve the question.
     
-    Return a valid JSON array. Do not use markdown. Only return the JSON array.
+    CRITICAL RULE: For every question you extract, the "subject" field MUST BE EXACTLY: "${exactSubject}". Do not change it. Do not guess it.
     
-    If it is a theory question, use this format:
-    {"course": "${course}",${company ? `"company": "${company}",` : ""}${level ? `"level": "${level}",` : ""}"subject": "General","topic": "General","type": "theory","stem": "The question text","options": [],"correct": "N/A","official_solution": "The suggested solution text.","explanation": "N/A"}
+    Return a valid JSON array. Extract a MAXIMUM of 5 questions per response. Do not use markdown. Write the entire JSON array as one single continuous line with no line breaks.
     
-    If it is a multiple choice question, use this format:
-    {"course": "${course}",${company ? `"company": "${company}",` : ""}${level ? `"level": "${level}",` : ""}"subject": "General","topic": "General","type": "mcq","stem": "The question text","options": [{"key": "A", "text": "..."}, {"key": "B", "text": "..."}, {"key": "C", "text": "..."}, {"key": "D", "text": "..."}],"correct": "A","explanation": "Why A is correct."}
+    Use this format:
+    {"course": "${course}",${company ? `"company": "${company}",` : ""}${level ? `"level": "${level}",` : ""}"subject": "${exactSubject}","topic": "General","type": "mcq","stem": "The question text","options": [{"key": "A", "text": "..."}, {"key": "B", "text": "..."}, {"key": "C", "text": "..."}, {"key": "D", "text": "..."}],"correct": "A","explanation": "Why A is correct."}
     
     If there are no questions in this chunk, return [].
     
@@ -87,8 +79,6 @@ async function extractQuestions() {
           model: "openai/gpt-oss-120b",
           messages: [{ role: "user", content: prompt }],
           temperature: 0.1,
-          max_tokens: 4000,
-          response_format: { type: "json_object" }
         }),
       });
 
@@ -96,45 +86,39 @@ async function extractQuestions() {
       
       if (!response.ok) {
         console.log(`GROQ ERROR on chunk ${i + 1}:`, JSON.stringify(result));
-        await new Promise((resolve) => setTimeout(resolve, 30000));
+        await new Promise((resolve) => setTimeout(resolve, 45000));
         continue;
       }
 
-      let content = result.choices?.[0]?.message?.content || "{}";
+      let content = result.choices?.[0]?.message?.content || "[]";
+      content = content.replace(/\n/g, "").replace(/\r/g, "").trim();
+      content = content.replace(/```json/g, "").replace(/```/g, "").trim();
+      
+      const firstBracket = content.indexOf("[");
+      const lastBracket = content.lastIndexOf("]");
+      if (firstBracket !== -1 && lastBracket !== -1) {
+        content = content.substring(firstBracket, lastBracket + 1);
+      }
       
       try {
         const parsed = JSON.parse(content);
-        
-        let questionsArray = [];
-        if (Array.isArray(parsed)) {
-          questionsArray = parsed;
-        } else if (parsed.questions && Array.isArray(parsed.questions)) {
-          questionsArray = parsed.questions;
-        } else {
-           const keys = Object.keys(parsed);
-           if (keys.length > 0 && Array.isArray(parsed[keys[0]])) {
-             questionsArray = parsed[keys[0]];
-           }
-        }
-
-        if (questionsArray.length > 0) {
-          allExtractedQuestions = [...allExtractedQuestions, ...questionsArray];
-          console.log(`Found ${questionsArray.length} questions.`);
+        if (Array.isArray(parsed) && parsed.length > 0) {
+          allExtractedQuestions = [...allExtractedQuestions, ...parsed];
+          console.log(`Found ${parsed.length} questions.`);
         }
       } catch (parseError) {
-        console.log(`PARSE ERROR on chunk ${i + 1}.`);
-        console.log("Raw output:", content.substring(0, 200));
+        console.log(`PARSE ERROR on chunk ${i + 1}. AI returned:`, content.substring(0, 150));
       }
       
     } catch (err) {
       console.error(`NETWORK ERROR on chunk ${i + 1}:`, err.message);
     }
     
-    await new Promise((resolve) => setTimeout(resolve, 15000));
+    await new Promise((resolve) => setTimeout(resolve, 45000));
   }
 
-  fs.writeFileSync("extracted_questions.json", JSON.stringify(allExtractedQuestions, null, 2));
-  console.log(`\nDone! Extracted ${allExtractedQuestions.length} questions to extracted_questions.json`);
+  fs.writeFileSync(`extracted_${course}_${level}.json`, JSON.stringify(allExtractedQuestions, null, 2));
+  console.log(`\nDone! Extracted ${allExtractedQuestions.length} questions to extracted_${course}_${level}.json`);
 }
 
 extractQuestions();
