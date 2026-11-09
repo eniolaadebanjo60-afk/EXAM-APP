@@ -10,14 +10,27 @@ const supabase = createClient(
 );
 
 async function upload() {
-  const rawData = fs.readFileSync("extracted_questions.json", "utf-8");
+  const args = process.argv.slice(2);
+  const fileName = args[0];
+
+  if (!fileName) {
+    console.error("Please provide a file name to upload. Example: node upload.js extracted_file.json");
+    return;
+  }
+
+  if (!fs.existsSync(fileName)) {
+    console.error(`File ${fileName} not found.`);
+    return;
+  }
+
+  const rawData = fs.readFileSync(fileName, "utf-8");
   const questions = JSON.parse(rawData);
 
   const sanitizedQuestions = questions.map((q) => ({
     course: q.course || "",
     company: q.company || "",
     level: q.level || "",
-    subject: q.subject || "General",
+    subject: q.subject || "",
     topic: q.topic || "General",
     type: q.type || "mcq",
     stem: q.stem || "",
@@ -27,7 +40,7 @@ async function upload() {
     official_solution: q.official_solution || ""
   }));
 
-  console.log(`Uploading ${sanitizedQuestions.length} questions to Supabase...`);
+  console.log(`Uploading ${sanitizedQuestions.length} questions from ${fileName} to Supabase...`);
 
   const { data, error } = await supabase
     .from("questions")

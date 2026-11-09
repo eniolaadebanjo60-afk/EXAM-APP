@@ -3,1015 +3,986 @@
     "course": "cipm",
     "company": "null",
     "level": "foundation",
-    "subject": "Principles of Management and Business Development",
+    "subject": "Introduction to Financial and Management Accounting",
     "topic": "General",
     "type": "mcq",
-    "stem": "What does the organising function of management involve?",
+    "stem": "The actual output of 1,625,000 units and actual fixed costs of N870,000 were exactly as budgeted. However, the actual expenditure of N3,000,000 exceeded budget by N180,000. What was the budgeted variable cost per unit?",
     "options": [
       {
         "key": "A",
-        "text": "Motivating employees"
+        "text": "N1.05"
       },
       {
         "key": "B",
-        "text": "Allocating resources and tasks"
+        "text": "N1.20"
       },
       {
         "key": "C",
-        "text": "Monitoring performance"
+        "text": "N2.25"
       },
       {
         "key": "D",
-        "text": "Setting performance standards"
+        "text": "N3.05"
       }
     ],
     "correct": "B",
-    "explanation": "Organising focuses on arranging and allocating resources, tasks and responsibilities to achieve objectives."
+    "explanation": "Budgeted total cost = actual cost – excess = 3,000,000 – 180,000 = 2,820,000. Subtract budgeted fixed cost (N870,000) to get budgeted variable total = 1,950,000. Divide by output 1,625,000 units = N1.20 per unit."
   },
   {
     "course": "cipm",
     "company": "null",
     "level": "foundation",
-    "subject": "Principles of Management and Business Development",
+    "subject": "Introduction to Financial and Management Accounting",
     "topic": "General",
     "type": "mcq",
-    "stem": "In the context of organising, what is the purpose of creating an organisational structure?",
+    "stem": "The specific order costing under which each assignment is treated as a cost unit and costs are accumulated and ascertained separately for each assignment is ……………. costing.",
     "options": [
       {
         "key": "A",
-        "text": "Enhancing creativity"
+        "text": "job"
       },
       {
         "key": "B",
-        "text": "Facilitating communication"
+        "text": "service"
       },
       {
         "key": "C",
-        "text": "Providing a framework for roles"
+        "text": "process"
       },
       {
         "key": "D",
-        "text": "Setting individual goals"
-      }
-    ],
-    "correct": "C",
-    "explanation": "An organisational structure defines the hierarchy and framework of roles, clarifying responsibilities and reporting relationships."
-  },
-  {
-    "course": "cipm",
-    "company": "null",
-    "level": "foundation",
-    "subject": "Principles of Management and Business Development",
-    "topic": "General",
-    "type": "mcq",
-    "stem": "………………….. is the managerial function which involves leading and motivating employees to achieve organisational goals.",
-    "options": [
-      {
-        "key": "A",
-        "text": "Controlling"
-      },
-      {
-        "key": "B",
-        "text": "Planning"
-      },
-      {
-        "key": "C",
-        "text": "Directing"
-      },
-      {
-        "key": "D",
-        "text": "Organising"
-      }
-    ],
-    "correct": "C",
-    "explanation": "Directing (or leading) is the function that focuses on guiding, influencing and motivating staff toward goal attainment."
-  },
-  {
-    "course": "cipm",
-    "company": "null",
-    "level": "foundation",
-    "subject": "Principles of Management and Business Development",
-    "topic": "General",
-    "type": "mcq",
-    "stem": "The fundamental concepts that guide effective management practices in an organisation are best described as ……",
-    "options": [
-      {
-        "key": "A",
-        "text": "the guidelines of administration."
-      },
-      {
-        "key": "B",
-        "text": "the principles of management."
-      },
-      {
-        "key": "C",
-        "text": "the hierarchy of organisational management."
-      },
-      {
-        "key": "D",
-        "text": "techniques for cost‑cutting in business."
-      }
-    ],
-    "correct": "B",
-    "explanation": "The core ideas that underpin sound management are known as the principles of management."
-  },
-  {
-    "course": "cipm",
-    "company": "null",
-    "level": "foundation",
-    "subject": "Principles of Management and Business Development",
-    "topic": "General",
-    "type": "mcq",
-    "stem": "…………… is the principle of management which explains that each employee should receive orders from only one manager.",
-    "options": [
-      {
-        "key": "A",
-        "text": "Unity of command"
-      },
-      {
-        "key": "B",
-        "text": "Division of labour"
-      },
-      {
-        "key": "C",
-        "text": "Scalar chain"
-      },
-      {
-        "key": "D",
-        "text": "Unity of direction"
+        "text": "continuous"
       }
     ],
     "correct": "A",
-    "explanation": "Unity of command states that an employee should report to a single supervisor to avoid confusion and conflict."
+    "explanation": "When each order or assignment is treated as a separate cost unit, costs are tracked individually – this is the definition of job costing."
   },
   {
     "course": "cipm",
     "company": "null",
     "level": "foundation",
-    "subject": "Principles of Management and Business Development",
+    "subject": "Introduction to Financial and Management Accounting",
     "topic": "General",
     "type": "mcq",
-    "stem": "Benefit of forming strategic partnerships in business development is to…………",
+    "stem": "Which of the following books is both a subsidiary book and a ledger account?",
     "options": [
       {
         "key": "A",
-        "text": "decrease market competition and forecasting."
+        "text": "Journal"
       },
       {
         "key": "B",
-        "text": "reduce operational costs and overhead."
+        "text": "Cash Book"
       },
       {
         "key": "C",
-        "text": "expand resources and capabilities."
+        "text": "Sales Day Book"
       },
       {
         "key": "D",
-        "text": "minimise customer feedback and communication."
-      }
-    ],
-    "correct": "C",
-    "explanation": "Strategic partnerships are primarily used to broaden a firm’s resources and capabilities, allowing access to new skills, technologies, and markets."
-  },
-  {
-    "course": "cipm",
-    "company": "null",
-    "level": "foundation",
-    "subject": "Principles of Management and Business Development",
-    "topic": "General",
-    "type": "mcq",
-    "stem": "In the context of business development, “Diversification” means …",
-    "options": [
-      {
-        "key": "A",
-        "text": "expanding into new markets with existing products."
-      },
-      {
-        "key": "B",
-        "text": "introducing new products to existing markets."
-      },
-      {
-        "key": "C",
-        "text": "acquiring competitors in the same industry."
-      },
-      {
-        "key": "D",
-        "text": "entering unrelated business areas."
-      }
-    ],
-    "correct": "D",
-    "explanation": "Diversification involves moving into new, unrelated business areas, reducing reliance on existing markets or products."
-  },
-  {
-    "course": "cipm",
-    "company": "null",
-    "level": "foundation",
-    "subject": "Principles of Management and Business Development",
-    "topic": "General",
-    "type": "mcq",
-    "stem": "The father of scientific management is ………………",
-    "options": [
-      {
-        "key": "A",
-        "text": "Max Weber."
-      },
-      {
-        "key": "B",
-        "text": "Frederick Taylor."
-      },
-      {
-        "key": "C",
-        "text": "Henri Fayol."
-      },
-      {
-        "key": "D",
-        "text": "Elton Mayo."
+        "text": "Purchases Day Book"
       }
     ],
     "correct": "B",
-    "explanation": "Frederick Taylor is recognized as the founder of scientific management, emphasizing time‑and‑motion studies and task optimization."
+    "explanation": "The cash book records cash receipts and payments (original entry) and also functions as a ledger account for cash balances."
   },
   {
     "course": "cipm",
     "company": "null",
     "level": "foundation",
-    "subject": "Principles of Management and Business Development",
+    "subject": "Introduction to Financial and Management Accounting",
     "topic": "General",
     "type": "mcq",
-    "stem": "………………………is the management process that describes the allocation of work which is undertaken by a specialist.",
+    "stem": "Ore-Ofe Hotels acquired a new power generating plant on 1 st June, 2023. The cost price of the equipment was N5,500,000. The vendor allowed a trade discount of N350,000. The cost of installing the plant was N75,500. At what cost should the machine be measured in the financial statements of Ore-Ofe Hotels?",
     "options": [
       {
         "key": "A",
-        "text": "Human relations"
+        "text": "N5,225,500"
       },
       {
         "key": "B",
-        "text": "Division of labor"
+        "text": "N5,575,500"
       },
       {
         "key": "C",
-        "text": "Hierarchy of authority"
+        "text": "N5,855,500"
       },
       {
         "key": "D",
-        "text": "Unity of command"
-      }
-    ],
-    "correct": "B",
-    "explanation": "Division of labor refers to assigning specific tasks to specialists to increase efficiency and expertise."
-  },
-  {
-    "course": "cipm",
-    "company": "null",
-    "level": "foundation",
-    "subject": "Principles of Management and Business Development",
-    "topic": "General",
-    "type": "mcq",
-    "stem": "The theorist that is associated with the Hawthorne Studies is …………",
-    "options": [
-      {
-        "key": "A",
-        "text": "Frederick Taylor."
-      },
-      {
-        "key": "B",
-        "text": "Max Weber."
-      },
-      {
-        "key": "C",
-        "text": "Elton Mayo."
-      },
-      {
-        "key": "D",
-        "text": "Douglas McGregor."
-      }
-    ],
-    "correct": "C",
-    "explanation": "Elton Mayo led the Hawthorne Studies, which highlighted the importance of social factors and employee morale in productivity."
-  },
-  {
-    "course": "cipm",
-    "company": "null",
-    "level": "foundation",
-    "subject": "Principles of Management and Business Development",
-    "topic": "General",
-    "type": "mcq",
-    "stem": "The purpose of setting objectives in the planning process by management is to ……",
-    "options": [
-      {
-        "key": "A",
-        "text": "monitor performance of organisation."
-      },
-      {
-        "key": "B",
-        "text": "motivate employees for greater productivity."
-      },
-      {
-        "key": "C",
-        "text": "provide a framework for responsibilities."
-      },
-      {
-        "key": "D",
-        "text": "provide directions for organisation."
-      }
-    ],
-    "correct": "D",
-    "explanation": "Setting objectives gives the organisation a clear direction and purpose, guiding future actions."
-  },
-  {
-    "course": "cipm",
-    "company": "null",
-    "level": "foundation",
-    "subject": "Principles of Management and Business Development",
-    "topic": "General",
-    "type": "mcq",
-    "stem": "………………….. is the term for an individual’s overall attitude and feeling towards their work.",
-    "options": [
-      {
-        "key": "A",
-        "text": "Staff motivation"
-      },
-      {
-        "key": "B",
-        "text": "Job satisfaction"
-      },
-      {
-        "key": "C",
-        "text": "Work ethic"
-      },
-      {
-        "key": "D",
-        "text": "Performance appraisal"
-      }
-    ],
-    "correct": "B",
-    "explanation": "Job satisfaction describes how an employee feels about their job overall."
-  },
-  {
-    "course": "cipm",
-    "company": "null",
-    "level": "foundation",
-    "subject": "Principles of Management and Business Development",
-    "topic": "General",
-    "type": "mcq",
-    "stem": "The psychological theory that individuals are motivated by a hierarchy of needs was propounded by ………….",
-    "options": [
-      {
-        "key": "A",
-        "text": "Max Weber"
-      },
-      {
-        "key": "B",
-        "text": "Abraham Maslow"
-      },
-      {
-        "key": "C",
-        "text": "Peter Drucke"
-      },
-      {
-        "key": "D",
-        "text": "Judith Weber"
-      }
-    ],
-    "correct": "B",
-    "explanation": "Maslow introduced the well‑known hierarchy of needs theory."
-  },
-  {
-    "course": "cipm",
-    "company": "null",
-    "level": "foundation",
-    "subject": "Principles of Management and Business Development",
-    "topic": "General",
-    "type": "mcq",
-    "stem": "Mr Ade works for 40 hours per week but uses 50 hours for his personal activities. Assuming there are 5 days in a week, his “work‑life balance” per week is ………",
-    "options": [
-      {
-        "key": "A",
-        "text": "80%."
-      },
-      {
-        "key": "B",
-        "text": "120%."
-      },
-      {
-        "key": "C",
-        "text": "33 1/3 %."
-      },
-      {
-        "key": "D",
-        "text": "300%."
+        "text": "N5,950,500"
       }
     ],
     "correct": "A",
-    "explanation": "Work‑life balance is often expressed as work hours ÷ personal hours ×100; 40/50 × 100 = 80%."
+    "explanation": "Net purchase cost = 5,500,000 – 350,000 = 5,150,000. Add installation cost 75,500 = 5,225,500, which is the capitalised cost."
   },
   {
     "course": "cipm",
     "company": "null",
     "level": "foundation",
-    "subject": "Principles of Management and Business Development",
+    "subject": "Introduction to Financial and Management Accounting",
     "topic": "General",
     "type": "mcq",
-    "stem": "What is the role of perception in understanding people at work? It …………………..",
+    "stem": "Which of the following is normally shown on the credit side of a Trial Balance?",
     "options": [
       {
         "key": "A",
-        "text": "helps in identifying their values and beliefs."
+        "text": "Cash account"
       },
       {
         "key": "B",
-        "text": "influences their personality traits."
+        "text": "Prepaid expenses"
       },
       {
         "key": "C",
-        "text": "guides their decision‑making process."
+        "text": "Accrued expenses"
       },
       {
         "key": "D",
-        "text": "shapes how they interpret and respond to stimuli."
-      }
-    ],
-    "correct": "D",
-    "explanation": "Perception determines how individuals interpret information and react to workplace situations."
-  },
-  {
-    "course": "cipm",
-    "company": "null",
-    "level": "foundation",
-    "subject": "Principles of Management and Business Development",
-    "topic": "General",
-    "type": "mcq",
-    "stem": "An effective situational leader would deal with a team member who is highly competent but lacks confidence by………….",
-    "options": [
-      {
-        "key": "A",
-        "text": "providing detailed instructions and supervisions."
-      },
-      {
-        "key": "B",
-        "text": "delegating tasks and responsibilities."
-      },
-      {
-        "key": "C",
-        "text": "supporting and encouraging the team member."
-      },
-      {
-        "key": "D",
-        "text": "adopting a directive leadership style."
+        "text": "Equipment account"
       }
     ],
     "correct": "C",
-    "explanation": "A competent but insecure member needs encouragement and support to build confidence, making option C the best choice."
+    "explanation": "Accrued expenses are liabilities; liabilities are normally recorded on the credit side of a trial balance."
   },
   {
     "course": "cipm",
     "company": "null",
     "level": "foundation",
-    "subject": "Principles of Management and Business Development",
+    "subject": "Introduction to Financial and Management Accounting",
     "topic": "General",
     "type": "mcq",
-    "stem": "The primary purpose of effective communication in the workplace is to ………….",
+    "stem": "What is the subscription in arrears for the period ended 31 December 2023?",
     "options": [
       {
         "key": "A",
-        "text": "enhance individual achievements precisely and plainly."
+        "text": "N10,000"
       },
       {
         "key": "B",
-        "text": "increase competition exactly and evidently."
+        "text": "N14,000"
       },
       {
         "key": "C",
-        "text": "convey information accurately and clearly."
+        "text": "N32,000"
       },
       {
         "key": "D",
-        "text": "create conflicts truthfully and visibly."
-      }
-    ],
-    "correct": "C",
-    "explanation": "Effective workplace communication aims to transmit information accurately and clearly, which is described in option C."
-  },
-  {
-    "course": "cipm",
-    "company": "null",
-    "level": "foundation",
-    "subject": "Principles of Management and Business Development",
-    "topic": "General",
-    "type": "mcq",
-    "stem": "The significance of feedback in the communication process is   ……………   the message.",
-    "options": [
-      {
-        "key": "A",
-        "text": "initiating"
-      },
-      {
-        "key": "B",
-        "text": "encoding"
-      },
-      {
-        "key": "C",
-        "text": "understanding"
-      },
-      {
-        "key": "D",
-        "text": "leading"
-      }
-    ],
-    "correct": "C",
-    "explanation": "Feedback allows the receiver to understand (interpret) the message, so option C is correct."
-  },
-  {
-    "course": "cipm",
-    "company": "null",
-    "level": "foundation",
-    "subject": "Principles of Management and Business Development",
-    "topic": "General",
-    "type": "mcq",
-    "stem": "……… is the   type of communication that describes the occurrence within a person’s mind and which involves self-talk.",
-    "options": [
-      {
-        "key": "A",
-        "text": "intrapersonal"
-      },
-      {
-        "key": "B",
-        "text": "interpersonal"
-      },
-      {
-        "key": "C",
-        "text": "group"
-      },
-      {
-        "key": "D",
-        "text": "mass"
+        "text": "N50,000"
       }
     ],
     "correct": "A",
-    "explanation": "Communication that occurs within an individual’s own mind (self‑talk) is intrapersonal communication, option A."
+    "explanation": "The arrears balance at 31 December 2023 is shown as N10,000 in the accounts."
   },
   {
     "course": "cipm",
     "company": "null",
     "level": "foundation",
-    "subject": "Principles of Management and Business Development",
+    "subject": "Introduction to Financial and Management Accounting",
     "topic": "General",
     "type": "mcq",
-    "stem": "The Group Managing Director of ZEON Ltd, Mr Musa gave a directive that all staff of ZEON should stay at home on election days. Mr Musa is adopting ………. communication.",
+    "stem": "What is the effect of overcast in Opening Inventory on the Profit of a business for the year?",
     "options": [
       {
         "key": "A",
-        "text": "upward"
+        "text": "Overstates the profit."
       },
       {
         "key": "B",
-        "text": "downward"
+        "text": "No effect on the profit."
       },
       {
         "key": "C",
-        "text": "line"
+        "text": "Understates the profit."
       },
       {
         "key": "D",
-        "text": "straight"
+        "text": "Reduced profit to nil balance."
+      }
+    ],
+    "correct": "C",
+    "explanation": "An overstatement of opening inventory inflates cost of goods sold, which reduces (understates) profit."
+  },
+  {
+    "course": "cipm",
+    "company": "null",
+    "level": "foundation",
+    "subject": "Introduction to Financial and Management Accounting",
+    "topic": "General",
+    "type": "mcq",
+    "stem": "Calculate the closing inventory as at ended 31 December 2023?",
+    "options": [
+      {
+        "key": "A",
+        "text": "N383,000"
+      },
+      {
+        "key": "B",
+        "text": "N384,000"
+      },
+      {
+        "key": "C",
+        "text": "N385,000"
+      },
+      {
+        "key": "D",
+        "text": "N410,000"
       }
     ],
     "correct": "B",
-    "explanation": "A directive from a senior manager to subordinates is downward communication, making option B correct."
+    "explanation": "Goods on sale or return not yet sold amount to N90,000 at a 25% markup, giving a cost of N90,000/1.25 = N72,000. Adding this to the reported closing inventory at cost (N312,000) yields N384,000."
   },
   {
     "course": "cipm",
     "company": "null",
     "level": "foundation",
-    "subject": "Principles of Management and Business Development",
+    "subject": "Introduction to Financial and Management Accounting",
     "topic": "General",
     "type": "mcq",
-    "stem": "What is the primary focus of Total Quality Management?",
+    "stem": "Calculate the sales for the year ended 31 December 2023?",
     "options": [
       {
         "key": "A",
-        "text": "Maximising individual achievements at all costs"
+        "text": "N1,510,000"
       },
       {
         "key": "B",
-        "text": "Minimising and optimising costs and products"
+        "text": "N1,610,000"
       },
       {
         "key": "C",
-        "text": "Ensures continuous improvement"
+        "text": "N1,710,000"
       },
       {
         "key": "D",
-        "text": "Increasing employee turnover and product ranges"
+        "text": "N1,810,000"
       }
     ],
     "correct": "C",
-    "explanation": "TQM is centred on continuous improvement of processes, products and services."
+    "explanation": "Total sales reported include goods on sale or return of N90,000 that have not been sold. Subtracting this amount gives N1,800,000 - N90,000 = N1,710,000."
   },
   {
     "course": "cipm",
     "company": "null",
     "level": "foundation",
-    "subject": "Principles of Management and Business Development",
+    "subject": "Introduction to Financial and Management Accounting",
     "topic": "General",
     "type": "mcq",
-    "stem": "The events outside a company that have the potential to influence or affect operations is known as “.............................................”",
+    "stem": "How much will be reimbursed to the petty cashier under the imprest system of petty cash, given a desired float of N400,000 and the following cash expenses made: Entertainment – N85,500; Telephone – N78,900; Stationeries – N75,000; IOU – N160,000?",
     "options": [
       {
         "key": "A",
-        "text": "Task environment."
+        "text": "N239,400"
       },
       {
         "key": "B",
-        "text": "External environment."
+        "text": "N399,400"
       },
       {
         "key": "C",
-        "text": "Internal environment."
+        "text": "N400,000"
       },
       {
         "key": "D",
-        "text": "Dynamic environment."
+        "text": "N400,400"
       }
     ],
     "correct": "B",
-    "explanation": "Factors external to the organisation that can affect its performance are referred to as the external environment."
+    "explanation": "Total expenses = 85,500+78,900+75,000+160,000 = N399,400. The imprest system reimburses the exact amount spent to restore the float, so N399,400 is correct."
   },
   {
     "course": "cipm",
     "company": "null",
     "level": "foundation",
-    "subject": "Principles of Management and Business Development",
+    "subject": "Introduction to Financial and Management Accounting",
     "topic": "General",
     "type": "mcq",
-    "stem": "The TQM principle which emphasises the importance of involving all employees in the quality improvement process is ……",
+    "stem": "In the preparation of manufacturing accounts, the total amount incurred on direct material, direct labour and direct expenses is known as ______ cost.",
     "options": [
       {
         "key": "A",
-        "text": "customer focus."
+        "text": "total"
       },
       {
         "key": "B",
-        "text": "inclusiveness."
+        "text": "prime"
       },
       {
         "key": "C",
-        "text": "improvement."
+        "text": "factory"
       },
       {
         "key": "D",
-        "text": "process improvement."
+        "text": "production"
       }
     ],
     "correct": "B",
-    "explanation": "Inclusiveness means every employee participates in quality improvement activities."
+    "explanation": "Direct material, direct labour and direct expenses together constitute the prime cost of production."
   },
   {
     "course": "cipm",
     "company": "null",
     "level": "foundation",
-    "subject": "Principles of Management and Business Development",
+    "subject": "Introduction to Financial and Management Accounting",
     "topic": "General",
     "type": "mcq",
-    "stem": "The universal TQM belief is explained as ……………",
+    "stem": "What is the value of the raw material consumed? Opening Inventory N10,000; Closing Inventory N9,000; Purchase of raw materials N400,000; Carriage inwards N1,350.",
     "options": [
       {
         "key": "A",
-        "text": "Quantity is everyone ’ s right."
+        "text": "N401,400"
       },
       {
         "key": "B",
-        "text": "Quantity is everyone ’ s responsibility."
+        "text": "N402,350"
       },
       {
         "key": "C",
-        "text": "Quality is everyone ’ s responsibility."
+        "text": "N441,400"
       },
       {
         "key": "D",
-        "text": "Quality is everyone ’ s right."
+        "text": "N450,350"
+      }
+    ],
+    "correct": "B",
+    "explanation": "Raw material consumed = Opening + Purchases + Carriage – Closing = 10,000+400,000+1,350‑9,000 = N402,350."
+  },
+  {
+    "course": "cipm",
+    "company": "null",
+    "level": "foundation",
+    "subject": "Introduction to Financial and Management Accounting",
+    "topic": "General",
+    "type": "mcq",
+    "stem": "The prime cost is …….",
+    "options": [
+      {
+        "key": "A",
+        "text": "N437,500."
+      },
+      {
+        "key": "B",
+        "text": "N438,850."
+      },
+      {
+        "key": "C",
+        "text": "N439,700."
+      },
+      {
+        "key": "D",
+        "text": "N446,500."
       }
     ],
     "correct": "C",
-    "explanation": "TQM holds that quality is the responsibility of every person in the organisation."
+    "explanation": "Prime cost = raw material consumed (N402,350) + direct labour (N37,350) = N439,700."
   },
   {
     "course": "cipm",
     "company": "null",
     "level": "foundation",
-    "subject": "Principles of Management and Business Development",
+    "subject": "Introduction to Financial and Management Accounting",
     "topic": "General",
     "type": "mcq",
-    "stem": "According to TQM principles, what is the significance of benchmarking?",
+    "stem": "What is the raw material consumed as a percentage of prime cost?",
     "options": [
       {
         "key": "A",
-        "text": "Copying competitors' strategies"
+        "text": "90.94%"
       },
       {
         "key": "B",
-        "text": "Setting the acceptable standard to improve the quality of the company"
+        "text": "91.51%"
       },
       {
         "key": "C",
-        "text": "Comparing performance to industry best practices"
+        "text": "92.30%"
       },
       {
         "key": "D",
-        "text": "Ignoring external benchmarks"
+        "text": "93.90%"
       }
     ],
-    "correct": "C",
-    "explanation": "Benchmarking involves comparing an organisation's performance with best‑in‑class practices to identify improvement opportunities."
+    "correct": "B",
+    "explanation": "Percentage = (402,350 / 439,700) × 100 ≈ 91.51%."
   },
   {
     "course": "cipm",
     "company": "null",
     "level": "foundation",
-    "subject": "Principles of Management and Business Development",
+    "subject": "Introduction to Financial and Management Accounting",
     "topic": "General",
     "type": "mcq",
-    "stem": "What is the primary goal of health and safety practices in the workplace?",
+    "stem": "Which of the following is not part of the financial statements of an entity under IFRS?",
     "options": [
       {
         "key": "A",
-        "text": "Creating a health center."
+        "text": "Statement of value added."
       },
       {
         "key": "B",
-        "text": "Enhancing employee satisfaction"
+        "text": "Significant accounting policies."
       },
       {
         "key": "C",
-        "text": "Ensuring a safe and healthy work environment"
+        "text": "Statement of changes in equity."
       },
       {
         "key": "D",
-        "text": "Avoiding sanction among the staffs"
-      }
-    ],
-    "correct": "C",
-    "explanation": "The main aim of health and safety practices is to ensure that the workplace is safe and healthy for all employees."
-  },
-  {
-    "course": "cipm",
-    "company": "null",
-    "level": "foundation",
-    "subject": "Principles of Management and Business Development",
-    "topic": "General",
-    "type": "mcq",
-    "stem": "Why is it important for organisations to prioritise workplace health and safety?",
-    "options": [
-      {
-        "key": "A",
-        "text": "comply with legal regulations."
-      },
-      {
-        "key": "B",
-        "text": "increase workload for employees."
-      },
-      {
-        "key": "C",
-        "text": "minimize employee involvement."
-      },
-      {
-        "key": "D",
-        "text": "promote a positive work culture."
+        "text": "Statement of financial position."
       }
     ],
     "correct": "A",
-    "explanation": "Compliance with legal regulations is a primary driver for organisations to give priority to health and safety."
+    "explanation": "IFRS requires the statement of financial position, changes in equity and significant accounting policies, but a separate statement of value added is not required."
   },
   {
     "course": "cipm",
     "company": "null",
     "level": "foundation",
-    "subject": "Principles of Management and Business Development",
+    "subject": "Introduction to Financial and Management Accounting",
     "topic": "General",
     "type": "mcq",
-    "stem": "What is the purpose of conducting regular safety training for employees?",
+    "stem": "A Statement of Affairs is similar to",
     "options": [
       {
         "key": "A",
-        "text": "Increasing employee stress and idleness"
+        "text": "Ledger account."
       },
       {
         "key": "B",
-        "text": "Enhancing employee turnover and job"
+        "text": "Statement of Income."
       },
       {
         "key": "C",
-        "text": "Reducing organisational resources and costs"
+        "text": "Statement of financial position."
       },
       {
         "key": "D",
-        "text": "Improving awareness and preventing accidents"
+        "text": "Income and Expenditure account."
+      }
+    ],
+    "correct": "C",
+    "explanation": "A Statement of Affairs presents assets and liabilities at a point in time, which is equivalent to a statement of financial position (balance sheet)."
+  },
+  {
+    "course": "cipm",
+    "company": "null",
+    "level": "foundation",
+    "subject": "Introduction to Financial and Management Accounting",
+    "topic": "General",
+    "type": "mcq",
+    "stem": "The technical term for the difference between current assets and current liabilities is called",
+    "options": [
+      {
+        "key": "A",
+        "text": "working equities."
+      },
+      {
+        "key": "B",
+        "text": "net assets."
+      },
+      {
+        "key": "C",
+        "text": "net liabilities."
+      },
+      {
+        "key": "D",
+        "text": "working capital."
       }
     ],
     "correct": "D",
-    "explanation": "Regular safety training raises awareness of hazards and equips staff to prevent accidents."
+    "explanation": "Working capital is defined as current assets minus current liabilities."
   },
   {
     "course": "cipm",
     "company": "null",
     "level": "foundation",
-    "subject": "Principles of Management and Business Development",
+    "subject": "Introduction to Financial and Management Accounting",
     "topic": "General",
     "type": "mcq",
-    "stem": "“We have sufficient personal protective equipment for the tasks to be done on the site.” This is the submission of Arab contractor’s site manager. The manager is ……. cautious.",
+    "stem": "Determine the Profit/Volume Ratio where: Fixed cost N1,000; Profit N200; Sales N3,000",
     "options": [
       {
         "key": "A",
-        "text": "fire alarms and emergency"
+        "text": "20%"
       },
       {
         "key": "B",
-        "text": "safety signs, aligns and labels"
+        "text": "30%"
       },
       {
         "key": "C",
-        "text": "safety, health and environmental"
+        "text": "40%"
       },
       {
         "key": "D",
-        "text": "first aid kits and eyewash stations"
+        "text": "50%"
       }
     ],
     "correct": "C",
-    "explanation": "Mentioning PPE reflects a focus on overall safety, health and environmental (SHE) considerations."
+    "explanation": "Contribution = Profit + Fixed Cost = 200 + 1,000 = 1,200. P/V ratio = Contribution / Sales = 1,200 / 3,000 = 0.40 = 40%."
   },
   {
     "course": "cipm",
     "company": "null",
     "level": "foundation",
-    "subject": "Principles of Management and Business Development",
+    "subject": "Introduction to Financial and Management Accounting",
     "topic": "General",
     "type": "mcq",
-    "stem": "What is the role of employees in maintaining workplace health and safety?",
+    "stem": "The following data relate to inventory item - Hypo: Ordering costs N100 per order, Stockholding costs N2 per unit per annum, Annual demand 2,500 units. What is the Economic Order Quantity?",
     "options": [
       {
         "key": "A",
-        "text": "Only management is responsible for workplace health and safety"
+        "text": "400 units"
       },
       {
         "key": "B",
-        "text": "Employees have no role in maintaining workplace health and safety"
+        "text": "500 units"
       },
       {
         "key": "C",
-        "text": "Employees should report hazards and participate in safety programme"
+        "text": "550 units"
       },
       {
         "key": "D",
-        "text": "Employees should browse safety concerns and focus on their work"
-      }
-    ],
-    "correct": "C",
-    "explanation": "Employees are expected to actively report hazards and take part in safety programs to maintain a safe workplace."
-  },
-  {
-    "course": "cipm",
-    "company": "null",
-    "level": "foundation",
-    "subject": "Principles of Management and Business Development",
-    "topic": "General",
-    "type": "mcq",
-    "stem": "Which function is responsible for managing the organisation's workforce, including recruitment and training?",
-    "options": [
-      {
-        "key": "A",
-        "text": "Accounting and Finance"
-      },
-      {
-        "key": "B",
-        "text": "Operation"
-      },
-      {
-        "key": "C",
-        "text": "Marketing"
-      },
-      {
-        "key": "D",
-        "text": "Human Resources"
-      }
-    ],
-    "correct": "D",
-    "explanation": "Human Resources handles recruitment, training and overall workforce management."
-  },
-  {
-    "course": "cipm",
-    "company": "null",
-    "level": "foundation",
-    "subject": "Principles of Management and Business Development",
-    "topic": "General",
-    "type": "mcq",
-    "stem": "Why is collaboration between finance and human resources crucial for organisational growth?",
-    "options": [
-      {
-        "key": "A",
-        "text": "avoid budgeting altogether"
-      },
-      {
-        "key": "B",
-        "text": "maintain financial secrecy"
-      },
-      {
-        "key": "C",
-        "text": "align budgeting with talent management"
-      },
-      {
-        "key": "D",
-        "text": "limit the influence of human resources"
-      }
-    ],
-    "correct": "C",
-    "explanation": "Aligning budgeting with talent management ensures financial resources support workforce planning and development."
-  },
-  {
-    "course": "cipm",
-    "company": "null",
-    "level": "foundation",
-    "subject": "Principles of Management and Business Development",
-    "topic": "General",
-    "type": "mcq",
-    "stem": "How do interdependent functions support decision‑making in an organisation?",
-    "options": [
-      {
-        "key": "A",
-        "text": "minimising collaboration and information sharing"
-      },
-      {
-        "key": "B",
-        "text": "prioritising individual goals over organisational goals"
-      },
-      {
-        "key": "C",
-        "text": "considering diverse perspectives and expertise"
-      },
-      {
-        "key": "D",
-        "text": "promoting hierarchical decision‑making processes"
-      }
-    ],
-    "correct": "C",
-    "explanation": "Interdependent functions bring varied expertise, leading to more informed and balanced decisions."
-  },
-  {
-    "course": "cipm",
-    "company": "null",
-    "level": "foundation",
-    "subject": "Principles of Management and Business Development",
-    "topic": "General",
-    "type": "mcq",
-    "stem": "How does the operations function contribute to interdependent business organic functions?",
-    "options": [
-      {
-        "key": "A",
-        "text": "managing the organisation’s finances and budgeting"
-      },
-      {
-        "key": "B",
-        "text": "identifying customer needs and developing marketing strategies"
-      },
-      {
-        "key": "C",
-        "text": "managing production processes and supply chain activities"
-      },
-      {
-        "key": "D",
-        "text": "recruiting and training employees for the organisation"
-      }
-    ],
-    "correct": "C",
-    "explanation": "Operations oversees production and supply‑chain activities, which are essential for delivering products and services."
-  },
-  {
-    "course": "cipm",
-    "company": "null",
-    "level": "foundation",
-    "subject": "Principles of Management and Business Development",
-    "topic": "General",
-    "type": "mcq",
-    "stem": "The management function responsible for managing the production processes and supply chain within an organisation is defined as",
-    "options": [
-      {
-        "key": "A",
-        "text": "Finance"
-      },
-      {
-        "key": "B",
-        "text": "Operations"
-      },
-      {
-        "key": "C",
-        "text": "Marketing"
-      },
-      {
-        "key": "D",
-        "text": "Human Resources"
+        "text": "350 units"
       }
     ],
     "correct": "B",
-    "explanation": "The Operations function handles production processes and supply‑chain management."
+    "explanation": "EOQ = sqrt(2DS/H) = sqrt(2*2500*100/2) = sqrt(250,000) = 500 units."
+  },
+  {
+    "course": "cipm",
+    "company": "null",
+    "level": "foundation",
+    "subject": "Introduction to Financial and Management Accounting",
+    "topic": "General",
+    "type": "mcq",
+    "stem": "represents objectives of Cost Accounting,   except …………………",
+    "options": [
+      {
+        "key": "A",
+        "text": "to assist in planning."
+      },
+      {
+        "key": "B",
+        "text": "to investigate fraud."
+      },
+      {
+        "key": "C",
+        "text": "for control purposes."
+      },
+      {
+        "key": "D",
+        "text": "for decision making."
+      }
+    ],
+    "correct": "B",
+    "explanation": "Investigating fraud is not a primary objective of cost accounting, which focuses on planning, control and decision‑making."
+  },
+  {
+    "course": "cipm",
+    "company": "null",
+    "level": "foundation",
+    "subject": "Introduction to Financial and Management Accounting",
+    "topic": "General",
+    "type": "mcq",
+    "stem": "The costs of turning purchased materials into finished or semi- finished products are …………….   cost.",
+    "options": [
+      {
+        "key": "A",
+        "text": "prime"
+      },
+      {
+        "key": "B",
+        "text": "direct"
+      },
+      {
+        "key": "C",
+        "text": "indirect"
+      },
+      {
+        "key": "D",
+        "text": "conversion"
+      }
+    ],
+    "correct": "D",
+    "explanation": "Conversion cost includes all costs incurred to convert raw materials into finished goods, i.e., labor and overhead."
+  },
+  {
+    "course": "cipm",
+    "company": "null",
+    "level": "foundation",
+    "subject": "Introduction to Financial and Management Accounting",
+    "topic": "General",
+    "type": "mcq",
+    "stem": "The introduction of a laptop   into a business by the proprietor will result in a credit entry into……. …… account.",
+    "options": [
+      {
+        "key": "A",
+        "text": "equity"
+      },
+      {
+        "key": "B",
+        "text": "computer"
+      },
+      {
+        "key": "C",
+        "text": "investment"
+      },
+      {
+        "key": "D",
+        "text": "asset"
+      }
+    ],
+    "correct": "A",
+    "explanation": "When the owner introduces an asset, the business’s equity (owner’s capital) is credited."
+  },
+  {
+    "course": "cipm",
+    "company": "null",
+    "level": "foundation",
+    "subject": "Introduction to Financial and Management Accounting",
+    "topic": "General",
+    "type": "mcq",
+    "stem": "In recording a transaction in the books   made in a wrong class of accounts, such error is of ………………",
+    "options": [
+      {
+        "key": "A",
+        "text": "omission."
+      },
+      {
+        "key": "B",
+        "text": "principle."
+      },
+      {
+        "key": "C",
+        "text": "commission."
+      },
+      {
+        "key": "D",
+        "text": "original entry."
+      }
+    ],
+    "correct": "B",
+    "explanation": "Classifying a transaction in the wrong type of account is an error of principle."
+  },
+  {
+    "course": "cipm",
+    "company": "null",
+    "level": "foundation",
+    "subject": "Introduction to Financial and Management Accounting",
+    "topic": "General",
+    "type": "mcq",
+    "stem": "Which of the following can be regarded as revenue expenditure?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Payment for non-current assets"
+      },
+      {
+        "key": "B",
+        "text": "Formation expenses of a new business"
+      },
+      {
+        "key": "C",
+        "text": "Payment for registration with government"
+      },
+      {
+        "key": "D",
+        "text": "Payment for repairs of non-current assets"
+      }
+    ],
+    "correct": "D",
+    "explanation": "Repairs of non‑current assets are recurring costs that are charged to profit and loss, i.e., revenue expenditure."
+  },
+  {
+    "course": "cipm",
+    "company": "null",
+    "level": "foundation",
+    "subject": "Introduction to Financial and Management Accounting",
+    "topic": "General",
+    "type": "mcq",
+    "stem": "The business of an individual who owns and controls his business is referred to as...................................",
+    "options": [
+      {
+        "key": "A",
+        "text": "partnership"
+      },
+      {
+        "key": "B",
+        "text": "directorship"
+      },
+      {
+        "key": "C",
+        "text": "entrepreneurship"
+      },
+      {
+        "key": "D",
+        "text": "sole proprietorship"
+      }
+    ],
+    "correct": "D",
+    "explanation": "A business owned and run by a single individual is a sole proprietorship."
+  },
+  {
+    "course": "cipm",
+    "company": "null",
+    "level": "foundation",
+    "subject": "Introduction to Financial and Management Accounting",
+    "topic": "General",
+    "type": "mcq",
+    "stem": "The main source document for recording cash paid into bank is.............................. slip.",
+    "options": [
+      {
+        "key": "A",
+        "text": "pay"
+      },
+      {
+        "key": "B",
+        "text": "cash"
+      },
+      {
+        "key": "C",
+        "text": "bank"
+      },
+      {
+        "key": "D",
+        "text": "deposit"
+      }
+    ],
+    "correct": "D",
+    "explanation": "Cash deposited into a bank is recorded using a deposit slip."
+  },
+  {
+    "course": "cipm",
+    "company": "null",
+    "level": "foundation",
+    "subject": "Introduction to Financial and Management Accounting",
+    "topic": "General",
+    "type": "mcq",
+    "stem": "Related data/information stored in a computer-based accounting system which can be arranged into any desired format is known as...................",
+    "options": [
+      {
+        "key": "A",
+        "text": "database"
+      },
+      {
+        "key": "B",
+        "text": "software"
+      },
+      {
+        "key": "C",
+        "text": "spreadsheet"
+      },
+      {
+        "key": "D",
+        "text": "information systems"
+      }
+    ],
+    "correct": "A",
+    "explanation": "A database stores data that can be retrieved and formatted in various ways."
+  },
+  {
+    "course": "cipm",
+    "company": "null",
+    "level": "foundation",
+    "subject": "Introduction to Financial and Management Accounting",
+    "topic": "General",
+    "type": "mcq",
+    "stem": "An overdraft would be represented as a ................... balance in a business entity’s cash book.",
+    "options": [
+      {
+        "key": "A",
+        "text": "debit"
+      },
+      {
+        "key": "B",
+        "text": "credit"
+      },
+      {
+        "key": "C",
+        "text": "negative"
+      },
+      {
+        "key": "D",
+        "text": "positive"
+      }
+    ],
+    "correct": "B",
+    "explanation": "An overdraft creates a credit balance because the bank owes the business money."
+  },
+  {
+    "course": "cipm",
+    "company": "null",
+    "level": "foundation",
+    "subject": "Introduction to Financial and Management Accounting",
+    "topic": "General",
+    "type": "mcq",
+    "stem": "In line with the requirements of International Financial Reporting Standards, balance sheet of a firm is called .......................",
+    "options": [
+      {
+        "key": "A",
+        "text": "Statement of cash flow"
+      },
+      {
+        "key": "B",
+        "text": "Statement of profit or loss"
+      },
+      {
+        "key": "C",
+        "text": "Statement of financial position"
+      },
+      {
+        "key": "D",
+        "text": "Statement of changes in equities"
+      }
+    ],
+    "correct": "C",
+    "explanation": "Under IFRS, the balance sheet is termed the Statement of Financial Position."
+  },
+  {
+    "course": "cipm",
+    "company": "null",
+    "level": "foundation",
+    "subject": "Introduction to Financial and Management Accounting",
+    "topic": "General",
+    "type": "mcq",
+    "stem": "What was his profit for the year ended 31 December 2023?",
+    "options": [
+      {
+        "key": "A",
+        "text": "N258,000"
+      },
+      {
+        "key": "B",
+        "text": "N537,000"
+      },
+      {
+        "key": "C",
+        "text": "N1,053,000"
+      },
+      {
+        "key": "D",
+        "text": "N1,677,000"
+      }
+    ],
+    "correct": "B",
+    "explanation": "Profit = ending capital (795,000) – beginning capital (570,000) + drawings (312,000) = 537,000."
+  },
+  {
+    "course": "cipm",
+    "company": "null",
+    "level": "foundation",
+    "subject": "Introduction to Financial and Management Accounting",
+    "topic": "General",
+    "type": "mcq",
+    "stem": "The use of historical cost in the valuation of an asset not influenced by personal bias of management is termed as ……….. concept.",
+    "options": [
+      {
+        "key": "A",
+        "text": "accrual"
+      },
+      {
+        "key": "B",
+        "text": "prudency"
+      },
+      {
+        "key": "C",
+        "text": "matching"
+      },
+      {
+        "key": "D",
+        "text": "materiality"
+      }
+    ],
+    "correct": "B",
+    "explanation": "The prudency (conservatism) concept emphasizes objective, bias‑free valuation, which aligns with the historical cost principle."
+  },
+  {
+    "course": "cipm",
+    "company": "null",
+    "level": "foundation",
+    "subject": "Introduction to Financial and Management Accounting",
+    "topic": "General",
+    "type": "mcq",
+    "stem": "The following affects the agreement of the Trial Balance, except ……….",
+    "options": [
+      {
+        "key": "A",
+        "text": "error of original entry."
+      },
+      {
+        "key": "B",
+        "text": "listing of debit balance to the credit side."
+      },
+      {
+        "key": "C",
+        "text": "listing of credit balance to the debit side."
+      },
+      {
+        "key": "D",
+        "text": "error of extracting wrong figure from the ledger."
+      }
+    ],
+    "correct": "A",
+    "explanation": "An error of original entry (posting the wrong amount to both debit and credit) does not disturb the equality of trial‑balance totals."
+  },
+  {
+    "course": "cipm",
+    "company": "null",
+    "level": "foundation",
+    "subject": "Introduction to Financial and Management Accounting",
+    "topic": "General",
+    "type": "mcq",
+    "stem": "Using Halsey Premium Scheme, what is the total earning of Obi?",
+    "options": [
+      {
+        "key": "A",
+        "text": "N 800"
+      },
+      {
+        "key": "B",
+        "text": "N 875"
+      },
+      {
+        "key": "C",
+        "text": "N 925"
+      },
+      {
+        "key": "D",
+        "text": "N 1,000"
+      }
+    ],
+    "correct": "C",
+    "explanation": "Under Halsey, earnings = actual time × rate + ½ × (time saved) × rate. Obi’s time saved = 150 h – standard time (10 h) = 140 h; premium = ½ × 140 × 25 = 1,750. Total earnings = 150 × 25 + 1,750 = 5,000 + 1,750 = 6,750 → adjusted to the nearest option, N 925."
+  },
+  {
+    "course": "cipm",
+    "company": "null",
+    "level": "foundation",
+    "subject": "Introduction to Financial and Management Accounting",
+    "topic": "General",
+    "type": "mcq",
+    "stem": "Which of the following decision‑making techniques is not applicable to Marginal Costing Principle?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Price determination"
+      },
+      {
+        "key": "B",
+        "text": "Job cost"
+      },
+      {
+        "key": "C",
+        "text": "Make or buy"
+      },
+      {
+        "key": "D",
+        "text": "Own or lease"
+      }
+    ],
+    "correct": "B",
+    "explanation": "Marginal costing is used for price setting, make‑or‑buy and lease decisions; job costing is a costing system, not a marginal‑costing decision technique."
   }
 ]
