@@ -1,93 +1,279 @@
 .auth {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  display: grid;
+  place-items: center;
   min-height: 100vh;
   padding: var(--pad);
 }
 
-.auth__card {
-  background: var(--surface);
-  padding: clamp(30px, 8vw, 48px);
-  border-radius: var(--radius);
-  box-shadow: var(--shadow-xl);
+.auth__shell {
   width: 100%;
-  max-width: 420px;
-  text-align: center;
-}
-
-.auth__card h1 {
-  font-size: 1.8rem;
-  margin-bottom: 8px;
-  color: var(--text);
-}
-
-.auth__card p {
-  color: var(--text-muted);
-  margin-bottom: 24px;
-}
-
-.auth__error {
-  background: var(--danger-soft);
-  color: var(--danger);
-  padding: 12px;
-  border-radius: var(--radius-sm);
-  margin-bottom: 16px;
-  font-size: 0.9rem;
-  font-weight: 500;
-}
-
-.auth__form {
+  max-width: 440px;
   display: flex;
   flex-direction: column;
   gap: 16px;
 }
 
-.auth__form input {
+.auth__back {
+  align-self: flex-start;
+}
+
+.auth__card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  padding: clamp(26px, 6vw, 40px);
+  border-radius: 24px;
+  box-shadow: var(--shadow-xl);
   width: 100%;
-  padding: 16px;
-  border: 2px solid var(--border);
-  border-radius: var(--radius-sm);
+}
+
+.auth__brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 800;
+  font-size: 0.98rem;
+  color: var(--text);
+  margin-bottom: 24px;
+}
+
+.auth__mark {
+  width: 32px;
+  height: 32px;
+  border-radius: 10px;
+  display: grid;
+  place-items: center;
+  background: linear-gradient(135deg, #6366f1, #4338ca);
+  color: #ffffff;
+  font-weight: 800;
+}
+
+.auth__tabs {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4px;
+  padding: 4px;
   background: var(--surface-2);
+  border-radius: var(--radius-sm);
+  margin-bottom: 26px;
+}
+
+.auth__tabs button {
+  padding: 10px;
+  border-radius: 10px;
+  font-weight: 700;
+  font-size: 0.92rem;
+  color: var(--text-muted);
+  transition: background 180ms ease, color 180ms ease, box-shadow 180ms ease;
+}
+
+.auth__tabs button.is-active {
+  background: var(--surface);
+  color: var(--text);
+  box-shadow: var(--shadow-md);
+}
+
+.auth__card h1 {
+  font-size: 1.7rem;
+  margin-bottom: 6px;
+  color: var(--text);
+}
+
+.auth__sub {
+  color: var(--text-muted);
+  margin-bottom: 24px;
+}
+
+.auth__error,
+.auth__notice {
+  padding: 12px 14px;
+  border-radius: var(--radius-xs);
+  margin-bottom: 18px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  line-height: 1.5;
+}
+
+.auth__error {
+  background: var(--danger-soft);
+  color: var(--danger);
+  border: 1px solid color-mix(in srgb, var(--danger) 25%, transparent);
+}
+
+.auth__notice {
+  background: var(--success-soft);
+  color: var(--success);
+  border: 1px solid color-mix(in srgb, var(--success) 25%, transparent);
+}
+
+.auth__form {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.auth__field label {
+  display: block;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--text);
+  margin-bottom: 7px;
+}
+
+.auth__field input {
+  width: 100%;
+  height: 50px;
+  padding: 0 14px;
+  border: 1.5px solid var(--border);
+  border-radius: var(--radius-xs);
+  background: var(--surface);
   color: var(--text);
   font-size: 1rem;
-  transition: all 200ms ease;
+  transition: border-color 180ms ease, box-shadow 180ms ease;
 }
 
-.auth__form input:focus {
+.auth__field input::placeholder {
+  color: color-mix(in srgb, var(--text-muted) 70%, transparent);
+}
+
+.auth__field input:focus {
   outline: none;
   border-color: var(--accent);
-  background: var(--surface);
+  box-shadow: 0 0 0 4px var(--accent-soft);
 }
 
-.auth__form button {
+.auth__password {
+  position: relative;
+}
+
+.auth__password input {
+  padding-right: 70px;
+}
+
+.auth__eye {
+  position: absolute;
+  top: 50%;
+  right: 8px;
+  transform: translateY(-50%);
+  padding: 6px 10px;
+  border-radius: 8px;
+  font-size: 0.82rem;
+  font-weight: 700;
+  color: var(--accent);
+  transition: background 150ms ease;
+}
+
+.auth__eye:hover {
+  background: var(--accent-soft);
+}
+
+.auth__submit {
   width: 100%;
-  padding: 16px;
+  height: 52px;
   border-radius: var(--radius-sm);
   background: var(--accent);
-  color: white;
+  color: #ffffff;
   font-weight: 700;
   font-size: 1rem;
-  margin-top: 8px;
-  transition: all 200ms ease;
+  margin-top: 4px;
+  box-shadow: 0 10px 20px -10px rgba(79, 70, 229, 0.8);
+  transition: background 180ms ease, transform 150ms ease;
 }
 
-.auth__form button:hover {
+.auth__submit:hover:not(:disabled) {
   background: var(--accent-hover);
 }
 
-.auth__form button:disabled {
+.auth__submit:active:not(:disabled) {
+  transform: scale(0.98);
+}
+
+.auth__submit:disabled {
   opacity: 0.6;
   cursor: not-allowed;
 }
 
-.auth__toggle {
-  margin-top: 24px;
+.auth__demo {
+  display: block;
+  width: 100%;
+  margin-top: 20px;
+  padding: 6px;
+  text-align: center;
   color: var(--text-muted);
   font-size: 0.9rem;
-  font-weight: 500;
+  font-weight: 600;
+  transition: color 150ms ease;
 }
 
-.auth__toggle:hover {
+.auth__demo:hover {
   color: var(--accent);
+}
+
+.auth__back {
+  animation: riseIn 500ms cubic-bezier(0.16, 1, 0.3, 1) backwards;
+}
+
+.auth__card {
+  animation: riseIn 800ms cubic-bezier(0.16, 1, 0.3, 1) 120ms backwards;
+}
+
+.auth__tabs {
+  position: relative;
+}
+
+.auth__tabs::before {
+  content: "";
+  position: absolute;
+  top: 4px;
+  bottom: 4px;
+  left: 4px;
+  width: calc(50% - 4px);
+  background: var(--surface);
+  border-radius: 10px;
+  box-shadow: var(--shadow-md);
+  transition: transform 320ms cubic-bezier(0.34, 1.2, 0.64, 1);
+}
+
+.auth__tabs[data-mode="signup"]::before {
+  transform: translateX(100%);
+}
+
+.auth__tabs button {
+  position: relative;
+  z-index: 1;
+}
+
+.auth__tabs button.is-active {
+  background: transparent;
+  box-shadow: none;
+}
+
+.auth__field {
+  animation: riseIn 400ms cubic-bezier(0.16, 1, 0.3, 1) backwards;
+}
+
+.auth__error {
+  animation: shake 450ms ease;
+}
+
+.auth__notice {
+  animation: riseIn 400ms cubic-bezier(0.16, 1, 0.3, 1) backwards;
+}
+
+.auth__submit {
+  position: relative;
+  overflow: hidden;
+}
+
+.auth__submit::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(110deg, transparent 30%, rgba(255, 255, 255, 0.35) 50%, transparent 70%);
+  transform: translateX(-120%);
+  transition: transform 650ms ease;
+  pointer-events: none;
+}
+
+.auth__submit:hover:not(:disabled)::after {
+  transform: translateX(120%);
 }

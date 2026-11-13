@@ -1,49 +1,95 @@
 :root {
-  --bg: #f8fafc;
-  --bg-gradient: radial-gradient(circle at top, #ffffff 0%, #f1f5f9 100%);
+  --bg: #f6f7fb;
+  --bg-gradient:
+    radial-gradient(70% 45% at 50% 0%, #e9ebff 0%, rgba(246, 247, 251, 0) 100%),
+    linear-gradient(#f6f7fb, #f6f7fb);
   --surface: #ffffff;
-  --surface-2: #f8fafc;
-  
+  --surface-2: #f3f4f9;
+
   --text: #0f172a;
-  --text-muted: #64748b;
+  --text-muted: #5b6478;
   --accent: #4f46e5;
   --accent-hover: #4338ca;
+  --accent-soft: #eef0ff;
   --accent-contrast: #ffffff;
-  --border: #e2e8f0;
-  
-  --success: #10b981;
+  --border: #e3e6ef;
+
+  --success: #059669;
   --success-soft: #ecfdf5;
-  --danger: #ef4444;
+  --danger: #dc2626;
   --danger-soft: #fef2f2;
+  --warn: #d97706;
+  --warn-soft: #fffbeb;
 
   --radius: 20px;
   --radius-sm: 14px;
-  
-  --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.05);
-  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
-  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.05), 0 4px 6px -2px rgba(0, 0, 0, 0.02);
-  --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.05), 0 10px 10px -5px rgba(0, 0, 0, 0.02);
+  --radius-xs: 10px;
 
-  --font-body: "Inter", system-ui, -apple-system, sans-serif;
-  --maxw: 720px;
+  --shadow-sm: 0 1px 2px rgba(15, 23, 42, 0.06);
+  --shadow-md: 0 4px 10px -2px rgba(15, 23, 42, 0.06), 0 2px 4px -2px rgba(15, 23, 42, 0.04);
+  --shadow-lg: 0 14px 24px -8px rgba(15, 23, 42, 0.1), 0 4px 8px -4px rgba(15, 23, 42, 0.04);
+  --shadow-xl: 0 28px 40px -12px rgba(15, 23, 42, 0.14), 0 8px 12px -6px rgba(15, 23, 42, 0.05);
+
+  --font-body: "Inter", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --maxw: 740px;
   --pad: clamp(16px, 5vw, 32px);
+
+  --font-display: "Space Grotesk", "Inter", system-ui, sans-serif;
+
+  --orb-a: rgba(99, 102, 241, 0.22);
+  --orb-b: rgba(56, 189, 248, 0.2);
+  --orb-c: rgba(168, 85, 247, 0.16);
+  --bg-dots: radial-gradient(circle, rgba(79, 70, 229, 0.24) 1px, transparent 1.5px);
+  --dots-size: 26px 26px;
+  --dots-mask: radial-gradient(ellipse 75% 60% at 50% 25%, #000 0%, transparent 100%);
+  --dots-anim: none;
 }
 
 [data-room="exam"] {
-  --bg: #0f172a;
-  --bg-gradient: radial-gradient(circle at top, #1e293b 0%, #0f172a 100%);
-  --surface: #1e293b;
-  --surface-2: #334155;
-  
-  --text: #f8fafc;
-  --text-muted: #94a3b8;
+  --bg: #0b1020;
+  --bg-gradient:
+    radial-gradient(70% 45% at 50% 0%, #1b2250 0%, rgba(11, 16, 32, 0) 100%),
+    linear-gradient(#0b1020, #0b1020);
+  --surface: #151b2e;
+  --surface-2: #1e2640;
+
+  --text: #f1f5f9;
+  --text-muted: #9aa5bd;
   --accent: #6366f1;
-  --accent-hover: #818cf8;
+  --accent-hover: #7578f3;
+  --accent-soft: rgba(99, 102, 241, 0.16);
   --accent-contrast: #ffffff;
-  --border: #334155;
-  
+  --border: #28314d;
+
   --success: #34d399;
-  --success-soft: rgba(52, 211, 153, 0.1);
+  --success-soft: rgba(52, 211, 153, 0.12);
   --danger: #f87171;
-  --danger-soft: rgba(248, 113, 113, 0.1);
+  --danger-soft: rgba(248, 113, 113, 0.12);
+  --warn: #fbbf24;
+  --warn-soft: rgba(251, 191, 36, 0.12);
+
+  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.3);
+  --shadow-md: 0 4px 10px -2px rgba(0, 0, 0, 0.35);
+  --shadow-lg: 0 14px 24px -8px rgba(0, 0, 0, 0.45);
+  --shadow-xl: 0 28px 40px -12px rgba(0, 0, 0, 0.55);
+
+  --orb-a: rgba(99, 102, 241, 0.38);
+  --orb-b: rgba(56, 189, 248, 0.22);
+  --orb-c: rgba(139, 92, 246, 0.32);
+  --bg-dots:
+    radial-gradient(1.6px 1.6px at 8% 14%, #ffffff 50%, transparent 100%),
+    radial-gradient(1px 1px at 22% 62%, #cfe0ff 50%, transparent 100%),
+    radial-gradient(1.4px 1.4px at 34% 28%, #ffffff 50%, transparent 100%),
+    radial-gradient(1px 1px at 47% 80%, #ffffff 50%, transparent 100%),
+    radial-gradient(1.8px 1.8px at 58% 12%, #bcd2ff 50%, transparent 100%),
+    radial-gradient(1px 1px at 66% 48%, #ffffff 50%, transparent 100%),
+    radial-gradient(1.4px 1.4px at 78% 72%, #ffffff 50%, transparent 100%),
+    radial-gradient(1px 1px at 86% 22%, #cfe0ff 50%, transparent 100%),
+    radial-gradient(1.6px 1.6px at 93% 58%, #ffffff 50%, transparent 100%),
+    radial-gradient(1px 1px at 15% 88%, #ffffff 50%, transparent 100%),
+    radial-gradient(1.2px 1.2px at 40% 52%, #cfe0ff 50%, transparent 100%),
+    radial-gradient(1px 1px at 72% 90%, #ffffff 50%, transparent 100%);
+  --dots-size: 100% 100%;
+  --dots-mask: none;
+  --dots-anim: twinkle 6s ease-in-out infinite alternate;
 }

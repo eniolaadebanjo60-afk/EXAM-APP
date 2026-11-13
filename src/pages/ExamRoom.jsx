@@ -4,6 +4,7 @@ import { supabase } from "../lib/supabase";
 import { saveExamState, loadExamState, clearExamState } from "../lib/examStorage";
 import QuestionCard from "../components/QuestionCard";
 import Timer from "../components/Timer";
+import ResultSummary, { toReviewItem } from "../components/ResultSummary";
 import "../styles/ExamRoom.css";
 
 const EXAM_SECONDS = 60 * 10;
@@ -17,7 +18,7 @@ export default function ExamRoom() {
 
   const [questions, setQuestions] = useState([]);
   const [loading, setLoading] = useState(true);
-  
+
   const [index, setIndex] = useState(0);
   const [history, setHistory] = useState({});
   const [submitted, setSubmitted] = useState(false);
@@ -26,7 +27,7 @@ export default function ExamRoom() {
 
   useEffect(() => {
     document.documentElement.setAttribute("data-room", "exam");
-    
+
     const saved = loadExamState();
     if (saved && saved.course === course && saved.company === company && saved.level === level) {
       setIndex(saved.index);
@@ -35,13 +36,13 @@ export default function ExamRoom() {
     } else {
       clearExamState();
     }
-    
+
     async function fetchQuestions() {
       let query = supabase.from("questions").select("*");
       if (course) query = query.eq("course", course);
       if (company) query = query.eq("company", company);
       if (level) query = query.eq("level", level);
-      
+
       const { data, error } = await query;
       if (error) {
         console.error(error);
@@ -51,7 +52,7 @@ export default function ExamRoom() {
       setLoading(false);
       setIsLoaded(true);
     }
-    
+
     fetchQuestions();
 
     return () => document.documentElement.removeAttribute("data-room");
@@ -65,8 +66,8 @@ export default function ExamRoom() {
 
   if (loading) {
     return (
-      <div className="practice__loading" data-room="exam">
-        <div className="practice__spinner"></div>
+      <div className="page-loading" data-room="exam">
+        <div className="spinner"></div>
         <span>Loading exam...</span>
       </div>
     );
@@ -74,8 +75,11 @@ export default function ExamRoom() {
 
   if (questions.length === 0) {
     return (
-      <div className="practice__loading" data-room="exam">
+      <div className="page-loading" data-room="exam">
         <span>No exam questions found for this course.</span>
+        <button className="btn" onClick={() => navigate(-1)}>
+          Go back
+        </button>
       </div>
     );
   }
@@ -85,10 +89,11 @@ export default function ExamRoom() {
   const progress = ((index + 1) / total) * 100;
   const currentAnswers = history[q.id] || [];
   const chosen = currentAnswers[currentAnswers.length - 1] || null;
+  const answeredCount = questions.filter((item) => (history[item.id] || []).length > 0).length;
 
   function pick(key) {
     if (submitted || chosen === key) return;
-    
+
     if (key === "SKIP") {
       next();
       return;
@@ -121,91 +126,65 @@ export default function ExamRoom() {
     clearExamState();
   }
 
-  const correctCount = Object.entries(history).filter(
-    ([qid, answers]) => {
-      const finalAnswer = answers[answers.length - 1];
-      return questions.find((m) => m.id === qid)?.correct === finalAnswer;
-    }
-  ).length;
+  const correctCount = Object.entries(history).filter(([qid, answers]) => {
+    const finalAnswer = answers[answers.length - 1];
+    return questions.find((m) => m.id === qid)?.correct === finalAnswer;
+  }).length;
 
   if (submitted) {
     const secondGuesses = questions.filter((m) => (history[m.id] || []).length > 1);
+    const firstInstinctRight = secondGuesses.filter((m) => history[m.id][0] === m.correct).length;
     const missed = questions.filter((m) => {
       const qHistory = history[m.id] || [];
       const finalAnswer = qHistory[qHistory.length - 1];
       return finalAnswer && finalAnswer !== m.correct;
     });
 
+    const insight =
+      secondGuesses.length > 0
+        ? {
+            title: "Replay insight",
+            text: `You changed your answer on ${secondGuesses.length} question(s).${
+              firstInstinctRight > 0 ? " Your first instinct was right on some of them!" : ""
+            }`,
+          }
+        : null;
+
     return (
-      <div className="exam exam--result">
-        <div className="exam__result-card">
-          <p className="exam__result-label">Final score</p>
-          <p className="exam__result-score">
-            {correctCount}<span> / {total}</span>
-          </p>
-          <p className="exam__result-msg">
-            {correctCount === total ? "Perfect. Sharp." : `${missed.length} to review below.`}
-          </p>
-        </div>
-
-        {secondGuesses.length > 0 && (
-          <div className="exam__replay-stat">
-            <h3>Replay Insight</h3>
-            <p>
-              You changed your answer on <strong>{secondGuesses.length}</strong> question(s). 
-              {secondGuesses.filter(m => history[m.id][0] === m.correct).length > 0 && " Your first instinct was right on some of them!"}
-            </p>
-          </div>
-        )}
-
-        {missed.length > 0 && (
-          <section className="exam__review">
-            <h2 className="exam__review-title">Solution Corner</h2>
-            {missed.map((m) => {
-              const picked = history[m.id][history[m.id].length - 1];
-              const pickedText = m.options?.find((o) => o.key === picked)?.text ?? picked;
-              const correctText = m.options?.find((o) => o.key === m.correct)?.text ?? m.correct;
-              return (
-                <article key={m.id} className="review-card">
-                  <p className="review-card__stem">{m.stem}</p>
-                  <div className="review-card__row">
-                    <span className="review-card__label">You picked</span>
-                    <span className="review-card__wrong">{picked}. {pickedText}</span>
-                  </div>
-                  <div className="review-card__row">
-                    <span className="review-card__label">Correct</span>
-                    <span className="review-card__right">{m.correct}. {correctText}</span>
-                  </div>
-                  <p className="review-card__explain">{m.explanation}</p>
-                </article>
-              );
-            })}
-          </section>
-        )}
-
-        <div className="exam__actions">
-          <button className="exam__btn exam__btn--primary" onClick={restart}>
-            Try again
-          </button>
-          <button className="exam__btn" onClick={() => navigate("/home")}>
-            Back to Home
-          </button>
-        </div>
-      </div>
+      <ResultSummary
+        label="Final score"
+        correct={correctCount}
+        total={total}
+        message={correctCount === total ? "Perfect. Sharp." : `${missed.length} to review below.`}
+        insight={insight}
+        reviewTitle="Solution Corner"
+        review={missed.map((m) => {
+          const qHistory = history[m.id];
+          return toReviewItem(m, qHistory[qHistory.length - 1]);
+        })}
+      >
+        <button className="btn btn--primary" onClick={restart}>
+          Try again
+        </button>
+        <button className="btn" onClick={() => navigate("/home")}>
+          Back to Home
+        </button>
+      </ResultSummary>
     );
   }
 
+  const isTheory = q.type === "theory" || !q.options || q.options.length === 0;
+
   return (
     <div className="exam">
-      <div className="exam__back-header">
-        <button className="exam__back-btn" onClick={() => navigate(-1)}>
+      <header className="exam__bar">
+        <button className="back-btn" onClick={() => navigate(-1)}>
           ← Back
         </button>
-      </div>
-
-      <header className="exam__bar">
         <Timer seconds={timeLeft} onTick={setTimeLeft} onEnd={submit} />
-        <span className="exam__count">{index + 1} / {total}</span>
+        <span className="exam__count">
+          {index + 1} / {total}
+        </span>
       </header>
 
       <div className="exam__progress">
@@ -213,41 +192,55 @@ export default function ExamRoom() {
       </div>
 
       <main className="exam__body">
-        <QuestionCard 
-          question={q} 
-          chosen={chosen} 
-          revealed={false} 
-          onPick={pick} 
-          isTheory={q.type === "theory" || !q.options || q.options.length === 0}
+        <QuestionCard
+          key={q.id}
+          question={q}
+          chosen={chosen}
+          revealed={false}
+          onPick={pick}
+          isTheory={isTheory}
         />
       </main>
 
-      <div className="exam__nav-grid">
-        {questions.map((item, i) => {
-          const hasAnswer = (history[item.id] || []).length > 0;
-          return (
-            <button 
-              key={item.id}
-              className={`exam__nav-dot ${hasAnswer ? "is-answered" : ""} ${i === index ? "is-current" : ""}`}
-              onClick={() => setIndex(i)}
-            >
-              {i + 1}
-            </button>
-          );
-        })}
-      </div>
+      <section className="exam__palette" aria-label="Question navigator">
+        <div className="exam__palette-head">
+          <h2>Questions</h2>
+          <span>
+            {answeredCount} of {total} answered
+          </span>
+        </div>
+
+        <div className="exam__nav-grid">
+          {questions.map((item, i) => {
+            const hasAnswer = (history[item.id] || []).length > 0;
+            return (
+              <button
+                key={item.id}
+                className={`exam__nav-dot ${hasAnswer ? "is-answered" : ""} ${
+                  i === index ? "is-current" : ""
+                }`}
+                onClick={() => setIndex(i)}
+                aria-label={`Question ${i + 1}${hasAnswer ? ", answered" : ""}`}
+                aria-current={i === index ? "true" : undefined}
+              >
+                {i + 1}
+              </button>
+            );
+          })}
+        </div>
+      </section>
 
       <footer className="exam__footer">
-        <button className="exam__btn" onClick={prev} disabled={index === 0}>
+        <button className="btn" onClick={prev} disabled={index === 0}>
           ← Back
         </button>
 
         {index < total - 1 ? (
-          <button className="exam__btn exam__btn--primary" onClick={next}>
+          <button className="btn btn--primary" onClick={next}>
             Next →
           </button>
         ) : (
-          <button className="exam__btn exam__btn--primary" onClick={submit}>
+          <button className="btn btn--primary" onClick={submit}>
             Submit exam
           </button>
         )}
