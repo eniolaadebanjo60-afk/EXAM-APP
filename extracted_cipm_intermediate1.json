@@ -1,0 +1,727 @@
+[
+  {
+    "course": "cipm",
+    "company": "null",
+    "level": "intermediate1",
+    "subject": "Fundamentals of Economics",
+    "topic": "General",
+    "type": "mcq",
+    "stem": "In the long- run, potential GNP is a variable because……….. I. technological change takes place. II. the quantity of labour and capital is not fixed. III. unemployment is not constant.",
+    "options": [
+      {
+        "key": "A",
+        "text": "I only"
+      },
+      {
+        "key": "B",
+        "text": "II only"
+      },
+      {
+        "key": "C",
+        "text": "I and II only"
+      },
+      {
+        "key": "D",
+        "text": "I and III only"
+      }
+    ],
+    "correct": "C",
+    "explanation": "Potential GNP depends on technology (I) and the amounts of labour and capital (II); unemployment is assumed to be at its natural rate in the long run, so III is not a factor."
+  },
+  {
+    "course": "cipm",
+    "company": "null",
+    "level": "intermediate1",
+    "subject": "Fundamentals of Economics",
+    "topic": "General",
+    "type": "mcq",
+    "stem": "A technical relationship between the maximum quantity of a product produced and the various input sets employed at a given time indicates the…………..",
+    "options": [
+      {
+        "key": "A",
+        "text": "production function."
+      },
+      {
+        "key": "B",
+        "text": "utility function."
+      },
+      {
+        "key": "C",
+        "text": "marginal rate of commodity substitution."
+      },
+      {
+        "key": "D",
+        "text": "marginal rate of technical substitution."
+      }
+    ],
+    "correct": "A",
+    "explanation": "The production function relates output quantity to the combination of inputs used."
+  },
+  {
+    "course": "cipm",
+    "company": "null",
+    "level": "intermediate1",
+    "subject": "Fundamentals of Economics",
+    "topic": "General",
+    "type": "mcq",
+    "stem": "The table below shows the hypothetical values for the marginal utilities of chicken and fish in a particular household. Quantity  Marginal utility of chicken  Marginal utility of fish 1  24  9 2  18  8 3  12  5 4  6  1 If the consumer’s money income is ₦5, the price of chicken is ₦2 and the price of fish is ₦1. How many chickens will maximise the consumer’s utility?",
+    "options": [
+      {
+        "key": "A",
+        "text": "1"
+      },
+      {
+        "key": "B",
+        "text": "2"
+      },
+      {
+        "key": "C",
+        "text": "3"
+      },
+      {
+        "key": "D",
+        "text": "4"
+      }
+    ],
+    "correct": "B",
+    "explanation": "Allocate budget to equalise marginal utility per Naira: MU/P for chicken units are 12,9,6,3; for fish 9,8,5,1. Buying chicken (2 N), fish (1 N), and a second chicken (2 N) uses the ₦5 budget and gives the highest total MU, resulting in 2 chickens."
+  },
+  {
+    "course": "cipm",
+    "company": "null",
+    "level": "intermediate1",
+    "subject": "Fundamentals of Economics",
+    "topic": "General",
+    "type": "mcq",
+    "stem": "The table below shows the hypothetical values for the marginal utilities of chicken and fish in a particular household. Quantity  Marginal utility of chicken  Marginal utility of fish 1  24  9 2  18  8 3  12  5 4  6  1 If the consumer’s money income is ₦5, the price of chicken is ₦2 and the price of fish is ₦1. How many fish will maximise the consumer’s utility?",
+    "options": [
+      {
+        "key": "A",
+        "text": "1"
+      },
+      {
+        "key": "B",
+        "text": "2"
+      },
+      {
+        "key": "C",
+        "text": "3"
+      },
+      {
+        "key": "D",
+        "text": "4"
+      }
+    ],
+    "correct": "A",
+    "explanation": "Following the same MU/P optimisation, only one unit of fish is purchased (the first fish with MU/P = 9) before the budget is exhausted."
+  },
+  {
+    "course": "cipm",
+    "company": "null",
+    "level": "intermediate1",
+    "subject": "Fundamentals of Economics",
+    "topic": "General",
+    "type": "mcq",
+    "stem": "The table below shows the hypothetical values for the marginal utilities of chicken and fish in a particular household. Quantity  Marginal utility of chicken  Marginal utility of fish 1  24  9 2  18  8 3  12  5 4  6  1 If the consumer’s money income is ₦5, the price of chicken is ₦2 and the price of fish is ₦1. What is the total utility of the consumer at the point where the utility of the consumer is maximised, given that U(C, F) = 10C + 30F?",
+    "options": [
+      {
+        "key": "A",
+        "text": "60"
+      },
+      {
+        "key": "B",
+        "text": "50"
+      },
+      {
+        "key": "C",
+        "text": "40"
+      },
+      {
+        "key": "D",
+        "text": "30"
+      }
+    ],
+    "correct": "B",
+    "explanation": "The optimal bundle is C = 2 chickens and F = 1 fish. Substituting into U = 10C + 30F gives 10×2 + 30×1 = 50."
+  },
+  {
+    "course": "cipm",
+    "company": "null",
+    "level": "intermediate1",
+    "subject": "Fundamentals of Economics",
+    "topic": "General",
+    "type": "mcq",
+    "stem": "The problems associated with estimating national income statistics exclude the……",
+    "options": [
+      {
+        "key": "A",
+        "text": "problems of double counting."
+      },
+      {
+        "key": "B",
+        "text": "inadequate and unreliable data."
+      },
+      {
+        "key": "C",
+        "text": "unrecorded services."
+      },
+      {
+        "key": "D",
+        "text": "stock of resources."
+      }
+    ],
+    "correct": "D",
+    "explanation": "Stock of resources is not a problem in estimating national income; the other three are common estimation issues."
+  },
+  {
+    "course": "cipm",
+    "company": "null",
+    "level": "intermediate1",
+    "subject": "Fundamentals of Economics",
+    "topic": "General",
+    "type": "mcq",
+    "stem": "In a product market, the following structures exist, except a/an…………. market.",
+    "options": [
+      {
+        "key": "A",
+        "text": "foreign exchange"
+      },
+      {
+        "key": "B",
+        "text": "monopolistic competitive"
+      },
+      {
+        "key": "C",
+        "text": "perfect competitive"
+      },
+      {
+        "key": "D",
+        "text": "oligopoly"
+      }
+    ],
+    "correct": "A",
+    "explanation": "Foreign exchange is a financial market, not a product market structure."
+  },
+  {
+    "course": "cipm",
+    "company": "null",
+    "level": "intermediate1",
+    "subject": "Fundamentals of Economics",
+    "topic": "General",
+    "type": "mcq",
+    "stem": "An economic concept that describes how an economic agent ranks his/her wants in order of priority is the …..",
+    "options": [
+      {
+        "key": "A",
+        "text": "opportunity cost."
+      },
+      {
+        "key": "B",
+        "text": "real cost."
+      },
+      {
+        "key": "C",
+        "text": "order of preference."
+      },
+      {
+        "key": "D",
+        "text": "scale of preference."
+      }
+    ],
+    "correct": "C",
+    "explanation": "The term \"order of preference\" (or preference ordering) refers to ranking wants by priority."
+  },
+  {
+    "course": "cipm",
+    "company": "null",
+    "level": "intermediate1",
+    "subject": "Fundamentals of Economics",
+    "topic": "General",
+    "type": "mcq",
+    "stem": "Which of the following items is not included in estimating the gross domestic product (GDP)?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Income from employment."
+      },
+      {
+        "key": "B",
+        "text": "Royalties from companies."
+      },
+      {
+        "key": "C",
+        "text": "Rents on properties."
+      },
+      {
+        "key": "D",
+        "text": "Earnings from abroad."
+      }
+    ],
+    "correct": "D",
+    "explanation": "GDP measures domestic production only; earnings from abroad are excluded (they belong to GNP)."
+  },
+  {
+    "course": "cipm",
+    "company": "null",
+    "level": "intermediate1",
+    "subject": "Fundamentals of Economics",
+    "topic": "General",
+    "type": "mcq",
+    "stem": "Economic development indicators are measured by? I. Increase in per capita income. II. Sustained increase in the level of real output. III. Structural changes in the economy.",
+    "options": [
+      {
+        "key": "A",
+        "text": "I and II."
+      },
+      {
+        "key": "B",
+        "text": "II and III."
+      },
+      {
+        "key": "C",
+        "text": "I and II."
+      },
+      {
+        "key": "D",
+        "text": "I, II and III."
+      }
+    ],
+    "correct": "D",
+    "explanation": "All three statements are commonly used indicators of economic development."
+  },
+  {
+    "course": "cipm",
+    "company": "null",
+    "level": "intermediate1",
+    "subject": "Fundamentals of Economics",
+    "topic": "General",
+    "type": "mcq",
+    "stem": "Difference between the gross domestic product and the gross national product is the…",
+    "options": [
+      {
+        "key": "A",
+        "text": "total interest payment."
+      },
+      {
+        "key": "B",
+        "text": "net income from abroad."
+      },
+      {
+        "key": "C",
+        "text": "total tax and interest payment."
+      },
+      {
+        "key": "D",
+        "text": "net internally generated income."
+      }
+    ],
+    "correct": "B",
+    "explanation": "GNP equals GDP plus net factor income from abroad, so the difference is net income from abroad."
+  },
+  {
+    "course": "cipm",
+    "company": "null",
+    "level": "intermediate1",
+    "subject": "Fundamentals of Economics",
+    "topic": "General",
+    "type": "mcq",
+    "stem": "The headquarters of the African Development Bank is situated in…",
+    "options": [
+      {
+        "key": "A",
+        "text": "Abidjan."
+      },
+      {
+        "key": "B",
+        "text": "Lomé."
+      },
+      {
+        "key": "C",
+        "text": "Abuja."
+      },
+      {
+        "key": "D",
+        "text": "Accra."
+      }
+    ],
+    "correct": "A",
+    "explanation": "The African Development Bank’s headquarters are located in Abidjan, Côte d'Ivoire."
+  },
+  {
+    "course": "cipm",
+    "company": "null",
+    "level": "intermediate1",
+    "subject": "Fundamentals of Economics",
+    "topic": "General",
+    "type": "mcq",
+    "stem": "The loan advances from the World Bank to developing countries are mainly to support…",
+    "options": [
+      {
+        "key": "A",
+        "text": "political restructuring."
+      },
+      {
+        "key": "B",
+        "text": "infrastructural development."
+      },
+      {
+        "key": "C",
+        "text": "exchange rate management."
+      },
+      {
+        "key": "D",
+        "text": "human rights initiatives."
+      }
+    ],
+    "correct": "B",
+    "explanation": "World Bank loans primarily fund infrastructure projects such as roads, schools, and utilities."
+  },
+  {
+    "course": "cipm",
+    "company": "null",
+    "level": "intermediate1",
+    "subject": "Fundamentals of Economics",
+    "topic": "General",
+    "type": "mcq",
+    "stem": "A market can be best described as a/an … goods and services.",
+    "options": [
+      {
+        "key": "A",
+        "text": "opportunity for buying and selling"
+      },
+      {
+        "key": "B",
+        "text": "location for buying and selling"
+      },
+      {
+        "key": "C",
+        "text": "framework that links buyers and sellers of"
+      },
+      {
+        "key": "D",
+        "text": "geographical location for buying and selling"
+      }
+    ],
+    "correct": "C",
+    "explanation": "A market is a framework that links buyers and sellers of goods and services."
+  },
+  {
+    "course": "cipm",
+    "company": "null",
+    "level": "intermediate1",
+    "subject": "Fundamentals of Economics",
+    "topic": "General",
+    "type": "mcq",
+    "stem": "The price which equates the quantity demanded and quantity supplied of a particular commodity is the … price.",
+    "options": [
+      {
+        "key": "A",
+        "text": "market"
+      },
+      {
+        "key": "B",
+        "text": "producers’"
+      },
+      {
+        "key": "C",
+        "text": "consumers’"
+      },
+      {
+        "key": "D",
+        "text": "marketing board"
+      }
+    ],
+    "correct": "A",
+    "explanation": "The equilibrium price, also called the market price, is where quantity demanded equals quantity supplied."
+  },
+  {
+    "course": "cipm",
+    "company": "null",
+    "level": "intermediate1",
+    "subject": "Fundamentals of Economics",
+    "topic": "General",
+    "type": "mcq",
+    "stem": "The persistent increase in the general price level in a society is …………..",
+    "options": [
+      {
+        "key": "A",
+        "text": "taxation"
+      },
+      {
+        "key": "B",
+        "text": "inflation"
+      },
+      {
+        "key": "C",
+        "text": "interest rate"
+      },
+      {
+        "key": "D",
+        "text": "exchange rate"
+      }
+    ],
+    "correct": "B",
+    "explanation": "A continual rise in the overall price level is defined as inflation."
+  },
+  {
+    "course": "cipm",
+    "company": "null",
+    "level": "intermediate1",
+    "subject": "Fundamentals of Economics",
+    "topic": "General",
+    "type": "mcq",
+    "stem": "If the value of cross elasticity of demand between two goods is positive, the goods can be ………… goods.",
+    "options": [
+      {
+        "key": "A",
+        "text": "substitute"
+      },
+      {
+        "key": "B",
+        "text": "complementary"
+      },
+      {
+        "key": "C",
+        "text": "inferior"
+      },
+      {
+        "key": "D",
+        "text": "normal"
+      }
+    ],
+    "correct": "A",
+    "explanation": "Positive cross‑price elasticity indicates that an increase in the price of one good raises the demand for the other, characteristic of substitute goods."
+  },
+  {
+    "course": "cipm",
+    "company": "null",
+    "level": "intermediate1",
+    "subject": "Fundamentals of Economics",
+    "topic": "General",
+    "type": "mcq",
+    "stem": "National income estimates can be over‑estimated due to problems associated …………..",
+    "options": [
+      {
+        "key": "A",
+        "text": "incomplete statistical data"
+      },
+      {
+        "key": "B",
+        "text": "wrong time of computation."
+      },
+      {
+        "key": "C",
+        "text": "changes in prices of goods within the year."
+      },
+      {
+        "key": "D",
+        "text": "double counting of data ."
+      }
+    ],
+    "correct": "D",
+    "explanation": "If the same income or output is counted more than once, the aggregate figure is inflated, leading to an over‑estimate of national income."
+  },
+  {
+    "course": "cipm",
+    "company": "null",
+    "level": "intermediate1",
+    "subject": "Fundamentals of Economics",
+    "topic": "General",
+    "type": "mcq",
+    "stem": "The economic function of government excludes ……………….",
+    "options": [
+      {
+        "key": "A",
+        "text": "redistribution of income."
+      },
+      {
+        "key": "B",
+        "text": "providing subsidies for international agencies"
+      },
+      {
+        "key": "C",
+        "text": "reallocation of resources."
+      },
+      {
+        "key": "D",
+        "text": "poverty alleviation."
+      }
+    ],
+    "correct": "B",
+    "explanation": "Providing subsidies to international agencies is not a core economic function of a government, unlike redistribution, resource allocation, or poverty alleviation."
+  },
+  {
+    "course": "cipm",
+    "company": "null",
+    "level": "intermediate1",
+    "subject": "Fundamentals of Economics",
+    "topic": "General",
+    "type": "mcq",
+    "stem": "When the marginal utility of a product is negative, the total utility of the product is ………………",
+    "options": [
+      {
+        "key": "A",
+        "text": "declining."
+      },
+      {
+        "key": "B",
+        "text": "rising."
+      },
+      {
+        "key": "C",
+        "text": "constant."
+      },
+      {
+        "key": "D",
+        "text": "undecided."
+      }
+    ],
+    "correct": "A",
+    "explanation": "Negative marginal utility means each additional unit reduces overall satisfaction, causing total utility to fall."
+  },
+  {
+    "course": "cipm",
+    "company": "null",
+    "level": "intermediate1",
+    "subject": "Fundamentals of Economics",
+    "topic": "General",
+    "type": "mcq",
+    "stem": "The following are various forms of money, except ………..",
+    "options": [
+      {
+        "key": "A",
+        "text": "coins."
+      },
+      {
+        "key": "B",
+        "text": "demand deposit."
+      },
+      {
+        "key": "C",
+        "text": "bank notes."
+      },
+      {
+        "key": "D",
+        "text": "bank tellers."
+      }
+    ],
+    "correct": "D",
+    "explanation": "Bank tellers are not a form of money, unlike coins, demand deposits, and bank notes."
+  },
+  {
+    "course": "cipm",
+    "company": "null",
+    "level": "intermediate1",
+    "subject": "Fundamentals of Economics",
+    "topic": "General",
+    "type": "mcq",
+    "stem": "The currency issued by the government and backed by the authority and power of the government and its economy is a/the ……………………….",
+    "options": [
+      {
+        "key": "A",
+        "text": "fiat money."
+      },
+      {
+        "key": "B",
+        "text": "money."
+      },
+      {
+        "key": "C",
+        "text": "currency."
+      },
+      {
+        "key": "D",
+        "text": "legal tender."
+      }
+    ],
+    "correct": "A",
+    "explanation": "Fiat money is currency issued by the government and backed by its authority."
+  },
+  {
+    "course": "cipm",
+    "company": "null",
+    "level": "intermediate1",
+    "subject": "Fundamentals of Economics",
+    "topic": "General",
+    "type": "mcq",
+    "stem": "The ratio of additional revenue to additional output is termed the ……………",
+    "options": [
+      {
+        "key": "A",
+        "text": "Marginal revenue."
+      },
+      {
+        "key": "B",
+        "text": "Average revenue."
+      },
+      {
+        "key": "C",
+        "text": "Additional revenue."
+      },
+      {
+        "key": "D",
+        "text": "Marginal revenue product."
+      }
+    ],
+    "correct": "A",
+    "explanation": "Marginal revenue is defined as the change in total revenue divided by the change in output."
+  },
+  {
+    "course": "cipm",
+    "company": "null",
+    "level": "intermediate1",
+    "subject": "Fundamentals of Economics",
+    "topic": "General",
+    "type": "mcq",
+    "stem": "Which of the following is true of the slope of a normal demand curve? A demand curve …",
+    "options": [
+      {
+        "key": "A",
+        "text": "slopes upwards from left to right."
+      },
+      {
+        "key": "B",
+        "text": "slopes downward from left to right."
+      },
+      {
+        "key": "C",
+        "text": "is parallel to the X-axis."
+      },
+      {
+        "key": "D",
+        "text": "is parallel to the Y-axis."
+      }
+    ],
+    "correct": "B",
+    "explanation": "A normal demand curve slopes downward, reflecting the inverse relationship between price and quantity demanded."
+  },
+  {
+    "course": "cipm",
+    "company": "null",
+    "level": "intermediate1",
+    "subject": "Fundamentals of Economics",
+    "topic": "General",
+    "type": "mcq",
+    "stem": "A market structure noted with two sellers of a particular commodity is a …………………",
+    "options": [
+      {
+        "key": "A",
+        "text": "monopoly."
+      },
+      {
+        "key": "B",
+        "text": "duopoly."
+      },
+      {
+        "key": "C",
+        "text": "oligopoly."
+      },
+      {
+        "key": "D",
+        "text": "monopolistic competition."
+      }
+    ],
+    "correct": "B",
+    "explanation": "A market with exactly two sellers is called a duopoly."
+  }
+]
